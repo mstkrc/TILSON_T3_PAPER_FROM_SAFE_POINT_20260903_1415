@@ -241,6 +241,31 @@ LIVE_TRADING=false korunmuştur.
 - Real order/Binance order endpoint: NONE.
 - Faz-22: NEXT_PENDING_USER_APPROVAL.
 - Note: Faz-21 closure is UI visual/static scope closure only. It is not paper start.
++## FAZ-22C READ-ONLY RUNTIME STATUS ADAPTER GATE READY - 2026-09-04
+
+- Faz-22C gate result: FAZ22C_READ_ONLY_ADAPTER_GATE_READY.
+- Scope: gate/design readiness only.
+- Implementation: NOT_STARTED.
+- Proposed adapter file: src/ui/control_center/runtime_status_adapter.py.
+- Proposed test file: tests/test_runtime_status_adapter.py.
+- Adapter rule: read-only snapshot only.
+- Adapter must not start paper, live, server, scheduler loop, bridge, execution, or network/order endpoint.
+- Adapter must not call src/paper/execution.py.
+- Adapter must read live-lock config and expose LIVE_TRADING=false and live_order_sending_allowed=false.
+- Missing runtime sources must return UNKNOWN / OFF / STALE / BLOCKED.
+- Data binding status remains DESIGN_READY / NOT_IMPLEMENTED.
+- Runtime backend/service: NOT_READY.
+- Paper orchestration: NOT_READY.
+- Ledger persistence: NOT_READY.
+- Required tests: no execution call, no network/order endpoint, no paper/live start, live-lock fields false, snapshot compatible with ControlCenterModel.bind_snapshot().
+- Blockers: no completed runtime status adapter, no runtime source registry, no persistent ledger store, no scheduler/status loop.
+- Safe next step: FAZ-22C narrow implementation package with read-only adapter and tests only, after explicit user approval.
+- Paper: OFF.
+- Live: OFF / LOCKED.
+- LIVE_TRADING=false.
+- live_order_sending_allowed=false.
+- Real order/Binance order endpoint: NONE.
+- Note: This record is gate/readiness only. It is not implementation, paper start, server start, or live enable.
 
 ## FAZ-22B DATA BINDING DESIGN READY - 2026-09-04
 

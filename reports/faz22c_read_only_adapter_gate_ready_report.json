@@ -1,0 +1,23 @@
+{
+  "phase": "FAZ-22C",
+  "result": "READ_ONLY_ADAPTER_GATE_READY",
+  "scope": "GATE_DESIGN_READINESS_ONLY",
+  "implementation": "NOT_STARTED",
+  "proposed_adapter_file": "src/ui/control_center/runtime_status_adapter.py",
+  "proposed_test_file": "tests/test_runtime_status_adapter.py",
+  "adapter_rule": "READ_ONLY_SNAPSHOT_ONLY",
+  "must_not_start": ["paper", "live", "server", "scheduler_loop", "bridge", "execution", "network_order_endpoint"],
+  "must_not_call": ["src/paper/execution.py"],
+  "fallback_states": ["UNKNOWN", "OFF", "STALE", "BLOCKED"],
+  "data_binding": "DESIGN_READY_NOT_IMPLEMENTED",
+  "runtime_backend": "NOT_READY",
+  "paper_orchestration": "NOT_READY",
+  "ledger_persistence": "NOT_READY",
+  "tests_required": true,
+  "next_step": "FAZ-22C_NARROW_IMPLEMENTATION_PACKAGE_AFTER_USER_APPROVAL",
+  "paper": "OFF",
+  "live": "OFF_LOCKED",
+  "live_trading": false,
+  "live_order_sending_allowed": false,
+  "real_order_endpoint": "NONE"
+}

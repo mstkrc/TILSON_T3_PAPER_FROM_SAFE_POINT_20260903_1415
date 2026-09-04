@@ -1,0 +1,20 @@
+FAZ-22C READ-ONLY RUNTIME STATUS ADAPTER GATE READY - 2026-09-04
+
+Result: FAZ22C_READ_ONLY_ADAPTER_GATE_READY.
+Scope: GATE / DESIGN READINESS ONLY.
+Implementation: NOT_STARTED.
+Adapter: READ-ONLY SNAPSHOT ONLY.
+Proposed adapter: src/ui/control_center/runtime_status_adapter.py.
+Proposed tests: tests/test_runtime_status_adapter.py.
+Fallback states: UNKNOWN / OFF / STALE / BLOCKED.
+Data binding: DESIGN_READY / NOT_IMPLEMENTED.
+Runtime backend: NOT_READY.
+Paper orchestration: NOT_READY.
+Ledger persistence: NOT_READY.
+Paper: OFF.
+Live: OFF / LOCKED.
+LIVE_TRADING=false.
+live_order_sending_allowed=false.
+Real order/Binance order endpoint: NONE.
+Next step: narrow implementation package after explicit user approval.
+Note: Gate/readiness record only; no implementation or process start.
