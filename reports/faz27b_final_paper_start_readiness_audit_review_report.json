@@ -1,0 +1,23 @@
+{
+  "phase":"FAZ-27B",
+  "result":"FINAL_PAPER_START_READINESS_AUDIT_REVIEW_COMPLETE",
+  "scope":"FINAL_REVIEW_AND_EXIT_DECISION_ONLY",
+  "review_items":16,
+  "faz27a_status":"PASS_READY_FOR_CONTROLLED_PAPER_START_PHASE",
+  "readiness_score":"10/10",
+  "paper_start_readiness_audit":"PASS_READY_FOR_CONTROLLED_PAPER_START_PHASE",
+  "paper_start_permission":"NOT_GRANTED_YET",
+  "blocking_failures":[],
+  "carried_forward_gaps":["runtime providers pending","paper orchestration remains FAZ-28 scope"],
+  "paper_status":"OFF",
+  "live_lock_status":"OFF_LOCKED",
+  "real_order_capability":"NONE",
+  "execution_network_status":"NONE",
+  "paper_start_trigger_status":"NOT_TRIGGERED",
+  "runtime_start_status":"NOT_TRIGGERED",
+  "server_start_status":"NOT_TRIGGERED",
+  "scheduler_loop_status":"NOT_TRIGGERED",
+  "security":{"LIVE_TRADING":false,"live_order_sending_allowed":false,"paper":"OFF","live":"OFF_LOCKED","real_order_endpoint":"NONE","paper_start_permission":"NOT_GRANTED_YET"},
+  "overall_faz27_decision":"PASS_PAPER_START_READINESS_AUDIT",
+  "next_phase":"FAZ-28_UI_PAPER_TRADE_START"
+}
