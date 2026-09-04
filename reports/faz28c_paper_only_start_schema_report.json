@@ -1,0 +1,34 @@
+{
+  "phase": "FAZ-28C",
+  "result": "PAPER_ONLY_START_SCHEMA_IMPLEMENTED",
+  "scope": "NARROW_SCHEMA_IMPLEMENTATION_ONLY_NO_START",
+  "implemented_files": [
+    "src/ui/control_center/paper_only_start_schema.py"
+  ],
+  "test_files": [
+    "tests/test_paper_only_start_schema.py"
+  ],
+  "schema_field_count": 45,
+  "required_field_count": 45,
+  "validation_status": "PASS",
+  "tests_status": "PASS_94",
+  "paper_start_permission": "NOT_GRANTED_YET",
+  "paper_start_allowed": false,
+  "paper_status": "OFF",
+  "live_lock_status": "OFF_LOCKED",
+  "real_order_capability": "NONE",
+  "execution_network_status": "NONE",
+  "closed_candle_rule_status": "REQUIRED",
+  "security": {
+    "LIVE_TRADING": false,
+    "live_order_sending_allowed": false,
+    "ui_can_enable_live": false,
+    "telegram_can_enable_live": false,
+    "codex_can_enable_live": false,
+    "requires_separate_live_gate": true,
+    "paper_start_trigger": "NOT_TRIGGERED",
+    "real_order_endpoint": "NONE"
+  },
+  "overall_decision": "SCHEMA_IMPLEMENTED_NO_START",
+  "next_subphase": "FAZ-28D_PAPER_ONLY_START_GATED_BUILDER_IMPLEMENTATION"
+}
