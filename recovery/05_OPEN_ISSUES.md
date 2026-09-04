@@ -137,6 +137,32 @@ KONU-50: LOCKED. Faz-21 → Faz-47 planı kayıtlıdır ve kullanıcı onayıyla
 - Tests: PASS.
 - Next subphase: FAZ-22D UI FUNCTIONAL SIMULATION WITHOUT PAPER START.
 - Note: This is not paper start, server start, live enable, or real order capability.
+## FAZ-24D UI ACTION AUTHORITY NEGATIVE TESTS IMPLEMENTED - 2026-09-04
+
+- Faz-24D result: UI_ACTION_AUTHORITY_NEGATIVE_TESTS_IMPLEMENTED.
+- Scope: test-only UI action authority negative tests.
+- Negative checks: 25.
+- Tests: PASS.
+- UI action authority: PASS_NO_ACTION_AUTHORITY.
+- Live action status: BLOCKED.
+- Paper action status: BLOCKED.
+- Order action status: BLOCKED.
+- Real order capability: NONE.
+- Execution/network status: NONE.
+- Live lock status: OFF_LOCKED.
+- Paper start readiness: NOT_ALLOWED_YET.
+- Runtime start: NOT_TRIGGERED.
+- Paper start trigger: NOT_TRIGGERED.
+- Live start: NOT_TRIGGERED.
+- Server start: NOT_TRIGGERED.
+- Scheduler loop start: NOT_TRIGGERED.
+- Execution call: NONE.
+- Network/order endpoint: NONE.
+- LIVE_TRADING=false.
+- live_order_sending_allowed=false.
+- Real order endpoint: NONE.
+- Next subphase: FAZ-24E LIVE LOCK RESULT REVIEW AND EXIT DECISION.
+- Note: This is not paper start, server start, live enable, or real order capability.
 ## FAZ-24C RISK FAIL-CLOSED GUARD TESTS IMPLEMENTED - 2026-09-04
 
 - Faz-24C result: RISK_FAIL_CLOSED_GUARD_TESTS_IMPLEMENTED.

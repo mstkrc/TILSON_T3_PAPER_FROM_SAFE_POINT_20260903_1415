@@ -1,0 +1,19 @@
+{
+  "phase": "FAZ-24D",
+  "result": "UI_ACTION_AUTHORITY_NEGATIVE_TESTS_IMPLEMENTED",
+  "scope": "TEST_ONLY_UI_ACTION_AUTHORITY_NEGATIVE",
+  "test_file": "tests/test_faz24_ui_action_authority_negative.py",
+  "negative_check_count": 25,
+  "tests_status": "PASS",
+  "ui_action_authority_status": "PASS_NO_ACTION_AUTHORITY",
+  "live_action_status": "BLOCKED",
+  "paper_action_status": "BLOCKED",
+  "order_action_status": "BLOCKED",
+  "real_order_capability": "NONE",
+  "execution_network_status": "NONE",
+  "paper_start_readiness": "NOT_ALLOWED_YET",
+  "live_lock_status": "OFF_LOCKED",
+  "security": {"LIVE_TRADING": false, "live_order_sending_allowed": false, "ui_can_enable_live": false, "telegram_can_enable_live": false, "codex_can_enable_live": false, "requires_separate_live_gate": true, "paper": "OFF", "live": "OFF_LOCKED", "real_order_endpoint": "NONE"},
+  "overall_decision": "UI_ACTION_AUTHORITY_NEGATIVE_TESTS_PASS",
+  "next_subphase": "FAZ-24E_LIVE_LOCK_RESULT_REVIEW_AND_EXIT_DECISION"
+}
