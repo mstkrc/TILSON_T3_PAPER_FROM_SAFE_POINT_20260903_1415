@@ -1,0 +1,23 @@
+FAZ-22D UI FUNCTIONAL SIMULATION GATE ANALYSIS - 2026-09-04
+
+Result: UI_FUNCTIONAL_SIMULATION_ANALYSIS_READY.
+Gate decision: STOP_RUNTIME_SIMULATION_NOT_IMPLEMENTED.
+Scope: UI intents without paper start.
+Static UI: 17/17 present.
+Runtime adapter: READ-ONLY SNAPSHOT ONLY.
+Simulation cases: refresh, route navigation, display-only buttons, disabled commands, live lock, unknown, stale, blocked, no execution, no paper start.
+Adapter tests: PASS.
+Full UI simulation harness: NOT_IMPLEMENTED.
+Data binding: PARTIAL_READ_ONLY_STATUS_ADAPTER / NOT_FULL_RUNTIME_BINDING.
+Paper start: NOT_TRIGGERED.
+Live start: NOT_TRIGGERED.
+Server start: NOT_TRIGGERED.
+Scheduler loop start: NOT_TRIGGERED.
+Execution call: NONE.
+Network/order endpoint: NONE.
+Paper: OFF.
+Live: OFF / LOCKED.
+LIVE_TRADING=false.
+live_order_sending_allowed=false.
+Real order/Binance order endpoint: NONE.
+Next step: narrow UI simulation tests after explicit approval.

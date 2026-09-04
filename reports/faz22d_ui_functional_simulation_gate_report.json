@@ -1,0 +1,41 @@
+{
+  "phase": "FAZ-22D",
+  "result": "UI_FUNCTIONAL_SIMULATION_ANALYSIS_READY",
+  "gate_decision": "STOP_RUNTIME_SIMULATION_NOT_IMPLEMENTED",
+  "scope": "UI_INTENTS_WITHOUT_PAPER_START",
+  "static_ui": "17_17_PRESENT",
+  "runtime_adapter": "READ_ONLY_SNAPSHOT_ONLY",
+  "simulation_cases": [
+    "refresh",
+    "route_navigation",
+    "display_only_buttons",
+    "disabled_command_buttons",
+    "live_locked_controls",
+    "unknown_snapshot",
+    "stale_snapshot",
+    "blocked_snapshot",
+    "no_execution",
+    "no_paper_start"
+  ],
+  "required_future_files": [
+    "tests/test_control_center.py",
+    "tests/test_runtime_status_adapter.py",
+    "src/ui/control_center/runtime_status_adapter.py",
+    "src/ui/control_center/model.py"
+  ],
+  "current_tests": "ADAPTER_TESTS_PASS",
+  "full_ui_simulation_harness": "NOT_IMPLEMENTED",
+  "data_binding": "PARTIAL_READ_ONLY_STATUS_ADAPTER_NOT_FULL_RUNTIME_BINDING",
+  "paper_start": "NOT_TRIGGERED",
+  "live_start": "NOT_TRIGGERED",
+  "server_start": "NOT_TRIGGERED",
+  "scheduler_loop_start": "NOT_TRIGGERED",
+  "execution_call": "NONE",
+  "network_order_endpoint": "NONE",
+  "live_trading": false,
+  "live_order_sending_allowed": false,
+  "paper": "OFF",
+  "live": "OFF_LOCKED",
+  "real_order_endpoint": "NONE",
+  "next_subphase": "FAZ-22D_NARROW_UI_SIMULATION_TESTS_AFTER_APPROVAL"
+}
