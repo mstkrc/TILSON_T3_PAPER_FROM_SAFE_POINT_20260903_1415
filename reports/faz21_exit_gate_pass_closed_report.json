@@ -1,0 +1,18 @@
+{
+  "phase": "FAZ-21",
+  "result": "PASS_LOCKED",
+  "exit_gate": "FAZ21_EXIT_GATE_PASS",
+  "ui_screens": "01-17",
+  "user_visual_qa": "APPROVED",
+  "technical_static_pass": true,
+  "recovery_ascii_only": true,
+  "mojibake_patterns": "NONE_IN_RECOVERY",
+  "old_snapshot_mojibake_note": "PRESERVED_HISTORICAL_ARTIFACT_NOT_EDITED",
+  "data_binding": "NOT_DONE",
+  "paper": "OFF",
+  "live": "OFF_LOCKED",
+  "live_trading": false,
+  "live_order_sending_allowed": false,
+  "real_order_endpoint": "NONE",
+  "phase22": "NEXT_PENDING_USER_APPROVAL"
+}

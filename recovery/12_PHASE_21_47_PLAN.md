@@ -55,3 +55,22 @@ Live trading kapalıdır: `LIVE_TRADING=false`, `live_order_sending_allowed=fals
 - Real order/Binance order endpoint: NONE.
 - Faz-22: NEXT_PENDING_USER_APPROVAL.
 - Note: This is UI visual/static scope record; it is not paper start.
+
+## FAZ-21 EXIT GATE PASS / CLOSED - 2026-09-04
+
+- Faz-21 result: PASS / LOCKED.
+- Exit gate: FAZ21_EXIT_GATE_PASS.
+- 01-17 UI screens: USER_VISUAL_QA_APPROVED / TECHNICAL_STATIC_PASS / RECORDED.
+- Recovery record: ASCII-only PASS.
+- Report exists: reports/faz21_ui_01_17_user_visual_qa_and_technical_pass_report.json.
+- Snapshot exists: snapshots/faz21_ui_01_17_user_visual_qa_technical_pass_20260904_1649.txt.
+- Note: Previous snapshot may contain Turkish mojibake; it is preserved as historical artifact and not edited.
+- New closure records are ASCII-only.
+- Data binding: NOT_DONE.
+- Paper: OFF.
+- Live: OFF / LOCKED.
+- LIVE_TRADING=false.
+- live_order_sending_allowed=false.
+- Real order/Binance order endpoint: NONE.
+- Faz-22: NEXT_PENDING_USER_APPROVAL.
+- Note: Faz-21 closure is UI visual/static scope closure only. It is not paper start.
