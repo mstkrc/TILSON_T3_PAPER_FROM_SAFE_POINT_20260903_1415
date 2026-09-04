@@ -1,0 +1,21 @@
+{
+  "phase": "FAZ-24E",
+  "result": "LIVE_LOCK_RESULT_REVIEW_AND_EXIT_DECISION_COMPLETE",
+  "scope": "RESULT_REVIEW_AND_EXIT_DECISION_ONLY",
+  "review_items": 25,
+  "faz24a_status": "PASS",
+  "faz24b_status": "PASS",
+  "faz24c_status": "PASS",
+  "faz24d_status": "PASS",
+  "live_lock_status": "PASS_LOCKED",
+  "risk_fail_closed_status": "PASS",
+  "ui_action_authority_status": "PASS_NO_ACTION_AUTHORITY",
+  "paper_start_readiness": "NOT_ALLOWED_YET",
+  "live_enable_status": "BLOCKED_REQUIRES_SEPARATE_LIVE_GATE",
+  "real_order_capability": "NONE",
+  "execution_network_status": "NONE",
+  "security": {"LIVE_TRADING": false, "live_order_sending_allowed": false, "ui_can_enable_live": false, "telegram_can_enable_live": false, "codex_can_enable_live": false, "requires_separate_live_gate": true, "paper": "OFF", "live": "OFF_LOCKED", "real_order_endpoint": "NONE", "execution_or_network_called": false},
+  "open_gaps_carried_forward": ["runtime providers pending", "UI render integration pending", "paper orchestration not ready", "persistent ledger/event store pending"],
+  "overall_faz24_decision": "PASS_UI_RISK_SAFETY_LIVE_LOCK_VALIDATION",
+  "next_phase": "FAZ-25_UI_LEDGER_PNL_POSITION_CONSISTENCY"
+}
