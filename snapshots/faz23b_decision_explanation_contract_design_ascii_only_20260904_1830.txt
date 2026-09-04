@@ -1,0 +1,15 @@
+FAZ-23B DECISION EXPLANATION CONTRACT DESIGN COMPLETED - 2026-09-04
+
+Scope: ANALYSIS AND CONTRACT DESIGN ONLY.
+Contract fields: 35 required fields.
+Contract status: READY / IMPLEMENTATION PENDING.
+Sources: decision trace, runtime status, market, candle, strategy, candidate, risk, position, ledger, health, live lock, and snapshot adapter.
+Fallbacks: UNKNOWN, OFF, STALE, BLOCKED, READY.
+Blocking: open candle, non-allowed risk, missing required source, or live-lock issue blocks action.
+UI rule: explain decision trace only; no decision or execution authority.
+Paper start: NOT_ALLOWED_YET.
+Live: OFF / LOCKED.
+LIVE_TRADING=false.
+live_order_sending_allowed=false.
+Real order endpoint: NONE.
+Next subphase: FAZ-23C READ-ONLY DECISION EXPLANATION SCHEMA IMPLEMENTATION.
