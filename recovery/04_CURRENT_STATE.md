@@ -1376,3 +1376,22 @@ Kaynak: `recovery/word/Tilson_T3_04_Current_State_ve_Phase_Tracker_Kilitli.docx`
 - Next correct action: USER_DECISION_FOR_NEXT_FAZ29_OBSERVATION_STEP.
 - Correct workspace: D:\\Masaustu\\TILSON_T3_GIT_SYNC_WORKSPACE_20260904.
 - Note: Day closed after FAZ-29 observation chain; no operational start occurred.
+# CURRENT ACTIVE STATE
+
+- Last recorded phase: FAZ-29 NEXT MARKET DATA CLOSED CANDLE OBSERVATION.
+- Last result: FAZ29_NEXT_MARKET_DATA_CLOSED_CANDLE_OBSERVATION_PASS_NETWORK_READ_ONLY_NO_DECISION_NO_ORDER.
+- FAZ-29 operational status: NOT_OPERATIONALLY_STARTED.
+- Paper start permission: NOT_GRANTED_YET.
+- Paper start allowed: false.
+- Paper status: OFF.
+- Live lock status: OFF_LOCKED.
+- LIVE_TRADING=false.
+- live_order_sending_allowed=false.
+- Real order capability: NONE.
+- Runtime/server/scheduler: NOT_TRIGGERED.
+- Paper start trigger: NOT_TRIGGERED.
+- Live start trigger: NOT_TRIGGERED.
+- Trade decision: NOT_GENERATED.
+- Next correct action: USER_DECISION_FOR_NEXT_FAZ29_OBSERVATION_STEP.
+- Correct workspace: D:\\Masaustu\\TILSON_T3_GIT_SYNC_WORKSPACE_20260904.
+- Note: Observation only; no decision, start, order, or execution occurred.

@@ -1395,3 +1395,15 @@ Tarihsel düzeltme kaydı: Önceki Faz-21 OPEN GATE kabulü eksik/erken sayıld�
 - No decision, signal, candidate/ranking/sizing/risk pipeline, paper/live start, runtime/server/scheduler, order, execution, or private endpoint.
 - Paper: OFF. Live: OFF_LOCKED. LIVE_TRADING=false. live_order_sending_allowed=false.
 - Next correct action: USER_DECISION_FOR_NEXT_FAZ29_OBSERVATION_STEP.
+
+
+## FAZ-29 NEXT MARKET DATA CLOSED CANDLE OBSERVATION RECORDED - 2026-09-05
+
+- Result: FAZ29_NEXT_MARKET_DATA_CLOSED_CANDLE_OBSERVATION_PASS_NETWORK_READ_ONLY_NO_DECISION_NO_ORDER.
+- Only public Binance BTCUSDT 1h kline endpoint was used.
+- Last closed candle: 2026-09-04T21:00:00Z to 2026-09-04T21:59:59.999Z.
+- Open candle: OPEN_CANDLE_REJECTED_FOR_DECISION.
+- No indicator, signal, candidate/ranking/sizing/risk pipeline, or trade decision.
+- No paper start, live start, runtime/server/scheduler, order, execution, or private endpoint.
+- FAZ-29 is not operationally started; Paper OFF; Live OFF_LOCKED.
+- Next correct action: USER_DECISION_FOR_NEXT_FAZ29_OBSERVATION_STEP.
