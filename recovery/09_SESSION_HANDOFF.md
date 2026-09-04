@@ -1385,3 +1385,21 @@ LIVE_TRADING=false korunmuştur.
 - Network/order endpoint: NONE.
 - Security: NO_START_NO_ORDER_NO_NETWORK_LIVE_LOCKED.
 - Note: Work stops for day after FAZ-28K. FAZ-29 is not started.
+
+
+## FAZ-29 MARKET DATA CLOSED CANDLE OBSERVATION RECORDED - 2026-09-04
+
+- Result: FAZ29_MARKET_DATA_CLOSED_CANDLE_OBSERVATION_PASS_NETWORK_READ_ONLY_NO_DECISION_NO_ORDER.
+- Network scope: PUBLIC_MARKET_DATA_READ_ONLY.
+- Endpoint: https://fapi.binance.com/fapi/v1/klines?symbol=BTCUSDT&interval=1h&limit=2.
+- Last closed candle: 2026-09-04T21:00:00Z to 2026-09-04T21:59:59.999Z.
+- Active open candle: 2026-09-04T22:00:00Z to 2026-09-04T22:59:59.999Z; rejected for decision.
+- Indicator: NOT_CALCULATED. Strategy signal: NOT_GENERATED.
+- Candidate/ranking/sizing/risk pipeline: NOT_TRIGGERED.
+- Trade decision: NOT_GENERATED.
+- Paper: OFF; permission: NOT_GRANTED_YET; allowed: false.
+- Live: OFF_LOCKED; LIVE_TRADING=false; live_order_sending_allowed=false.
+- Runtime/server/scheduler: NOT_TRIGGERED.
+- Order/execution/private endpoint: NONE.
+- FAZ-29 status: OBSERVATION_RECORDED_NOT_OPERATIONAL_START.
+- Note: Observation only; no decision, start, order, or execution occurred.
