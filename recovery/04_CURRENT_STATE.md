@@ -1479,3 +1479,24 @@ Kaynak: `recovery/word/Tilson_T3_04_Current_State_ve_Phase_Tracker_Kilitli.docx`
 - Next correct action: USER_DECISION_FOR_NEXT_FAZ29_PAPER_GATE_OR_CONTINUED_DRY_OBSERVATION.
 - Correct workspace: D:\\Masaustu\\TILSON_T3_GIT_SYNC_WORKSPACE_20260904.
 - Note: Dry context validation only; no real signal, decision, start, order, or execution occurred.
+# CURRENT ACTIVE STATE
+
+- Last recorded phase: FAZ-29 LONGXIA SYMBOL LISTING RECHECK.
+- Last result: FAZ29_LONGXIA_SYMBOL_LISTING_RECHECK_NOT_LISTED_CONFIRMED_NO_START.
+- LONGXIAUSDT exact Binance USDT-M listing: NOT_FOUND.
+- Previous NOT_LISTED status: CONFIRMED.
+- FAZ-29 operational status: NOT_OPERATIONALLY_STARTED.
+- Paper start permission: NOT_GRANTED_YET.
+- Paper start allowed: false.
+- Paper status: OFF.
+- Live lock status: OFF_LOCKED.
+- LIVE_TRADING=false.
+- live_order_sending_allowed=false.
+- Real order capability: NONE.
+- Runtime/server/scheduler: NOT_TRIGGERED.
+- Paper start trigger: NOT_TRIGGERED.
+- Live start trigger: NOT_TRIGGERED.
+- Trade decision: NOT_GENERATED.
+- Next correct action: KEEP_LONGXIA_OUT_OF_BINANCE_USDT_M_OBSERVATION_UNIVERSE.
+- Correct workspace: D:\\Masaustu\\TILSON_T3_GIT_SYNC_WORKSPACE_20260904.
+- Note: Listing recheck only; no indicator, signal, decision, start, order, or execution occurred.

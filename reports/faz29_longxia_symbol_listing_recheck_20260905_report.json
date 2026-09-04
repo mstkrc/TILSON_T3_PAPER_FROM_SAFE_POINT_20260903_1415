@@ -1,0 +1,14 @@
+{
+  "record_type":"FAZ29_LONGXIA_SYMBOL_LISTING_RECHECK",
+  "date":"2026-09-05",
+  "result":"FAZ29_LONGXIA_SYMBOL_LISTING_RECHECK_NOT_LISTED_CONFIRMED_NO_START",
+  "canonical_head_before":"3801bb146c089c005c330e32af30984d22ab61e3",
+  "previous_multi_symbol_result":"FAZ29_WATCHLIST_BINANCE_LISTED_MULTI_SYMBOL_DRY_OBSERVATION_RECORD_COMMIT_PUSH_PASS_NO_START",
+  "previous_recorded_longxia_status":"NOT_LISTED_ON_BINANCE_USDT_M",
+  "user_visual_evidence":{"tradingview_symbol":"LONGXIAUSDT.P","exchange_label":"Binance","instrument_type":"PERPETUAL_CONTRACT_SWAP_CRYPTO_DEFI","visual_recheck_required":true},
+  "market":"BINANCE_USDT_M_FUTURES","mode":"PAPER","symbol_rechecked":"LONGXIAUSDT","tradingview_symbol":"LONGXIAUSDT.P","normalized_binance_symbol":"LONGXIAUSDT","endpoint_scope":"PUBLIC_MARKET_DATA_READ_ONLY","private_endpoint_used":false,"api_key_secret_used":false,
+  "exchange_info_endpoint_used":true,"ticker_24hr_endpoint_used":true,"kline_public_probe_used":false,"exchange_info_exact_symbol_found":false,"exchange_info_partial_matches":[],
+  "exchange_info_symbol_record":null,"ticker_24hr_probe_result":"NOT_RETURNED_SYMBOL_NOT_FOUND","kline_probe_result":"NOT_USED_EXACT_SYMBOL_NOT_FOUND","listing_recheck_conclusion":"NOT_LISTED_CONFIRMED","previous_not_listed_record_status":"CONFIRMED","possible_previous_filter_issue":null,
+  "indicator_calculation_performed":false,"t3_dmi_adx_calculated":false,"watch_class_generated":false,"real_strategy_signal_generated":false,"real_candidate_selection_performed":false,"real_ranking_performed":false,"candidate_ranking_sizing_risk_pipeline_triggered":false,"trade_decision_generated":false,
+  "paper_status":"OFF","paper_start_permission":"NOT_GRANTED_YET","paper_start_allowed":false,"live_lock_status":"OFF_LOCKED","LIVE_TRADING":false,"live_order_sending_allowed":false,"real_order_capability":"NONE","runtime_server_scheduler":"NOT_TRIGGERED","paper_start_trigger":"NOT_TRIGGERED","live_start_trigger":"NOT_TRIGGERED","execution_order_private_endpoint":"NONE","faz29_operational_status":"NOT_OPERATIONALLY_STARTED","next_correct_action":"KEEP_LONGXIA_OUT_OF_BINANCE_USDT_M_OBSERVATION_UNIVERSE","security":"LISTING_RECHECK_ONLY_NO_INDICATOR_NO_SIGNAL_NO_CANDIDATE_NO_DECISION_NO_ORDER_NO_RUNTIME","overall_decision":"LONGXIAUSDT_NOT_LISTED_CONFIRMED"
+}

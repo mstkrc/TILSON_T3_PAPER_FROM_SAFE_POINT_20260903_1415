@@ -1486,3 +1486,15 @@ LIVE_TRADING=false korunmuştur.
 - No real signal, candidate, ranking, sizing, risk permission, order plan, trade decision, paper/live start, runtime/server/scheduler, order, execution, or private endpoint.
 - FAZ-29 is not operationally started; Paper OFF; Live OFF_LOCKED.
 - Next correct action: USER_DECISION_FOR_NEXT_FAZ29_PAPER_GATE_OR_CONTINUED_DRY_OBSERVATION.
+
+
+## FAZ-29 LONGXIA SYMBOL LISTING RECHECK RECORDED - 2026-09-05
+
+- Result: FAZ29_LONGXIA_SYMBOL_LISTING_RECHECK_NOT_LISTED_CONFIRMED_NO_START.
+- TradingView evidence: LONGXIAUSDT.P, Binance perpetual/swap crypto defi.
+- Public Binance exchangeInfo exact match: none; LONGXIA partial matches: none.
+- Public ticker probe: symbol not found; kline probe not used.
+- Previous NOT_LISTED_ON_BINANCE_USDT_M status: CONFIRMED.
+- No indicator, signal, candidate, decision, order, paper/live start, runtime/server/scheduler, or private endpoint.
+- FAZ-29 is not operationally started; Paper OFF; Live OFF_LOCKED.
+- Next correct action: KEEP_LONGXIA_OUT_OF_BINANCE_USDT_M_OBSERVATION_UNIVERSE.
