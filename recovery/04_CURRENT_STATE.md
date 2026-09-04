@@ -184,24 +184,23 @@ Kaynak: `recovery/word/Tilson_T3_04_Current_State_ve_Phase_Tracker_Kilitli.docx`
 - Paper: OFF. Live: OFF / LOCKED. LIVE_TRADING=false. live_order_sending_allowed=false. Gerçek emir endpoint yok.
 - Bu kapanışta UI source, HTML, config, test ve PNG değiştirilmedi.
 
+## FAZ-21 / 01-17 USER VISUAL QA + TECHNICAL STATIC PASS - 2026-09-04
 
-## FAZ-21 / 01?17 USER VISUAL QA + TECHNICAL STATIC PASS ? 2026-09-04
-
-- Kullan?c? g?rsel QA: 01?17 USER_VISUAL_QA_APPROVED.
-- Teknik statik do?rulama: 17/17 PASS.
+- User visual QA: 01-17 USER_VISUAL_QA_APPROVED.
+- Technical static validation: 17/17 PASS.
 - UTF-8: 17/17 PASS.
 - U+FFFD replacement character: 0.
-- Mojibake pattern: Yok.
-- 01 metadata: data-live-order-sending-allowed="false" eklendi.
-- 07 Strateji: kullan?c? iste?iyle d?rt yard?m ? ikonu kald?r?ld?.
-- Duplicate shell kontrol?: USER_VISUAL_QA_CONFIRMED / AUTOMATED_CHECK_INCONCLUSIVE / ACCEPTED_FOR_FAZ21_STATIC_UI_SCOPE.
-- 01?17: USER_VISUAL_QA_APPROVED / TECHNICAL_STATIC_PASS / RECORDED.
+- Mojibake pattern: NONE.
+- 01 metadata: data-live-order-sending-allowed="false" added.
+- 07 Strategy: four help ? icons removed by user request.
+- Duplicate shell check: USER_VISUAL_QA_CONFIRMED / AUTOMATED_CHECK_INCONCLUSIVE / ACCEPTED_FOR_FAZ21_STATIC_UI_SCOPE.
+- 01-17: USER_VISUAL_QA_APPROVED / TECHNICAL_STATIC_PASS / RECORDED.
 - Faz-21: UI_SCREEN_SCOPE_17_17_PASS / WAITING_FAZ21_EXIT_GATE.
 - Data binding: NOT_DONE.
 - Paper: OFF.
 - Live: OFF / LOCKED.
 - LIVE_TRADING=false.
 - live_order_sending_allowed=false.
-- Ger?ek emir/Binance order endpoint: NONE.
+- Real order/Binance order endpoint: NONE.
 - Faz-22: NEXT_PENDING_USER_APPROVAL.
-- Not: Bu kay?t UI g?rsel/statik kapsam ge?i?idir; paper start de?ildir.
+- Note: This is UI visual/static scope record; it is not paper start.
