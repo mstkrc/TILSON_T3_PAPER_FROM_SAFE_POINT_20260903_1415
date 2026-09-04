@@ -1243,3 +1243,24 @@ Kaynak: `recovery/word/Tilson_T3_04_Current_State_ve_Phase_Tracker_Kilitli.docx`
 - Correct workspace: D:\\Masaustu\\TILSON_T3_GIT_SYNC_WORKSPACE_20260904.
 - Latest expected commit after push: FAZ-28I commit.
 - Note: This is not paper start, server start, live enable, or real order capability.
+# CURRENT ACTIVE STATE
+
+- Last completed phase: FAZ-28J CONTROLLED PAPER START PRE-RUN AUDIT.
+- Last result: CONTROLLED_PAPER_START_PRE_RUN_AUDIT_COMPLETE.
+- Overall decision: PRE_RUN_AUDIT_PASS_NO_START_TRANSITION_RECORD_REQUIRED.
+- Current next subphase: FAZ-28K CONTROLLED PAPER START FINAL AUTHORIZATION AND TRANSITION RECORD.
+- Paper start permission: NOT_GRANTED_YET.
+- Paper start allowed: false.
+- Paper status: OFF.
+- Live lock status: OFF_LOCKED.
+- LIVE_TRADING=false.
+- live_order_sending_allowed=false.
+- Real order capability: NONE.
+- Execution/network status: NONE.
+- Paper start trigger: NOT_TRIGGERED.
+- Live start trigger: NOT_TRIGGERED.
+- Runtime/server/scheduler: NOT_TRIGGERED.
+- Transition record required before FAZ-29: true.
+- Correct workspace: D:\\Masaustu\\TILSON_T3_GIT_SYNC_WORKSPACE_20260904.
+- Latest expected commit after push: FAZ-28J commit.
+- Note: This is not paper start, server start, live enable, or real order capability.
