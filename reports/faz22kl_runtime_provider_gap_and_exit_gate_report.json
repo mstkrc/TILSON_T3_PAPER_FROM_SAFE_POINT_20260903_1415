@@ -1,0 +1,32 @@
+{
+  "phase_package": "FAZ-22K-L",
+  "result": "RUNTIME_PROVIDER_GAP_MATRIX_AND_EXIT_GATE_COMPLETE",
+  "faz22k_runtime_provider_gap_matrix": [
+    {"provider_name": "scheduler_status", "required_for_screens": ["01 Overview", "09 Health"], "current_status": "NOT_CONNECTED / PENDING_PROVIDER_IMPLEMENTATION", "paper_start_required": true, "risk_if_missing": "stale scheduler state", "next_phase_owner": "FAZ-22K", "allowed_next_action": "design provider contract"},
+    {"provider_name": "closed_candle_authority", "required_for_screens": ["01 Overview", "02 Live Scan", "03 Signals", "06 Charts", "07 Strategy"], "current_status": "NOT_CONNECTED / PENDING_PROVIDER_IMPLEMENTATION", "paper_start_required": true, "risk_if_missing": "open candle decision", "next_phase_owner": "FAZ-22K", "allowed_next_action": "design provider contract"},
+    {"provider_name": "strategy_signal_snapshot", "required_for_screens": ["03 Signals", "07 Strategy", "15 Strategy Reports"], "current_status": "NOT_CONNECTED / PENDING_PROVIDER_IMPLEMENTATION", "paper_start_required": true, "risk_if_missing": "missing signal state", "next_phase_owner": "FAZ-22K", "allowed_next_action": "design provider contract"},
+    {"provider_name": "candidate_pipeline_snapshot", "required_for_screens": ["02 Live Scan"], "current_status": "NOT_CONNECTED / PENDING_PROVIDER_IMPLEMENTATION", "paper_start_required": true, "risk_if_missing": "candidate state unknown", "next_phase_owner": "FAZ-22K", "allowed_next_action": "design provider contract"},
+    {"provider_name": "risk_permission_snapshot", "required_for_screens": ["08 Risk", "14 Risk Center"], "current_status": "NOT_CONNECTED / PENDING_PROVIDER_IMPLEMENTATION", "paper_start_required": true, "risk_if_missing": "risk permission cannot be proven", "next_phase_owner": "FAZ-22K", "allowed_next_action": "design provider contract"},
+    {"provider_name": "execution_state_snapshot", "required_for_screens": ["01 Overview", "04 Positions"], "current_status": "NOT_CONNECTED / PENDING_PROVIDER_IMPLEMENTATION", "paper_start_required": true, "risk_if_missing": "execution state unknown", "next_phase_owner": "FAZ-22K", "allowed_next_action": "design provider contract"},
+    {"provider_name": "paper_ledger_snapshot", "required_for_screens": ["01 Overview", "04 Positions", "05 Trade History", "06 Charts", "10 Reports", "11 Portfolio", "12 Performance", "13 Trade Analysis", "15 Strategy Reports", "16 Custom Reports"], "current_status": "NOT_CONNECTED / PENDING_PROVIDER_IMPLEMENTATION", "paper_start_required": true, "risk_if_missing": "accounting and PnL unavailable", "next_phase_owner": "FAZ-22K", "allowed_next_action": "design provider contract"},
+    {"provider_name": "position_snapshot", "required_for_screens": ["01 Overview", "04 Positions", "06 Charts", "08 Risk", "11 Portfolio"], "current_status": "NOT_CONNECTED / PENDING_PROVIDER_IMPLEMENTATION", "paper_start_required": true, "risk_if_missing": "exposure unknown", "next_phase_owner": "FAZ-22K", "allowed_next_action": "design provider contract"},
+    {"provider_name": "portfolio_pnl_snapshot", "required_for_screens": ["06 Charts", "11 Portfolio", "12 Performance"], "current_status": "NOT_CONNECTED / PENDING_PROVIDER_IMPLEMENTATION", "paper_start_required": true, "risk_if_missing": "portfolio metrics unavailable", "next_phase_owner": "FAZ-22K", "allowed_next_action": "design provider contract"},
+    {"provider_name": "health_error_repair_snapshot", "required_for_screens": ["01 Overview", "09 Health", "14 Risk Center", "17 Notifications"], "current_status": "NOT_CONNECTED / PENDING_PROVIDER_IMPLEMENTATION", "paper_start_required": true, "risk_if_missing": "health gate unknown", "next_phase_owner": "FAZ-22K", "allowed_next_action": "design provider contract"},
+    {"provider_name": "report_registry_snapshot", "required_for_screens": ["10 Reports", "16 Custom Reports"], "current_status": "NOT_CONNECTED / PENDING_PROVIDER_IMPLEMENTATION", "paper_start_required": false, "risk_if_missing": "report availability unknown", "next_phase_owner": "FAZ-22K", "allowed_next_action": "design provider contract"},
+    {"provider_name": "notification_event_stream", "required_for_screens": ["17 Notifications"], "current_status": "NOT_CONNECTED / PENDING_PROVIDER_IMPLEMENTATION", "paper_start_required": false, "risk_if_missing": "events may be missed", "next_phase_owner": "FAZ-22K", "allowed_next_action": "design provider contract"}
+  ],
+  "faz22l_exit_gate_decision": "FAZ-22_EXIT_GATE_COMPLETE",
+  "static_ui_status": "PASS",
+  "runtime_status_adapter_status": "PASS_READ_ONLY",
+  "runtime_source_registry_status": "PASS_READ_ONLY",
+  "binding_registry_status": "PASS_READ_ONLY_DISPLAY_ONLY",
+  "ui_snapshot_binding_adapter_status": "PASS_READ_ONLY_DISPLAY_SNAPSHOT",
+  "ui_binding_validation_review_status": "PASS",
+  "tests_summary": "28 prior UI/adapter tests PASS; 19 source registry tests PASS; 23 binding registry tests PASS",
+  "paper_start_readiness": "NOT_ALLOWED_YET",
+  "live_lock_status": "OFF_LOCKED",
+  "security": {"LIVE_TRADING": false, "live_order_sending_allowed": false, "paper": "OFF", "real_order_endpoint": "NONE", "execution_or_network_called": false},
+  "open_gaps_carried_forward": ["runtime providers pending", "UI render integration pending", "paper orchestration not ready", "persistent ledger/event store pending"],
+  "final_faz22_decision": "PASS_READ_ONLY_UI_FUNCTIONAL_LAYER",
+  "next_phase": "FAZ-23_UI_DECISION_EXPLANATION_VALIDATION"
+}
