@@ -1,0 +1,17 @@
+{
+  "phase": "FAZ-24C",
+  "result": "RISK_FAIL_CLOSED_GUARD_TESTS_IMPLEMENTED",
+  "scope": "TEST_ONLY_RISK_GUARD_IMPLEMENTATION",
+  "test_file": "tests/test_faz24_risk_fail_closed_guards.py",
+  "risk_guard_check_count": 19,
+  "tests_status": "PASS",
+  "fail_closed_status": "PASS",
+  "deterministic_priority_status": "PASS",
+  "paper_start_readiness": "NOT_ALLOWED_YET",
+  "live_lock_status": "OFF_LOCKED",
+  "real_order_capability": "NONE",
+  "execution_network_status": "NONE",
+  "security": {"LIVE_TRADING": false, "live_order_sending_allowed": false, "paper": "OFF", "live": "OFF_LOCKED", "real_order_endpoint": "NONE", "execution_or_network_called": false},
+  "overall_decision": "RISK_FAIL_CLOSED_GUARD_TESTS_PASS",
+  "next_subphase": "FAZ-24D_UI_ACTION_AUTHORITY_NEGATIVE_TESTS"
+}
