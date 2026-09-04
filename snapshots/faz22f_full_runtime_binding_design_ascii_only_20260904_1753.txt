@@ -1,0 +1,15 @@
+FAZ-22F FULL RUNTIME BINDING DESIGN - 2026-09-04
+
+Result: FULL_RUNTIME_BINDING_DESIGN_READY.
+Scope: DESIGN ONLY / NO IMPLEMENTATION.
+Implementation: NOT_STARTED.
+Screens 01-17: mapped to scheduler, candle, strategy, candidate, risk, execution, ledger, positions, portfolio, health, reports, and notifications sources.
+Refresh policy: per-domain cadence with generated timestamp.
+Stale policy: explicit STALE display; stale data cannot authorize decisions.
+Fallback policy: OFF for no process, UNKNOWN for missing source, STALE for expired source, BLOCKED for safety failure, READY for valid fresh source.
+Blocking policy: open candle, stale data, failed risk, failed recovery, or live-lock violation blocks decisions.
+No execution guarantee: UI and adapter are read-only; no paper/live/server/scheduler start; no network/order endpoint.
+Required future work: runtime source registry, binding registry, persistent ledger/event store, status providers, report registry, full binding tests.
+Security: LIVE_TRADING=false; live_order_sending_allowed=false; Paper OFF; Live OFF / LOCKED; real endpoint NONE.
+Faz-22F gate: FULL_RUNTIME_BINDING_DESIGN_READY.
+Next subphase: FAZ-22G READ-ONLY RUNTIME SOURCE REGISTRY IMPLEMENTATION.
