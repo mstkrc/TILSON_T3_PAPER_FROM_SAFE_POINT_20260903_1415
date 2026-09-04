@@ -1,0 +1,25 @@
+FAZ-25E LEDGER PNL POSITION RESULT REVIEW AND EXIT DECISION COMPLETED - 2026-09-04
+
+FAZ-25A: PASS_WITH_GAPS_CARRIED_FORWARD
+FAZ-25B: PASS_CONTRACT_READY
+FAZ-25C: PASS_SCHEMA_IMPLEMENTED
+FAZ-25D: PASS_BUILDER_IMPLEMENTED
+Review items: 31
+Schema fields: 45
+Payload fields: 45
+Overall decision: PASS_READ_ONLY_LEDGER_PNL_POSITION_CONSISTENCY_LAYER
+Ledger/PnL/Position providers: PENDING
+UI display authority: READ_ONLY_DISPLAY_ONLY
+Paper ledger write: NOT_ALLOWED_YET
+Live ledger write: BLOCKED
+Paper start: NOT_ALLOWED_YET
+Live lock: OFF_LOCKED
+LIVE_TRADING=false
+live_order_sending_allowed=false
+Real order capability: NONE
+Execution/network status: NONE
+Ledger runtime write: NOT_TRIGGERED
+Position mutation: NOT_TRIGGERED
+Authoritative PnL calculation: NOT_TRIGGERED
+Next phase: FAZ-26 UI ERROR REPAIR DIAGNOSTIC FLOW
+This is a review record only; no paper, server, scheduler, live, ledger write, or order start occurred.

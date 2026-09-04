@@ -289,6 +289,41 @@ LIVE_TRADING=false korunmuştur.
 - Tests: PASS.
 - Next subphase: FAZ-22D UI FUNCTIONAL SIMULATION WITHOUT PAPER START.
 - Note: This is not paper start, server start, live enable, or real order capability.
+## FAZ-25E LEDGER PNL POSITION RESULT REVIEW AND EXIT DECISION COMPLETED - 2026-09-04
+
+- Faz-25E result: LEDGER_PNL_POSITION_RESULT_REVIEW_AND_EXIT_DECISION_COMPLETE.
+- Faz-25 overall decision: PASS_READ_ONLY_LEDGER_PNL_POSITION_CONSISTENCY_LAYER.
+- Faz-25A status: PASS_WITH_GAPS_CARRIED_FORWARD.
+- Faz-25B status: PASS_CONTRACT_READY.
+- Faz-25C status: PASS_SCHEMA_IMPLEMENTED.
+- Faz-25D status: PASS_BUILDER_IMPLEMENTED.
+- Schema fields: 45.
+- Payload fields: 45.
+- Ledger runtime provider status: PENDING.
+- PnL runtime provider status: PENDING.
+- Position runtime provider status: PENDING.
+- UI display authority: READ_ONLY_DISPLAY_ONLY.
+- Paper ledger write status: NOT_ALLOWED_YET.
+- Live ledger write status: BLOCKED.
+- Paper start readiness: NOT_ALLOWED_YET.
+- Live lock status: OFF_LOCKED.
+- Real order capability: NONE.
+- Execution/network status: NONE.
+- Ledger runtime write: NOT_TRIGGERED.
+- Position mutation: NOT_TRIGGERED.
+- Authoritative PnL calculation: NOT_TRIGGERED.
+- Runtime start: NOT_TRIGGERED.
+- Paper start trigger: NOT_TRIGGERED.
+- Live start: NOT_TRIGGERED.
+- Server start: NOT_TRIGGERED.
+- Scheduler loop start: NOT_TRIGGERED.
+- Execution call: NONE.
+- Network/order endpoint: NONE.
+- LIVE_TRADING=false.
+- live_order_sending_allowed=false.
+- Real order endpoint: NONE.
+- Next phase: FAZ-26 UI ERROR REPAIR DIAGNOSTIC FLOW.
+- Note: This is not paper start, server start, live enable, ledger runtime write, position mutation, PnL authority, or real order capability.
 ## FAZ-25D READ-ONLY LEDGER PNL POSITION BUILDER IMPLEMENTED - 2026-09-04
 
 - Faz-25D result: READ_ONLY_LEDGER_PNL_POSITION_BUILDER_IMPLEMENTED.
