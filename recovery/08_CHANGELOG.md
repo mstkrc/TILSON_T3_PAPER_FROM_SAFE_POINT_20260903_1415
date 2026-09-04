@@ -1708,3 +1708,15 @@ Control Center fiili seti 17 ekrandır: 01 = Genel Bakış; 02–17 = diğer Con
 - No paper/live start, runtime/server/scheduler, order, execution, or private endpoint.
 - FAZ-29 is not operationally started; Paper OFF; Live OFF_LOCKED.
 - Next correct action: USER_DECISION_FOR_NEXT_FAZ29_OBSERVATION_STEP.
+
+
+## FAZ-29 CLOSED CANDLE FULL DRY OBSERVATION RECORDED - 2026-09-05
+
+- Result: FAZ29_CLOSED_CANDLE_FULL_DRY_OBSERVATION_PASS_NO_REAL_DECISION_NO_ORDER.
+- Only public Binance BTCUSDT 1h kline endpoint was used; 199 closed candles used.
+- Open candle excluded from all calculations.
+- T3 and DMI/ADX calculated only as dry observation; T3 state GREEN; ADX slope FALLING.
+- Dry signal, direction, candidate eligibility, ranking, and sizing/risk contexts were observation-only.
+- No real signal, decision, candidate selection, ranking/sizing/risk/order pipeline, paper/live start, runtime/server/scheduler, order, execution, or private endpoint.
+- FAZ-29 is not operationally started; Paper OFF; Live OFF_LOCKED.
+- Next correct action: USER_DECISION_FOR_NEXT_FAZ29_FULL_DRY_OR_PAPER_GATE_STEP.
