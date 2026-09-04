@@ -1474,3 +1474,15 @@ LIVE_TRADING=false korunmuştur.
 - No real signal, candidate, ranking/sizing/risk/order pipeline, trade decision, paper/live start, runtime/server/scheduler, order, execution, or private endpoint.
 - FAZ-29 is not operationally started; Paper OFF; Live OFF_LOCKED.
 - Next correct action: USER_DECISION_FOR_NEXT_FAZ29_MULTI_SYMBOL_DRY_OR_PAPER_GATE_STEP.
+
+
+## FAZ-29 WATCH_STRONG DRY SIGNAL CONTEXT VALIDATION RECORDED - 2026-09-05
+
+- Result: FAZ29_WATCH_STRONG_DRY_SIGNAL_CONTEXT_VALIDATION_PASS_NO_REAL_SIGNAL_NO_ORDER.
+- DASHUSDT and MARSCOINUSDT validated using only public Binance 1h klines.
+- Both: T3 GREEN to GREEN continuation, +DI above -DI, ADX threshold PASS, slope RISING.
+- Dry signal context: DRY_LONG_CONTEXT_BUT_NO_ENTRY_TRIGGER; continuation is not a real signal.
+- Dry direction context: DRY_DIRECTION_LONG_CONFIRMED_BY_DI_ADX; observation only.
+- No real signal, candidate, ranking, sizing, risk permission, order plan, trade decision, paper/live start, runtime/server/scheduler, order, execution, or private endpoint.
+- FAZ-29 is not operationally started; Paper OFF; Live OFF_LOCKED.
+- Next correct action: USER_DECISION_FOR_NEXT_FAZ29_PAPER_GATE_OR_CONTINUED_DRY_OBSERVATION.
