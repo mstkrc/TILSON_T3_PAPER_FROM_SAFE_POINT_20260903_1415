@@ -1,0 +1,23 @@
+FAZ-25D READ-ONLY LEDGER PNL POSITION BUILDER IMPLEMENTED - 2026-09-04
+
+Payload fields: 45
+Validation: PASS
+Tests: PASS (67 selected tests)
+Fail-closed priority: PASS
+Ledger runtime provider: PENDING
+PnL runtime provider: PENDING
+Position runtime provider: PENDING
+UI display authority: READ_ONLY_DISPLAY_ONLY
+Paper ledger write: NOT_ALLOWED_YET
+Live ledger write: BLOCKED
+Paper start: NOT_ALLOWED_YET
+Live lock: OFF_LOCKED
+LIVE_TRADING=false
+live_order_sending_allowed=false
+Real order capability: NONE
+Execution/network status: NONE
+Ledger runtime write: NOT_TRIGGERED
+Position mutation: NOT_TRIGGERED
+Authoritative PnL calculation: NOT_TRIGGERED
+Next subphase: FAZ-25E LEDGER PNL POSITION RESULT REVIEW AND EXIT DECISION
+This is a narrow builder record only; no paper, server, scheduler, live, or order start occurred.

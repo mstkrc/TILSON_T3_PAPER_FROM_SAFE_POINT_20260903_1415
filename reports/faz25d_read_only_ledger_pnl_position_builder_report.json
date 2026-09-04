@@ -1,0 +1,20 @@
+{
+  "phase":"FAZ-25D",
+  "result":"READ_ONLY_LEDGER_PNL_POSITION_BUILDER_IMPLEMENTED",
+  "scope":"NARROW_BUILDER_IMPLEMENTATION_ONLY",
+  "implemented_files":["src/ui/control_center/ledger_pnl_position_builder.py"],
+  "test_files":["tests/test_ledger_pnl_position_builder.py"],
+  "payload_field_count":45,
+  "validation_status":"PASS",
+  "tests_status":"PASS_67",
+  "fail_closed_priority_status":"PASS",
+  "paper_ledger_write_status":"NOT_ALLOWED_YET",
+  "live_ledger_write_status":"BLOCKED",
+  "paper_start_readiness":"NOT_ALLOWED_YET",
+  "live_lock_status":"OFF_LOCKED",
+  "real_order_capability":"NONE",
+  "execution_network_status":"NONE",
+  "security":{"LIVE_TRADING":false,"live_order_sending_allowed":false,"paper":"OFF","live":"OFF_LOCKED","real_order_endpoint":"NONE","ledger_runtime_write":false,"position_mutation":false,"authoritative_pnl_calculation":false},
+  "overall_decision":"BUILDER_IMPLEMENTED_READ_ONLY",
+  "next_subphase":"FAZ-25E_LEDGER_PNL_POSITION_RESULT_REVIEW_AND_EXIT_DECISION"
+}
