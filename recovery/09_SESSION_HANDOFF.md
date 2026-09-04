@@ -289,6 +289,29 @@ LIVE_TRADING=false korunmuştur.
 - Tests: PASS.
 - Next subphase: FAZ-22D UI FUNCTIONAL SIMULATION WITHOUT PAPER START.
 - Note: This is not paper start, server start, live enable, or real order capability.
++## FAZ-23C READ-ONLY DECISION EXPLANATION SCHEMA IMPLEMENTED - 2026-09-04
+
+- Faz-23C result: READ_ONLY_DECISION_EXPLANATION_SCHEMA_IMPLEMENTED.
+- Scope: narrow schema implementation only.
+- Schema fields: 35.
+- Required fields: 35.
+- Validation: PASS.
+- Tests: PASS.
+- UI render integration: PENDING.
+- Runtime providers: PENDING.
+- Paper start: NOT_ALLOWED_YET.
+- Runtime start: NOT_TRIGGERED.
+- Paper start trigger: NOT_TRIGGERED.
+- Live start: NOT_TRIGGERED.
+- Server start: NOT_TRIGGERED.
+- Scheduler loop start: NOT_TRIGGERED.
+- Execution call: NONE.
+- Network/order endpoint: NONE.
+- LIVE_TRADING=false.
+- live_order_sending_allowed=false.
+- Real order endpoint: NONE.
+- Next subphase: FAZ-23D READ-ONLY DECISION EXPLANATION BUILDER IMPLEMENTATION.
+- Note: This is not paper start, server start, live enable, or real order capability.
 +## FAZ-23B DECISION EXPLANATION CONTRACT DESIGN COMPLETED - 2026-09-04
 
 - Faz-23B result: DECISION_EXPLANATION_CONTRACT_DESIGN_READY.
