@@ -1,0 +1,9 @@
+{
+  "default_stop_loss_percent": 2,
+  "stop_loss_enabled": true,
+  "pause_enabled": false,
+  "stop_new_entries": false,
+  "panic_mode": false,
+  "same_symbol_hedge_allowed": false,
+  "auto_reversal_allowed": false
+}

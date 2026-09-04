@@ -1,0 +1,44 @@
+TILSON T3 TRADE — GÜN SONU KAPANIŞ SNAPSHOT
+Timestamp: 2026-09-03 04:32 Europe/Istanbul
+
+CLOSURE LABEL
+DAY_END_CLOSE_REVERTED_SAFE_POINT_10_17_PENDING
+
+CURRENT SAFE POINT
+REVERTED_TO_GROUP2_APPROVED_STATE
+
+BASIS
+GROUP2_USER_QA_APPROVED_WITH_FONT_READABILITY_AND_SCALE_NOTE_RECORDED
+
+PREVIOUS DAY-END SNAPSHOT
+snapshots/day_end_close_reverted_to_group2_approved_state_20260902_232100.txt
+SHA-256: CB44E74CD11B4873765B914A27C43A28FB2620517D8DE4298DB3545AC44DA3BF
+
+STATUS
+- 01_GENEL_BAKIS: PASS / RECORDED / BASELINE_PROTECTED
+- 02–05: LAYOUT_VISUAL_BASELINE_PROTECTED / DO_NOT_TOUCH
+- 06–09: USER_QA_APPROVED_WITH_FONT_READABILITY_AND_SCALE_NOTE / DO_NOT_TOUCH
+- 10–17: UNACCEPTED_WORKING_ARTIFACTS / NOT_ACCEPTED / REWORK_PENDING / USER_LATER_QA_REQUIRED
+- 10–17 HTML outputs, kullanıcı kabulü veya baseline anlamına gelmez.
+- Final global font/background/theme pass: NOT_DONE
+- Data binding: NOT_DONE
+
+SAFETY
+- LIVE_TRADING=false
+- live_order_sending_allowed=false
+- Real orders: NO
+- Binance/live endpoint: NOT USED
+- Paper: OFF
+- Live: OFF / LOCKED
+
+RECOVERY FILES UPDATED
+- recovery/04_CURRENT_STATE.md
+- recovery/05_OPEN_ISSUES.md
+- recovery/08_CHANGELOG.md
+- recovery/09_SESSION_HANDOFF.md
+- recovery/11_PHASE_TRACKER.md
+
+HTML, PNG, config, test, backend ve data binding değişikliği yapılmadı.
+
+EXACT NEXT STEP
+Bir sonraki oturumda 01–09 korunacak; 10–17 için önce yöntem sadeleştirilecek, sonra yalnız kullanıcı onaylı kapsam çalışılacaktır.

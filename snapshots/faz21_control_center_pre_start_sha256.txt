@@ -1,0 +1,4 @@
+PRE-SNAPSHOT — Faz-21 UI Control Center geliştirme başlangıcı
+Reference SHA-256: CE62CD8B67F57BE66762E0A1DCA8F28354BE24582126A15E95F11152AEBDA388
+Existing recovery POST snapshot SHA-256: 272E05E5DD162D032EBFCF563E7D1307355BD356EACE0ED7F882E64DAA429C85
+Scope: src/ui Control Center only; live/order/paper execution prohibited.

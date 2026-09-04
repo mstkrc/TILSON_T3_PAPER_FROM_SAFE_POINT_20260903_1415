@@ -1,0 +1,123 @@
+# Tilson T3 — Current State
+
+## Faz-21→47 güncel canonical durum — 2026-09-02
+
+- Faz-0→20: **PASS / LOCKED / FOUNDATION_CONFIRMED**.
+- Faz-21→47: **STARTED / IN_PROGRESS** — kullanıcı onayıyla uygulama süreci başlamıştır; plan kaydı LOCKED olarak korunur.
+- `01_GENEL_BAKIS`: **PASS / RECORDED** — kullanıcı final görsel QA onayı kayıtlıdır.
+- `UI_MODULAR_SPLIT`: **READY**.
+- `GROUP1 / 02–05`: **IMPLEMENTED / USER_QA_REVIEWED** — kullanıcı görsel değerlendirmesinde daha iyi bulunmuştur.
+- `GROUP2 / 06–09`: **IMPLEMENTED / USER_QA_PENDING**.
+- `GROUP3 / 10–13`: **PENDING**.
+- `GROUP4 / 14–17`: **PENDING**.
+- Data binding: **NOT_DONE**.
+- Paper: **OFF**.
+- Live: **OFF / LOCKED**.
+- Güvenlik: `LIVE_TRADING=false`, `live_order_sending_allowed=false`; gerçek emir endpoint: **NONE**.
+
+## Faz-21 / 01_GENEL_BAKIS PASS kaydı — 2026-09-02
+
+- Karar: **01_GENEL_BAKIS_PASS**.
+- `01_GENEL_BAKIS`, kullanıcı final görsel QA onayı ile geçmiştir.
+- Bu PASS yalnız görsel/UI display katmanı içindir; gerçek data binding yapılmamıştır.
+- Execution, paper veya live bağlantısı yapılmamıştır.
+- `KAPAT` ve işlem benzeri kontroller display-only / disabled / UIIntent durumundadır.
+- Faz-21’in tamamı PASS değildir: **Faz-21 IN_PROGRESS / PARTIAL; 01_GENEL_BAKIS PASS; 02–05 IMPLEMENTED / USER_QA_REVIEWED; 06–09 IMPLEMENTED / USER_QA_PENDING; 10–17 PENDING**.
+- Tarihsel / 01_GENEL_BAKIS PASS anı snapshot SHA’ları: orkestratör `22D6A769D7555E1928E881926BEA542E4379B2C87595FB6238F87A4FE1D88FCF`, Genel Bakış modülü `B921767FC052EF96B8D920B186EF061C42906D9AFD1277A6A3DB68D11FB46124`, HTML `82C9A8EA166612D1482BD69F774B4FA61F05479EB2B02FB38450A65909DF7F70`.
+- Güncel UI SHA’ları: `src/ui/control_center_render.py` `04446875FEE7D8E3C4EA447EE0B3530D1016C3E1762F855DBDFFC98769C554D3`; `src/ui/control_center/screens/overview.py` `2B915398D3E79F85763AF151418BD37FA67D0A42DF272CF3CA364DF7554E4759`; HTML `070803D36AABA44B76C5AEC8F8603ED78F80DBF4CDA5E0FE5A2E0E2893575C0F`.
+- Test / UTF-8: `79 passed`; mojibake `0`.
+- PNG referans seti: `17/17` korundu.
+- Live kilidi: `LIVE_TRADING=false`, `live_order_sending_allowed=false`; paper/live başlatılmadı ve gerçek emir/Binance endpoint yok.
+- [TARİHSEL / SUPERSEDED] PASS kararının kayıtlı sonraki güvenli adımı modüler bölme planıydı.
+- Güncel teknik not: UI modüler mimari bölme aynı oturumda tamamlandı ve `UI_MODULAR_SPLIT_READY` doğrulaması aldı; yeni ekran uygulaması ayrıca kullanıcı onayı gerektirir.
+
+## Faz-21 UI Control Center geliştirme
+
+- Kullanıcı onayıyla Faz-21 UI Control Center geliştirmesi başlatıldı.
+- Referans seti: `DOKUMANTASYON/CONTROL CENTER/`; USER APPROVED VISUAL REFERENCE SET. Eski root görsel arşivlendi.
+- ControlCenterModel operasyon panelleri, scanner/candidate pipeline, readiness checklist, display-model alanları ve paper-safe UIIntent içerir; gerçek data binding yapılmamıştır.
+- [TARİHSEL / SUPERSEDED] Gerçek frontend/render QA yoktur ifadesi eski durum kaydıdır; mevcut UI render ve kullanıcı QA kayıtlarıyla güncel değildir.
+- Live locked: `LIVE_TRADING=false`; gerçek emir/Binance endpoint yok.
+
+## UI Control Center hazırlama kaydı
+
+- Control Center operasyon panelleri genişletildi.
+- Scanner/candidate pipeline ve Paper Start Readiness Checklist eklendi.
+- Paper-safe UIIntent ve Panic/Manual Close confirmation modeli eklendi.
+- Live kontrolleri locked/passive kaldı; Report/Excel ve Optimization ayrımı korundu.
+- İki dakika UI refresh no-decision kuralı korundu.
+- Türkçe mojibake kaynakları düzeltildi; UI kapsamındaki testler dahil toplam test sonucu 77 passed.
+- Değişiklik yalnız UI model/intent/test kapsamındadır; paper trade başlatılmadı, live açılmadı, LIVE_TRADING=false, gerçek emir/Binance endpoint yok.
+- [TARİHSEL / SUPERSEDED] Gerçek frontend/render QA mevcut değildir ifadesi eski durum kaydıdır.
+
+Kaynak: `recovery/word/Tilson_T3_04_Current_State_ve_Phase_Tracker_Kilitli.docx`.
+
+- Faz-0: **PASS / LOCKED**
+- Faz-1: **PASS / LOCKED**
+- Faz-2: **PASS / LOCKED**
+- Faz-3: **PASS / LOCKED**
+- Faz-4: **PASS / LOCKED**
+- Faz-5: **PASS / LOCKED**
+- Faz-6: **PASS / LOCKED**
+- Faz-7: **PASS / LOCKED**
+- Faz-8: **PASS / LOCKED**
+- Faz-9: **PASS / LOCKED**
+- Faz-10: **PASS / LOCKED**
+- Faz-11: **PASS / LOCKED**
+- Faz-12: **PASS / LOCKED**
+- Faz-0 → Faz-13: **PASS / LOCKED**
+- Faz-14: **PASS / LOCKED**
+- Faz-14 uygulaması: KONU-49 kapsamında openpyxl 3.1.5 ile Report/Excel export oluşturuldu.
+- Faz-15: **PASS / LOCKED**
+- Faz-16: **PASS / LOCKED**
+- Faz-17: **PASS / LOCKED**
+- Faz-18: **PASS / LOCKED**
+- Faz-19: **PASS / LOCKED**
+- Faz-20: **PASS / LOCKED**
+- Faz-21: **IN_PROGRESS / PARTIAL — 01_GENEL_BAKIS PASS; 02–05 IMPLEMENTED / USER_QA_REVIEWED; 06–09 IMPLEMENTED / USER_QA_PENDING; 10–17 PENDING**.
+- Faz-21 → Faz-47 uygulama programı: **STARTED / IN_PROGRESS**; ilerideki alt işler ilgili kullanıcı onayı ve gate koşullarıyla PENDING tutulur.
+- Aktif faz: **Faz-21 — UI Operational Cockpit Review / IN_PROGRESS / PARTIAL**
+- KONU-1 → KONU-50: kapalı ve kilitli.
+- Kod durumu: Veri, candle, indicator, strategy signal, candidate ranking, sizing, risk permission, position state, concurrency, paper execution/fill simulation, ledger/accounting, scheduler ve Control Center UI altyapısı mevcut.
+- Report/Excel: openpyxl 3.1.5 ile doğrulandı; çıktı `reports/Tilson_T3_Faz14_Report.xlsx`.
+- Telegram Security modeli mevcut; gerçek Telegram ağ bağlantısı yok.
+- Ledger: single source of truth oluşturuldu.
+- Scheduler: 1H closed-candle loop, 2 dakika UI refresh no-decision loop, stop-loss monitor loop, optimization/telegram placeholder ayrımı mevcut.
+- Live durumu: Kilitli / `LIVE_TRADING=false`.
+- Gerçek emir: Yok.
+- Binance order endpoint: Yok.
+- Faz-14 doğrulaması: deterministik Long/Short sample Ledger fixture ile 46 test PASS.
+- Faz-14 Report modeli, filtreler, Ledger kaynak kontrolü ve Excel export uygulanmıştır.
+- KONU-49: Faz-14 `.xlsx` export için `openpyxl` kullanımı LOCKED ve kullanıcı onaylıdır; kullanım yalnız Faz-14 ile sınırlıdır.
+- KONU-49 ile ortam blocker’ı çözülmüştür; openpyxl 3.1.5 kullanılmaktadır.
+- Gerçek emir: Yok.
+- Binance order endpoint: Yok.
+- Recovery iskeleti: tamamlandı.
+- Fixture gerçek trade değildir; missing Ledger WARNING, PnL mismatch BLOCKING_ERROR olarak korunur.
+- Optimization: trade_config’e otomatik aktarılmaz; direct apply/one-click apply, historical/mini backtest ve open candle yasaktır.
+- Telegram Security: whitelist, unauthorized audit, read-only commands ve panic double confirmation mevcut; manual close, settings change ve live enable disabled.
+- Telegram gerçek ağ bağlantısı: Henüz yok.
+- Health/Error/Repair/Diagnostic altyapısı mevcut; Health, Error classification, Safe mode, Repair Mode, Diagnostic Package, secret masking ve STOP_AND_REPORT doğrulandı.
+- Telegram ağ bağlantısı genişletilmedi; LIVE_TRADING=false; gerçek emir/Binance order endpoint yok.
+- Live Lock doğrulandı: LIVE_TRADING=false; aktif LIVE_TRADING=true yok; live_order_sending_allowed=false; UI/Telegram/Codex live enable disabled; requires_separate_live_gate=true.
+- Paper/live ayrımı: paper_only=true, live_order_sent=false. Live-lock violation CRITICAL + BLOCKING + safe mode + STOP_AND_REPORT.
+- Gerçek emir/Binance order endpoint yok.
+- Full regression: 77/77 PASS; Faz-0 → Faz-18 bütünlük, Recovery Gate, config/live-lock, closed/open candle, end-to-end paper chain, Ledger/Report/Excel, optimization separation, Telegram Security, Health/Repair/Diagnostic ve live-lock violation kontrolleri PASS.
+- Live: Kilitli / LIVE_TRADING=false; aktif LIVE_TRADING=true yok; gerçek emir/Binance order endpoint yok.
+- Word dosyaları değişmedi / hash eşit; kilitli kararlar değişmedi.
+- Faz-0 → Faz-19: PASS / LOCKED; Full regression 77/77 PASS.
+- KONU-1 → KONU-49: LOCKED. Ledger single source, paper-only, Recovery Gate ve STOP_AND_REPORT aktiftir.
+- [TARİHSEL / SUPERSEDED] Final DOC/Word güncellemesi bekleniyordu; güncel paket kayıtları bu güncellemenin yapıldığını gösterir.
+- Live kilitli / LIVE_TRADING=false; aktif LIVE_TRADING=true, gerçek emir ve Binance order endpoint yok.
+- Faz-0 → Faz-20: PASS / LOCKED; KONU-1 → KONU-49: LOCKED; Full regression: 77/77 PASS.
+- Final handoff/documentation closure: Tamamlandı. Final Word/DOC paket güncellemesi sonraki kullanıcı onaylı adımdır.
+- Live: Kilitli / LIVE_TRADING=false; aktif LIVE_TRADING=true yok; paper-only korundu; gerçek emir/Binance order endpoint yok.
+- Kritik açık issue: Yok.
+- [TARİHSEL / SUPERSEDED] Sonraki olası adım Final Word/DOC paket güncellemesiydi; güncel paket kaydı tamamlanmıştır.
+- [TARİHSEL / SUPERSEDED] Önceki Faz-21 OPEN GATE kaydı eksik/erken kabul edilmişti ve geri alınmıştır.
+- [TARİHSEL / SUPERSEDED] Faz-21 başlamadı ve START GATE bekleniyor ifadeleri eski durum kaydıdır; güncel durum Faz-21→47 STARTED / IN_PROGRESS’tir.
+- Final Word/DOC içerik güncellemesi: Tamamlandı; DOCX XML doğrulaması PASS ve recovery/word hash eşleşmesi PASS.
+- Final render QA: **BLOCKED / WAITING_RENDER_ENV**; pdf2image, LibreOffice/soffice ve alternatif renderer mevcut değil.
+- Faz-0 → Faz-20: PASS / LOCKED; KONU-1 → KONU-49: LOCKED.
+- Final Word/DOC paketi: 12 belge KONU-49 ve Faz-0 → Faz-20 kapanış addendum’ı ile güncellendi; recovery/word eşitlendi.
+- DOCX görsel QA: render bağımlılığı eksikliği nedeniyle tamamlanamadı; yapısal XML doğrulaması PASS.

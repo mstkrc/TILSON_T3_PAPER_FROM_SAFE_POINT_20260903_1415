@@ -1,0 +1,11 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+*.pyo
+.env
+.env.*
+*.key
+*.pem
+*.log
+.tmp/
+.pytest_tmp_f14/

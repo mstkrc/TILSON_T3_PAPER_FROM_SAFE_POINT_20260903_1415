@@ -1,0 +1,33 @@
+GROUP2 USER QA APPROVAL WITH FONT READABILITY / SCALE NOTE
+Timestamp: 2026-09-02 21:07:00 Europe/Istanbul
+
+Group-2 / 06_GRAFIKLER, 07_STRATEJI, 08_RISK, 09_SISTEM_SAGLIGI:
+USER_QA_APPROVED_WITH_FONT_READABILITY_AND_SCALE_NOTE
+Group-2 PASS_RECORDED: NO
+Layout/panel architecture: accepted by user QA.
+Font readability, scale/density, background, card tone, border, glow and palette:
+reserved for one final global pass after all 17 screens are complete.
+Layout, panel order, grid architecture, content organization and route are protected.
+Group-3 / 10-13: PENDING
+Group-4 / 14-17: PENDING
+Data binding: NOT_DONE
+Paper: OFF
+Live: OFF / LOCKED
+LIVE_TRADING=false
+live_order_sending_allowed=false
+Real order endpoint: NONE
+
+Recovery files updated:
+recovery/04_CURRENT_STATE.md
+recovery/08_CHANGELOG.md
+recovery/09_SESSION_HANDOFF.md
+recovery/11_PHASE_TRACKER.md
+
+Post-update SHA-256:
+recovery/04_CURRENT_STATE.md 662504657FA51E37AB9D8013EDF7B51BDEF3E9CC30C0DA66EF628DB925200163
+recovery/08_CHANGELOG.md 24CC7D8609368AF8DA07437BF59FBB6427A34C6603B08A9A591EB8C7396C18AB
+recovery/09_SESSION_HANDOFF.md B3EFD8CCB04546ED631A518E952FC0BB19AE7F4E44BFB8F0126B9FFFAAFE41DC
+recovery/11_PHASE_TRACKER.md 53F3822525F8699ADB9B98B745BF7D790550B8DFF67CC400067199C930F910B4
+
+Scope: recovery/status records and recovery-only snapshot.
+Code, HTML, CSS/theme, PNG, config, data binding and paper/live behavior were not changed.

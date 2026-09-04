@@ -1,0 +1,40 @@
+TILSON T3 TRADE — FAZ-21 / 01_GENEL_BAKIS PASS MANIFEST
+Timestamp: 2026-09-02 05:52:11 Europe/Istanbul
+Decision: 01_GENEL_BAKIS_PASS
+Scope: Visual/UI display layer only
+User final visual QA: PASS
+Faz-21 overall: IN_PROGRESS / PARTIAL
+Remaining screens: 16 NOT_STARTED / PENDING
+Real data binding: false
+Execution connection: false
+Paper started: false
+Live started: false
+LIVE_TRADING: false
+live_order_sending_allowed: false
+Real order/Binance endpoint: none
+Display controls: display-only / disabled / UIIntent
+
+ACTIVE UI HASHES
+src/ui/control_center_render.py|22D6A769D7555E1928E881926BEA542E4379B2C87595FB6238F87A4FE1D88FCF
+src/ui/control_center/screens/overview.py|B921767FC052EF96B8D920B186EF061C42906D9AFD1277A6A3DB68D11FB46124
+outputs/faz21_control_center.html|82C9A8EA166612D1482BD69F774B4FA61F05479EB2B02FB38450A65909DF7F70
+config/live_lock_config.json|A159CF26C3A0F2CB0CC059A59F8EF7C84C019B4663F78709525AFAC0A3E9F494
+
+RECOVERY HASHES AFTER PASS RECORD
+recovery/04_CURRENT_STATE.md|A4E483DEFCDDE383F5EC8356CC0D1E79F4C1EE63E5BBD73C57E3BFF93D9CF1D1
+recovery/08_CHANGELOG.md|E8B2CA461CC507450E1D518036B60BA6602019CCD381F2EC85D5E8EC933D36EC
+recovery/09_SESSION_HANDOFF.md|C74C84407EA59686B1DD29CC92148D306F594B828D3BC90202F108F9D7350828
+recovery/11_PHASE_TRACKER.md|C18D735FA14567C4C232D3DEFA2AD7A1249104C5B020EA4ABAB38C3B7663BDE3
+
+PNG REFERENCE SET
+Active PNG count: 17
+Active PNG set SHA-256: F042FC1A59919795E4D658AB71DCB59652645669D2E9F4AC76740CE5A445B05D
+PNG files changed by this record: false
+
+VALIDATION REFERENCE
+Tests: 79 passed
+UTF-8/mojibake: PASS / 0
+
+RECORDED NEXT SAFE STEP
+17 ekranın tek dosyaya yığılmaması için UI modüler mimari bölme planı.
+Current technical note: UI modular split is already complete and validated as UI_MODULAR_SPLIT_READY; any next screen implementation requires separate user approval.

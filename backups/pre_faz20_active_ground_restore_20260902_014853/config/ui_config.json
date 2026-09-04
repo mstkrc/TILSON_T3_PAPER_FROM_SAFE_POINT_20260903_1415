@@ -1,0 +1,7 @@
+{
+  "language": "tr",
+  "main_page_must_match_reference_image": true,
+  "show_active_trade_settings_only": true,
+  "optimization_on_main_page_allowed": false,
+  "show_commission_and_funding_rows": true
+}

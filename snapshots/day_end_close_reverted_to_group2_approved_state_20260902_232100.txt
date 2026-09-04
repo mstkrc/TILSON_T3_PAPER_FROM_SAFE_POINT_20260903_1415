@@ -1,0 +1,35 @@
+TILSON T3 TRADE — GÜN SONU KAPANIŞ SNAPSHOT
+Timestamp: 2026-09-02 23:21:00 Europe/Istanbul
+
+CURRENT SAFE POINT
+REVERTED_TO_GROUP2_APPROVED_STATE
+
+RECOVERY CONSISTENCY REPAIR BASIS
+RECOVERY_CONSISTENCY_REPAIRED_READY_FOR_DAY_END_CLOSE
+snapshots/recovery_consistency_repair_reverted_to_group2_approved_20260902_231800.txt
+SHA-256: 2F0F2E4E67089034D23EEE1E33E67E4A3F5D53ED1232C7B3C9EE8EE8100B8624
+
+STATUS
+- 01_GENEL_BAKIS: PASS / RECORDED / BASELINE_PROTECTED / PLANNED_THEME_REVISION
+- 02–05: LAYOUT_VISUAL_BASELINE_PROTECTED / PLANNED_THEME_REVISION
+- 06–09: USER_QA_APPROVED_WITH_FONT_READABILITY_AND_SCALE_NOTE
+- 10–17: NOT_ACCEPTED / REVERTED / REWORK_PENDING
+- Final global font/background/theme pass: YAPILMADI
+- Data binding: NOT_DONE
+
+SAFETY
+- Paper: OFF
+- Live: OFF / LOCKED
+- LIVE_TRADING=false
+- live_order_sending_allowed=false
+- Gerçek emir/Binance endpoint yok
+- UI source, HTML, config, tests ve PNG değiştirilmedi
+
+RECOVERY FILES UPDATED
+- recovery/04_CURRENT_STATE.md
+- recovery/08_CHANGELOG.md
+- recovery/09_SESSION_HANDOFF.md
+- recovery/11_PHASE_TRACKER.md
+
+EXACT NEXT STEP
+Bir sonraki oturumda 01–09 korunacak; 10–17 için önce yöntem sadeleştirilecek, sonra yalnız kullanıcı onaylı kapsam çalışılacaktır.

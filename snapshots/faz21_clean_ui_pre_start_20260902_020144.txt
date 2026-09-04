@@ -1,0 +1,14 @@
+Timestamp: 20260902_020144
+Faz-20 PASS / LOCKED aktif zemindir.
+KONU-1 → KONU-50 korunuyor.
+Anayasa/mimari korunuyor.
+Recovery korunuyor.
+LIVE_TRADING=false.
+Paper trade başlatılmadı.
+Live açılmadı.
+Gerçek emir endpoint yok.
+17 PNG referans seti doğrulandı.
+Hash manifest: snapshots/faz21_clean_ui_reference_17_png_sha256_20260902_020144.txt
+PS1/ASCII denemeleri aktif temel değildir.
+Faz-21 temiz UI geliştirme henüz başlamadı.
+İlk uygulama hedefi yalnız 01_GENEL_BAKIS.png olacaktır.

@@ -1,0 +1,44 @@
+TILSON T3 TRADE — RECOVERY CONSISTENCY REPAIR SNAPSHOT
+Timestamp: 2026-09-02 23:18:00 Europe/Istanbul
+
+CURRENT SAFE POINT
+REVERTED_TO_GROUP2_APPROVED_STATE
+
+BASIS
+GROUP2_USER_QA_APPROVED_WITH_FONT_READABILITY_AND_SCALE_NOTE_RECORDED
+
+REFERENCE SNAPSHOT
+snapshots/group2_user_qa_approved_font_scale_note_20260902_210700.txt
+SHA-256: C01F4247EE4E0E39F030E3C2148C68DE9A27EE7C6BB4DA68CD0F916058C6E293
+
+CORRECTED STATUS
+- 01_GENEL_BAKIS: PASS / RECORDED / BASELINE_PROTECTED / PLANNED_THEME_REVISION
+- 02–05: LAYOUT_VISUAL_BASELINE_PROTECTED / PLANNED_THEME_REVISION
+- 06–09: USER_QA_APPROVED_WITH_FONT_READABILITY_AND_SCALE_NOTE
+- 10–17: NOT_ACCEPTED / REVERTED / REWORK_PENDING; no PASS or QA approval
+- Faz-21: IN_PROGRESS; 01 PASS recorded, 02–05 protected, 06–09 approved with final readability note, 10–17 pending rework after revert
+- Final global font/background/theme pass: NOT_DONE; deferred until all 17 screens are complete
+
+MODIFIED RECOVERY FILES
+- recovery/04_CURRENT_STATE.md
+- recovery/05_OPEN_ISSUES.md
+- recovery/08_CHANGELOG.md
+- recovery/09_SESSION_HANDOFF.md
+- recovery/10_DOCUMENT_INDEX.md
+- recovery/11_PHASE_TRACKER.md
+
+SAFETY STATUS
+- UI source: unchanged
+- HTML outputs: unchanged
+- Config: unchanged
+- Tests: unchanged
+- PNG references: unchanged
+- Data binding: NOT_DONE
+- Paper: OFF
+- Live: OFF / LOCKED
+- LIVE_TRADING=false
+- live_order_sending_allowed=false
+- Real order endpoint: NONE
+
+EXACT NEXT STEP
+Recovery tutarlılığı düzeltildi; şimdi gün sonu kapanış kaydı yapılabilir.

@@ -1,0 +1,9 @@
+{
+  "enabled": false,
+  "separate_from_trade_config": true,
+  "live_scan_only": true,
+  "historical_backtest_enabled": false,
+  "mini_backtest_enabled": false,
+  "direct_apply_to_trade_config_allowed": false,
+  "open_candle_allowed": false
+}

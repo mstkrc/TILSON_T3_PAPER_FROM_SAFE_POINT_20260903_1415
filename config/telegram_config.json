@@ -1,0 +1,8 @@
+{
+  "enabled": false,
+  "whitelist_required": true,
+  "panic_requires_double_confirm": true,
+  "manual_close_enabled": false,
+  "strategy_setting_change_enabled": false,
+  "live_enable_allowed": false
+}

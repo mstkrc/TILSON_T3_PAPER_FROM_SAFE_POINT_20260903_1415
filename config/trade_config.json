@@ -1,0 +1,21 @@
+{
+  "mode": "PAPER",
+  "market": "BINANCE_USDT_M_FUTURES",
+  "margin_mode": "ISOLATED",
+  "initial_wallet_usd": 1000,
+  "max_coin_count": 10,
+  "default_leverage": 1,
+  "allowed_leverage": [1, 2, 3, 4, 5],
+  "timeframe": "1h",
+  "closed_candle_only": true,
+  "ui_refresh_minutes": 2,
+  "t3_factor": 0.7,
+  "t3_period": 4,
+  "t3_source": "close",
+  "dmi_di_length": 24,
+  "adx_smoothing": 24,
+  "adx_threshold": 30,
+  "adx_slope_n": 6,
+  "t3_entry_mode": "T3_COLOR_CHANGE_ONLY",
+  "continuation_mode_enabled": false
+}

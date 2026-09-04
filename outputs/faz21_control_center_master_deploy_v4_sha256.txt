@@ -1,0 +1,13 @@
+﻿FAZ-21 CONTROL CENTER MASTER DEPLOY V4
+Date: 20260902_005139
+ProjectRoot: D:\Masaustu\TILSON T3 TRADE
+HTML: outputs/faz21_control_center.html
+HTML_SHA256: D6371583B318C33FD3410A97786BD24FFC83BF95002E547A855680F9D945DDEB
+Reference_Set: DOKUMANTASYON/CONTROL CENTER/
+Reference_Mode: ASCII_CANONICAL_17_PNG
+Manifest: D:\Masaustu\TILSON T3 TRADE\snapshots\control_center_visual_reference_set_ascii_sha256_20260902_003854.txt
+Backup: D:\Masaustu\TILSON T3 TRADE\backups\control_center_master_deploy_v4_20260902_005139
+LIVE_TRADING: false
+Paper_trade_started: NO
+Live_opened: NO
+Real_order_endpoint_added: NO
