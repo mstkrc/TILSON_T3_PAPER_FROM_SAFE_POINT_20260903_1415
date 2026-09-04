@@ -260,6 +260,36 @@ Tarihsel düzeltme kaydı: Önceki Faz-21 OPEN GATE kabulü eksik/erken sayıld�
 - Tests: PASS.
 - Next subphase: FAZ-22D UI FUNCTIONAL SIMULATION WITHOUT PAPER START.
 - Note: This is not paper start, server start, live enable, or real order capability.
+## FAZ-25C READ-ONLY LEDGER PNL POSITION SCHEMA IMPLEMENTED - 2026-09-04
+
+- Faz-25C result: READ_ONLY_LEDGER_PNL_POSITION_SCHEMA_IMPLEMENTED.
+- Scope: narrow schema implementation only.
+- Schema fields: 45.
+- Required fields: 45.
+- Validation: PASS.
+- Tests: PASS.
+- Ledger runtime provider status: PENDING.
+- PnL runtime provider status: PENDING.
+- Position runtime provider status: PENDING.
+- UI display authority: READ_ONLY_DISPLAY_ONLY.
+- Paper ledger write status: NOT_ALLOWED_YET.
+- Live ledger write status: BLOCKED.
+- Paper start readiness: NOT_ALLOWED_YET.
+- Live lock status: OFF_LOCKED.
+- Real order capability: NONE.
+- Execution/network status: NONE.
+- Runtime start: NOT_TRIGGERED.
+- Paper start trigger: NOT_TRIGGERED.
+- Live start: NOT_TRIGGERED.
+- Server start: NOT_TRIGGERED.
+- Scheduler loop start: NOT_TRIGGERED.
+- Execution call: NONE.
+- Network/order endpoint: NONE.
+- LIVE_TRADING=false.
+- live_order_sending_allowed=false.
+- Real order endpoint: NONE.
+- Next subphase: FAZ-25D READ-ONLY LEDGER PNL POSITION BUILDER IMPLEMENTATION.
+- Note: This is not paper start, server start, live enable, ledger runtime write, position mutation, PnL authority, or real order capability.
 ## FAZ-25B LEDGER PNL POSITION CONSISTENCY CONTRACT DESIGN COMPLETED - 2026-09-04
 
 - Faz-25B result: LEDGER_PNL_POSITION_CONSISTENCY_CONTRACT_DESIGN_READY.
