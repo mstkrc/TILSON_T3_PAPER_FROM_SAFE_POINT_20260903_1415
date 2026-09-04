@@ -122,6 +122,37 @@ Live trading kapalıdır: `LIVE_TRADING=false`, `live_order_sending_allowed=fals
 - Tests: PASS.
 - Next subphase: FAZ-22D UI FUNCTIONAL SIMULATION WITHOUT PAPER START.
 - Note: This is not paper start, server start, live enable, or real order capability.
+## FAZ-26B ERROR REPAIR DIAGNOSTIC CONTRACT DESIGN COMPLETED - 2026-09-04
+
+- Faz-26B result: ERROR_REPAIR_DIAGNOSTIC_CONTRACT_DESIGN_READY.
+- Scope: analysis and contract design only.
+- Contract fields: 50.
+- Diagnostic runtime provider status: PENDING.
+- Repair runtime provider status: PENDING.
+- Error event provider status: PENDING.
+- UI display authority: READ_ONLY_DISPLAY_ONLY.
+- Repair action authority: BLOCKED.
+- Auto repair authority: BLOCKED.
+- Recovery restore authority: BLOCKED.
+- File write authority: BLOCKED.
+- Manual repair recommendation: ALLOWED_DISPLAY_ONLY.
+- Real order capability: NONE.
+- Runtime start: NOT_TRIGGERED.
+- Paper start trigger: NOT_TRIGGERED.
+- Live start: NOT_TRIGGERED.
+- Server start: NOT_TRIGGERED.
+- Scheduler loop start: NOT_TRIGGERED.
+- Repair action: NOT_TRIGGERED.
+- Auto repair: NOT_TRIGGERED.
+- Recovery restore: NOT_TRIGGERED.
+- File write action: NOT_TRIGGERED.
+- Execution call: NONE.
+- Network/order endpoint: NONE.
+- LIVE_TRADING=false.
+- live_order_sending_allowed=false.
+- Real order endpoint: NONE.
+- Next subphase: FAZ-26C READ-ONLY ERROR REPAIR DIAGNOSTIC SCHEMA IMPLEMENTATION.
+- Note: This is not paper start, server start, live enable, repair execution, recovery restore, file write action, or real order capability.
 ## FAZ-26A UI ERROR REPAIR DIAGNOSTIC FLOW OPEN GATE COMPLETED - 2026-09-04
 
 - Faz-26A result: UI_ERROR_REPAIR_DIAGNOSTIC_FLOW_OPEN_GATE_COMPLETE.

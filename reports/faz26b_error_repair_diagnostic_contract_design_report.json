@@ -1,0 +1,570 @@
+{
+  "phase": "FAZ-26B",
+  "result": "ERROR_REPAIR_DIAGNOSTIC_CONTRACT_DESIGN_READY",
+  "scope": "ANALYSIS_AND_CONTRACT_DESIGN_ONLY",
+  "contract_fields": [
+    {
+      "field_name": "diagnostic_snapshot_id",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "generated_at",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "system_mode",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "PAPER",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "source_freshness",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "health_state",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "error_state",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "diagnostic_provider_status",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "PENDING",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "repair_provider_status",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "PENDING",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "error_event_provider_status",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "PENDING",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "active_error_count",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "critical_error_count",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "warning_count",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "stale_data_detected",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "missing_provider_detected",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "config_mismatch_detected",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "ledger_mismatch_detected",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "position_mismatch_detected",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "pnl_mismatch_detected",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "live_lock_violation_detected",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "runtime_exception_detected",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "scheduler_stopped_detected",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "paper_engine_stopped_detected",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "ui_render_failure_detected",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "recovery_snapshot_available",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "recovery_restore_required",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "repair_recommendation",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "repair_action_required",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "auto_repair_allowed",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": false,
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "manual_repair_allowed",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": true,
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "repair_execution_allowed",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": false,
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "recovery_restore_allowed",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": false,
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "diagnostic_consistency",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "repair_consistency",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "overall_diagnostic_status",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "BLOCKED",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "fail_closed_reason",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "DIAGNOSTIC_NOT_PROVEN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "severity",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "display_only",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": true,
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "read_only",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": true,
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "can_recommend_manual_repair",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": true,
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "can_execute_repair",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": false,
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "can_auto_repair",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": false,
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "can_restore_recovery",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": false,
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "can_write_file",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": false,
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "can_execute",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": false,
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "can_start_paper",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": false,
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "can_start_live",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": false,
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "can_send_order",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": false,
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "next_allowed_action",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "DISPLAY_ONLY_REVIEW",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "blocked_by",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "DIAGNOSTIC_NOT_PROVEN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    },
+    {
+      "field_name": "operator_message",
+      "required": true,
+      "source": "diagnostic/error/repair source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "Display-only diagnostic review required.",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no repair, restore, write, start, or order action",
+      "safety_rule": "read-only; no execution; no repair; no file write"
+    }
+  ],
+  "field_count": 50,
+  "read_only_rules": [
+    "display_only=true",
+    "read_only=true",
+    "manual repair recommendation is display-only",
+    "all repair, restore, file, execution, paper, live, and order flags false"
+  ],
+  "fail_closed_rules": [
+    "CRITICAL_HEALTH",
+    "LIVE_LOCK_VIOLATION",
+    "CONFIG_MISMATCH",
+    "RUNTIME_EXCEPTION",
+    "MISSING_PROVIDER",
+    "STALE_DATA",
+    "LEDGER_MISMATCH",
+    "POSITION_MISMATCH",
+    "PNL_MISMATCH",
+    "SCHEDULER_STOPPED",
+    "PAPER_ENGINE_STOPPED",
+    "UI_RENDER_FAILURE",
+    "DIAGNOSTIC_NOT_PROVEN",
+    "NONE"
+  ],
+  "allowed_next_actions": [
+    "DISPLAY_ONLY_REVIEW",
+    "WAIT_FOR_RUNTIME_PROVIDER",
+    "DESIGN_READ_ONLY_SCHEMA",
+    "IMPLEMENT_READ_ONLY_SCHEMA",
+    "MANUAL_REPAIR_REVIEW_REQUIRED",
+    "STOP_AND_REPORT"
+  ],
+  "forbidden_next_actions": [
+    "EXECUTE_REPAIR",
+    "AUTO_REPAIR",
+    "RESTORE_RECOVERY",
+    "WRITE_FILE",
+    "START_PAPER",
+    "START_LIVE",
+    "SEND_ORDER"
+  ],
+  "diagnostic_provider_status": "PENDING",
+  "repair_provider_status": "PENDING",
+  "error_event_provider_status": "PENDING",
+  "repair_action_authority": "BLOCKED",
+  "auto_repair_authority": "BLOCKED",
+  "recovery_restore_authority": "BLOCKED",
+  "file_write_authority": "BLOCKED",
+  "manual_repair_recommendation": "ALLOWED_DISPLAY_ONLY",
+  "real_order_capability": "NONE",
+  "execution_network_status": "NONE",
+  "overall_decision": "CONTRACT_READY_IMPLEMENTATION_PENDING",
+  "next_subphase": "FAZ-26C_READ_ONLY_ERROR_REPAIR_DIAGNOSTIC_SCHEMA_IMPLEMENTATION",
+  "security": {
+    "LIVE_TRADING": false,
+    "live_order_sending_allowed": false,
+    "paper": "OFF",
+    "live": "OFF_LOCKED",
+    "real_order_endpoint": "NONE",
+    "repair_action": "NOT_TRIGGERED",
+    "auto_repair": "NOT_TRIGGERED",
+    "recovery_restore": "NOT_TRIGGERED",
+    "file_write_action": "NOT_TRIGGERED"
+  }
+}
