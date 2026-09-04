@@ -1,0 +1,21 @@
+FAZ-22B DATA BINDING DESIGN READY - 2026-09-04
+
+Result: FAZ22B_DATA_BINDING_DESIGN_READY.
+Scope: DESIGN / CONTRACT ONLY.
+Implementation: NOT_STARTED.
+Data binding: DESIGN_READY / NOT_IMPLEMENTED.
+Runtime backend: NOT_READY.
+Paper orchestration: NOT_READY.
+Ledger persistence: NOT_READY.
+Static UI: 17/17 screens present.
+Canonical source map: market, candle, strategy, risk, execution, ledger, positions, health, scheduler, reports, notifications.
+Refresh/stale policy: DEFINED.
+Safety gate map: DEFINED.
+Failure states: BLOCKED / UNKNOWN / STALE / READY / OFF.
+Next subphase: FAZ-22C READ-ONLY RUNTIME STATUS ADAPTER DESIGN/IMPLEMENTATION GATE.
+Paper: OFF.
+Live: OFF / LOCKED.
+LIVE_TRADING=false.
+live_order_sending_allowed=false.
+Real order/Binance order endpoint: NONE.
+Note: Design-only record; no implementation, paper start, server start, or live enable.

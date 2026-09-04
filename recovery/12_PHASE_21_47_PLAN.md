@@ -75,6 +75,29 @@ Live trading kapalıdır: `LIVE_TRADING=false`, `live_order_sending_allowed=fals
 - Faz-22: NEXT_PENDING_USER_APPROVAL.
 - Note: Faz-21 closure is UI visual/static scope closure only. It is not paper start.
 
+## FAZ-22B DATA BINDING DESIGN READY - 2026-09-04
+
+- Faz-22B result: FAZ22B_DATA_BINDING_DESIGN_READY.
+- Scope: design/contract only.
+- Implementation: NOT_STARTED.
+- Data binding status: DESIGN_READY / NOT_IMPLEMENTED.
+- Runtime backend/service: NOT_READY.
+- Paper orchestration: NOT_READY.
+- Ledger persistence: NOT_READY.
+- Static UI status: 17/17 screens present.
+- Canonical source map prepared for market, candle, strategy, risk, execution, ledger, positions, health, scheduler, reports, and notifications.
+- Field contract prepared with: UI field, current source, required canonical source, refresh policy, stale behavior, safety gate, failure state, implementation phase.
+- Refresh/stale policy: defined.
+- Safety gate map: defined.
+- Failure states: BLOCKED / UNKNOWN / STALE / READY / OFF defined.
+- Next required subphase: FAZ-22C READ-ONLY RUNTIME STATUS ADAPTER DESIGN/IMPLEMENTATION GATE.
+- Paper: OFF.
+- Live: OFF / LOCKED.
+- LIVE_TRADING=false.
+- live_order_sending_allowed=false.
+- Real order/Binance order endpoint: NONE.
+- Note: This record is design-only. It is not data binding implementation, paper start, server start, or live enable.
+
 ## FAZ-22A FUNCTIONAL GAP ANALYSIS READY - 2026-09-04
 
 - Faz-21 status: PASS / LOCKED.
