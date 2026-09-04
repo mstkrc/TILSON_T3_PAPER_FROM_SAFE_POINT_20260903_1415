@@ -1,0 +1,22 @@
+{
+  "phase": "FAZ-22G",
+  "result": "READ_ONLY_RUNTIME_SOURCE_REGISTRY_IMPLEMENTED",
+  "scope": "NARROW_REGISTRY_IMPLEMENTATION_ONLY",
+  "registry_file": "src/ui/control_center/runtime_sources.py",
+  "test_file": "tests/test_control_center_runtime_sources.py",
+  "registry_rule": "READ_ONLY_SOURCE_DEFINITIONS_ONLY",
+  "sources_registered": 12,
+  "screens_mapped": 17,
+  "fallback_states": ["UNKNOWN", "OFF", "STALE", "BLOCKED"],
+  "tests": "PASS_19",
+  "runtime_start": "NOT_TRIGGERED",
+  "paper_start": "NOT_TRIGGERED",
+  "live_start": "NOT_TRIGGERED",
+  "server_start": "NOT_TRIGGERED",
+  "scheduler_loop_start": "NOT_TRIGGERED",
+  "execution_call": "NONE",
+  "network_order_endpoint": "NONE",
+  "LIVE_TRADING": false,
+  "live_order_sending_allowed": false,
+  "next_subphase": "FAZ-22H_READ_ONLY_BINDING_REGISTRY_IMPLEMENTATION"
+}

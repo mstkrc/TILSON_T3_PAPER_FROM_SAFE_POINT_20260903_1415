@@ -122,6 +122,27 @@ Live trading kapalıdır: `LIVE_TRADING=false`, `live_order_sending_allowed=fals
 - Tests: PASS.
 - Next subphase: FAZ-22D UI FUNCTIONAL SIMULATION WITHOUT PAPER START.
 - Note: This is not paper start, server start, live enable, or real order capability.
++## FAZ-22G READ-ONLY RUNTIME SOURCE REGISTRY IMPLEMENTED - 2026-09-04
+
+- Faz-22G result: READ_ONLY_RUNTIME_SOURCE_REGISTRY_IMPLEMENTED.
+- Scope: narrow registry implementation only.
+- Registry file: src/ui/control_center/runtime_sources.py.
+- Test file: tests/test_control_center_runtime_sources.py.
+- Registry rule: read-only source definitions only.
+- Runtime start: NOT_TRIGGERED.
+- Paper start: NOT_TRIGGERED.
+- Live start: NOT_TRIGGERED.
+- Server start: NOT_TRIGGERED.
+- Scheduler loop start: NOT_TRIGGERED.
+- Execution call: NONE.
+- Network/order endpoint: NONE.
+- LIVE_TRADING=false.
+- live_order_sending_allowed=false.
+- Sources registered: 12.
+- Screens mapped: 17.
+- Tests: PASS.
+- Next subphase: FAZ-22H READ-ONLY BINDING REGISTRY IMPLEMENTATION.
+- Note: This is not paper start, server start, live enable, or real order capability.
 
 ## FAZ-22B DATA BINDING DESIGN READY - 2026-09-04
 
