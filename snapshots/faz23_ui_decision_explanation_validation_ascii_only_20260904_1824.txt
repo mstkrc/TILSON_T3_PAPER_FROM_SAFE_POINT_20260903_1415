@@ -1,0 +1,18 @@
+FAZ-23 UI DECISION EXPLANATION VALIDATION COMPLETED - 2026-09-04
+
+Scope: ANALYSIS / REPORT ONLY.
+Explanation items reviewed: 20.
+Read-only binding status: PASS_READ_ONLY.
+Actual provider support: PENDING.
+UI render integration: PENDING.
+Paper start: NOT_ALLOWED_YET.
+Decision explanation: PARTIAL_PASS_READ_ONLY_DESIGN_LEVEL.
+Covered areas: mode, scheduler, closed candle, strategy, candidates, ranking, position, risk permission, block reason, decision modes, final decision, no-trade reason, paper readiness, live lock, health, ledger/PnL, next action.
+Missing areas: actual providers, decision trace fields, AI/Hybrid contracts, render integration, persistent ledger/event state.
+Runtime/Paper/Live/Server start: NOT_TRIGGERED.
+Execution call: NONE.
+Network/order endpoint: NONE.
+LIVE_TRADING=false.
+live_order_sending_allowed=false.
+Real order endpoint: NONE.
+Next subphase: FAZ-23B DECISION EXPLANATION CONTRACT DESIGN.
