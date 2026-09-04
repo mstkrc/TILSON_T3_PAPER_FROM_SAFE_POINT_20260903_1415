@@ -1287,3 +1287,31 @@ Kaynak: `recovery/word/Tilson_T3_04_Current_State_ve_Phase_Tracker_Kilitli.docx`
 - Correct workspace: D:\\Masaustu\\TILSON_T3_GIT_SYNC_WORKSPACE_20260904.
 - Latest expected commit after push: FAZ-28K commit.
 - Note: This is not paper start, server start, live enable, or real order capability.
+# CURRENT ACTIVE STATE
+
+- Day end close: COMPLETE_AFTER_FAZ28K.
+- FAZ-28 status: COMPLETED_AND_CLOSED.
+- FAZ-28 close result: CLOSED_PREPARATION_CHAIN_PASS_NO_START.
+- Meaning: FAZ-28 is finished. The paper-start preparation chain passed, but real paper start was not executed.
+- Last completed phase: FAZ-28K CONTROLLED PAPER START FINAL AUTHORIZATION AND TRANSITION RECORD.
+- Last result: CONTROLLED_PAPER_START_FINAL_AUTHORIZATION_AND_TRANSITION_RECORD_COMPLETE.
+- Latest pushed commit before day close: ebd4baf571df9b7c3a560aace47617462db1d9a4.
+- FAZ-29 transition status: READY_FOR_OBSERVATION_PHASE_ONLY.
+- FAZ-29 status: NOT_STARTED.
+- Next session action: FAZ-29 FIRST CLOSED CANDLE OBSERVATION.
+- Important: FAZ-29 is observation only, not paper start.
+- Explicit user authorization required for real paper start: true.
+- Paper start permission: NOT_GRANTED_YET.
+- Paper start allowed: false.
+- Paper status: OFF.
+- Live lock status: OFF_LOCKED.
+- LIVE_TRADING=false.
+- live_order_sending_allowed=false.
+- Real order capability: NONE.
+- Execution/network status: NONE.
+- Paper start trigger: NOT_TRIGGERED.
+- Live start trigger: NOT_TRIGGERED.
+- Runtime/server/scheduler: NOT_TRIGGERED.
+- Recovery rules: READ_AND_APPLIED.
+- Correct workspace: D:\\Masaustu\\TILSON_T3_GIT_SYNC_WORKSPACE_20260904.
+- Note: Day closed here. FAZ-29 is not started. This is not paper start, server start, live enable, or real order capability.
