@@ -1,0 +1,28 @@
+{
+  "phase": "FAZ-27A",
+  "result": "PAPER_START_READINESS_AUDIT_OPEN_GATE_COMPLETE",
+  "scope": "ANALYSIS_REPORT_ONLY",
+  "readiness_matrix": [
+    {"check_id":"27A-01","check_name":"UI operational cockpit layers","expected_state":"complete enough for paper readiness","observed_state":"17 screens and read-only functional layers present","pass_fail":"PASS","blocking_reason_if_fail":"NONE","carried_gap_if_pass":"full runtime binding remains limited","required_next_action":"review in FAZ-27B"},
+    {"check_id":"27A-02","check_name":"Decision explanation layer","expected_state":"read-only PASS","observed_state":"schema and builder implemented and validated","pass_fail":"PASS","blocking_reason_if_fail":"NONE","carried_gap_if_pass":"providers remain pending","required_next_action":"retain read-only gate"},
+    {"check_id":"27A-03","check_name":"Risk safety live lock","expected_state":"PASS and live blocked","observed_state":"OFF_LOCKED with false live flags","pass_fail":"PASS","blocking_reason_if_fail":"NONE","carried_gap_if_pass":"separate live gate still required","required_next_action":"retain lock"},
+    {"check_id":"27A-04","check_name":"Ledger PnL Position consistency","expected_state":"PASS with providers pending noted","observed_state":"read-only layer passed; runtime providers pending","pass_fail":"PASS_WITH_CARRIED_GAP","blocking_reason_if_fail":"NONE","carried_gap_if_pass":"runtime providers pending","required_next_action":"do not infer authoritative runtime values"},
+    {"check_id":"27A-05","check_name":"Error Repair Diagnostic layer","expected_state":"PASS with providers pending noted","observed_state":"read-only layer passed; runtime providers pending","pass_fail":"PASS_WITH_CARRIED_GAP","blocking_reason_if_fail":"NONE","carried_gap_if_pass":"diagnostic, repair, and error event providers pending","required_next_action":"preserve fail-closed behavior"},
+    {"check_id":"27A-06","check_name":"Paper mode configuration","expected_state":"paper mode exists and live flags false","observed_state":"trade mode PAPER; live lock flags false","pass_fail":"PASS","blocking_reason_if_fail":"NONE","carried_gap_if_pass":"paper permission not granted","required_next_action":"await FAZ-27B review"},
+    {"check_id":"27A-07","check_name":"Closed candle rule","expected_state":"closed candle only","observed_state":"closed_candle_only=true","pass_fail":"PASS","blocking_reason_if_fail":"NONE","carried_gap_if_pass":"runtime enforcement remains next gate concern","required_next_action":"verify before any controlled start"},
+    {"check_id":"27A-08","check_name":"UI authority before Faz-28","expected_state":"no paper/live/order authority","observed_state":"read-only/display-only controls and false action flags","pass_fail":"PASS","blocking_reason_if_fail":"NONE","carried_gap_if_pass":"none","required_next_action":"keep UI non-authoritative"},
+    {"check_id":"27A-09","check_name":"Real order capability","expected_state":"none detected","observed_state":"no real order endpoint or capability","pass_fail":"PASS","blocking_reason_if_fail":"NONE","carried_gap_if_pass":"none","required_next_action":"keep endpoint absent"},
+    {"check_id":"27A-10","check_name":"Recovery continuity","expected_state":"current continuity and clean audit state","observed_state":"prior FAZ-24 to FAZ-26 records present; working tree clean before audit","pass_fail":"PASS","blocking_reason_if_fail":"NONE","carried_gap_if_pass":"this audit record pending commit","required_next_action":"commit audit artifacts after validation"}
+  ],
+  "readiness_score": "10/10",
+  "paper_start_readiness_audit": "PASS_READY_FOR_CONTROLLED_PAPER_START_PHASE",
+  "paper_start_permission": "NOT_GRANTED_YET",
+  "blocking_failures": [],
+  "carried_forward_gaps": ["runtime providers pending", "paper orchestration remains not ready until FAZ-28 scope", "full runtime binding not complete"],
+  "live_lock_status": "OFF_LOCKED",
+  "real_order_capability": "NONE",
+  "execution_network_status": "NONE",
+  "security": {"LIVE_TRADING":false,"live_order_sending_allowed":false,"paper":"OFF","live":"OFF_LOCKED","paper_start":"NOT_TRIGGERED","live_start":"NOT_TRIGGERED","server_start":"NOT_TRIGGERED","scheduler_loop":"NOT_TRIGGERED","real_order_endpoint":"NONE"},
+  "overall_decision": "READY_FOR_FAZ27B_FINAL_READINESS_AUDIT_REVIEW",
+  "next_subphase": "FAZ-27B_FINAL_PAPER_START_READINESS_AUDIT_REVIEW"
+}
