@@ -1,0 +1,22 @@
+{
+  "phase": "FAZ-22C",
+  "result": "READ_ONLY_RUNTIME_STATUS_ADAPTER_IMPLEMENTED",
+  "scope": "NARROW_IMPLEMENTATION_ONLY",
+  "adapter_file": "src/ui/control_center/runtime_status_adapter.py",
+  "test_file": "tests/test_runtime_status_adapter.py",
+  "paper_start": "NOT_TRIGGERED",
+  "live_start": "NOT_TRIGGERED",
+  "server_start": "NOT_TRIGGERED",
+  "scheduler_loop_start": "NOT_TRIGGERED",
+  "execution_call": "NONE",
+  "network_order_endpoint": "NONE",
+  "live_trading": false,
+  "live_order_sending_allowed": false,
+  "data_binding": "PARTIAL_READ_ONLY_STATUS_ADAPTER_NOT_FULL_RUNTIME_BINDING",
+  "runtime_backend": "NOT_STARTED",
+  "paper_orchestration": "NOT_STARTED",
+  "ledger_persistence": "NOT_STARTED",
+  "failure_states": ["UNKNOWN", "OFF", "STALE", "BLOCKED"],
+  "tests": "PASS",
+  "next_subphase": "FAZ-22D_UI_FUNCTIONAL_SIMULATION_WITHOUT_PAPER_START"
+}
