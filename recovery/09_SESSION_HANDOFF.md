@@ -1200,3 +1200,24 @@ LIVE_TRADING=false korunmuştur.
 - Tests: PASS.
 - Next subphase: FAZ-22E UI FUNCTIONAL RESULT REVIEW.
 - Note: This is not paper start, server start, live enable, or real order capability.
+## FAZ-28G UI PAPER START REQUEST ADAPTER IMPLEMENTED - 2026-09-04
+
+- Faz-28G result: UI_PAPER_START_REQUEST_ADAPTER_IMPLEMENTED.
+- Scope: narrow adapter implementation only; no paper start.
+- Retry reason: ALIGN_TESTS_WITH_FAZ28D_FAIL_CLOSED_PRIORITY.
+- Alignment decision: NOT_GRANTED_YET masks lower priority blocks in FAZ-28G.
+- Payload fields: 45.
+- Adapter default status: BLOCKED.
+- Default blocking reason: PAPER_START_NOT_GRANTED_YET.
+- Stronger priority blocks: LIVE_LOCK_VIOLATION, REAL_ORDER_ENDPOINT_DETECTED, NON_PAPER_MODE_REQUESTED.
+- Masked lower priority blocks: OPEN_CANDLE_OR_UNKNOWN_CANDLE, RISK_GATE_NOT_PASS, DIAGNOSTIC_NOT_PASS, LEDGER_NOT_CONSISTENT, POSITION_NOT_CONSISTENT, PNL_NOT_CONSISTENT, RUNTIME_PROVIDER_PENDING.
+- Operator message: UI_PAPER_START_REQUEST_ADAPTER_READY_NO_START.
+- Validation: PASS.
+- Tests: PASS (106).
+- Paper start permission: NOT_GRANTED_YET; paper start allowed: false.
+- Paper status: OFF; live lock status: OFF_LOCKED; real order capability: NONE.
+- Execution/network status: NONE; closed candle rule: REQUIRED.
+- Runtime/paper/live/server/scheduler start: NOT_TRIGGERED; execution call: NONE.
+- LIVE_TRADING=false; live_order_sending_allowed=false; real order endpoint: NONE.
+- Next subphase: FAZ-28H UI PAPER START ACTION BINDING DRY RUN.
+- Note: This is not paper start, server start, live enable, or real order capability.

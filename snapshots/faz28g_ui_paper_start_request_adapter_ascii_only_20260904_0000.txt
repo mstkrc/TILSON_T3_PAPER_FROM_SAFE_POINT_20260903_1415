@@ -1,0 +1,22 @@
+FAZ-28G UI PAPER START REQUEST ADAPTER SNAPSHOT
+result=UI_PAPER_START_REQUEST_ADAPTER_IMPLEMENTED
+payload_field_count=45
+status=BLOCKED
+blocking_reason=PAPER_START_NOT_GRANTED_YET
+paper_start_permission=NOT_GRANTED_YET
+paper_start_allowed=false
+paper_status=OFF
+live_lock_status=OFF_LOCKED
+real_order_capability=NONE
+execution_network_status=NONE
+closed_candle_rule=REQUIRED
+tests=PASS (106)
+paper_start_trigger=NOT_TRIGGERED
+live_start_trigger=NOT_TRIGGERED
+server_start=NOT_TRIGGERED
+scheduler_loop=NOT_TRIGGERED
+execution_call=NONE
+network_order_endpoint=NONE
+LIVE_TRADING=false
+live_order_sending_allowed=false
+next_subphase=FAZ-28H_UI_PAPER_START_ACTION_BINDING_DRY_RUN
