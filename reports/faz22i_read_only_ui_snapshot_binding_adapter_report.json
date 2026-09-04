@@ -1,0 +1,21 @@
+{
+  "phase": "FAZ-22I",
+  "result": "READ_ONLY_UI_SNAPSHOT_BINDING_ADAPTER_IMPLEMENTED",
+  "scope": "NARROW_UI_SNAPSHOT_BINDING_ADAPTER_IMPLEMENTATION_ONLY",
+  "adapter_file": "src/ui/control_center/ui_snapshot_binding_adapter.py",
+  "test_file": "tests/test_ui_snapshot_binding_adapter.py",
+  "adapter_rule": "READ_ONLY_DISPLAY_SNAPSHOT_BINDING_ONLY",
+  "runtime_start": "NOT_TRIGGERED",
+  "paper_start": "NOT_TRIGGERED",
+  "live_start": "NOT_TRIGGERED",
+  "server_start": "NOT_TRIGGERED",
+  "scheduler_loop_start": "NOT_TRIGGERED",
+  "execution_call": "NONE",
+  "network_order_endpoint": "NONE",
+  "LIVE_TRADING": false,
+  "live_order_sending_allowed": false,
+  "screens_bound": 17,
+  "sources_referenced": 12,
+  "tests": "PASS_28",
+  "next_subphase": "FAZ-22J_FULL_UI_BINDING_VALIDATION_REVIEW"
+}
