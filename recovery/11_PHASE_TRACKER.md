@@ -1374,3 +1374,13 @@ Tarihsel düzeltme kaydı: Önceki Faz-21 OPEN GATE kabulü eksik/erken sayıld�
 - Order/execution/private endpoint: NONE.
 - FAZ-29 status: OBSERVATION_RECORDED_NOT_OPERATIONAL_START.
 - Note: Observation only; no decision, start, order, or execution occurred.
+
+
+## FAZ-29 OBSERVATION CHAIN CLOSE RECORDED - 2026-09-05
+
+- Result: FAZ29_OBSERVATION_CHAIN_CLOSE_READY_FOR_NEXT_USER_DECISION.
+- Previous remote head: 095f0b7a795b95097dd5f068e2ce4b99228cf3a4.
+- FAZ-29 public market-data read-only closed-candle observation: completed, recorded, committed, and pushed.
+- No decision, signal, candidate/ranking/sizing/risk pipeline, paper start, live start, runtime/server/scheduler, order, execution, or private endpoint.
+- FAZ-29 is not operationally started.
+- Next correct action: USER_DECISION_FOR_NEXT_FAZ29_OBSERVATION_STEP.
