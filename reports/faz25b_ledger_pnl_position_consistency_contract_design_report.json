@@ -1,0 +1,496 @@
+{
+  "phase": "FAZ-25B",
+  "result": "LEDGER_PNL_POSITION_CONSISTENCY_CONTRACT_DESIGN_READY",
+  "scope": "ANALYSIS_AND_CONTRACT_DESIGN_ONLY",
+  "contract_fields": [
+    {
+      "field_name": "consistency_snapshot_id",
+      "required": true,
+      "source": "consistency source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "generated_at",
+      "required": true,
+      "source": "consistency source",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "system_mode",
+      "required": true,
+      "source": "trade_config",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "PAPER",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "source_freshness",
+      "required": true,
+      "source": "runtime providers",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "ledger_source_status",
+      "required": true,
+      "source": "paper ledger provider",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "pnl_source_status",
+      "required": true,
+      "source": "portfolio pnl provider",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "position_source_status",
+      "required": true,
+      "source": "position provider",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "ledger_provider_status",
+      "required": true,
+      "source": "runtime source registry",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "PENDING",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "pnl_provider_status",
+      "required": true,
+      "source": "runtime source registry",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "PENDING",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "position_provider_status",
+      "required": true,
+      "source": "runtime source registry",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "PENDING",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "paper_ledger_write_allowed",
+      "required": true,
+      "source": "live lock/config",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "false",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "live_ledger_write_allowed",
+      "required": true,
+      "source": "live lock/config",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "false",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "open_position_count",
+      "required": true,
+      "source": "position provider",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "closed_trade_count",
+      "required": true,
+      "source": "ledger provider",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "ledger_trade_count",
+      "required": true,
+      "source": "ledger provider",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "duplicate_trade_ids_detected",
+      "required": true,
+      "source": "ledger consistency validator",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "missing_trade_ids_detected",
+      "required": true,
+      "source": "ledger consistency validator",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "orphan_fills_detected",
+      "required": true,
+      "source": "execution record validator",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "orphan_positions_detected",
+      "required": true,
+      "source": "position validator",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "position_ledger_mismatch_detected",
+      "required": true,
+      "source": "consistency validator",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "pnl_ledger_mismatch_detected",
+      "required": true,
+      "source": "consistency validator",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "realized_pnl_total",
+      "required": true,
+      "source": "ledger derived pnl",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "unrealized_pnl_total",
+      "required": true,
+      "source": "position derived pnl",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "fees_total",
+      "required": true,
+      "source": "ledger execution records",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "slippage_total",
+      "required": true,
+      "source": "ledger execution records",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "cash_balance",
+      "required": true,
+      "source": "ledger account state",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "equity",
+      "required": true,
+      "source": "ledger account state",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "exposure_total",
+      "required": true,
+      "source": "position provider",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "risk_reserved_amount",
+      "required": true,
+      "source": "risk provider",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "ledger_consistency",
+      "required": true,
+      "source": "ledger validator",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "pnl_consistency",
+      "required": true,
+      "source": "pnl validator",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "position_consistency",
+      "required": true,
+      "source": "position validator",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "overall_consistency",
+      "required": true,
+      "source": "consistency validator",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "BLOCKED",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "fail_closed_reason",
+      "required": true,
+      "source": "consistency validator",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "CONSISTENCY_NOT_PROVEN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "display_only",
+      "required": true,
+      "source": "contract safety",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "true",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "read_only",
+      "required": true,
+      "source": "contract safety",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "true",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "can_write_ledger",
+      "required": true,
+      "source": "contract safety",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "false",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "can_mutate_position",
+      "required": true,
+      "source": "contract safety",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "false",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "can_recalculate_authoritatively",
+      "required": true,
+      "source": "contract safety",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "false",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "can_execute",
+      "required": true,
+      "source": "contract safety",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "false",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "can_start_paper",
+      "required": true,
+      "source": "contract safety",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "false",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "can_start_live",
+      "required": true,
+      "source": "contract safety",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "false",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "can_send_order",
+      "required": true,
+      "source": "contract safety",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "false",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "next_allowed_action",
+      "required": true,
+      "source": "contract safety",
+      "allowed_values": "DISPLAY_ONLY_REVIEW|WAIT_FOR_RUNTIME_PROVIDER|DESIGN_READ_ONLY_SCHEMA|IMPLEMENT_READ_ONLY_SCHEMA|REPAIR_REQUIRED",
+      "fallback_value": "DISPLAY_ONLY_REVIEW",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    },
+    {
+      "field_name": "blocked_by",
+      "required": true,
+      "source": "consistency validator",
+      "allowed_values": "contract-defined safe values",
+      "fallback_value": "UNKNOWN",
+      "blocking_if_missing": true,
+      "ui_display_rule": "display only; no authoritative write or calculation",
+      "safety_rule": "read-only; no execution authority"
+    }
+  ],
+  "field_count": 45,
+  "read_only_rules": [
+    "display_only=true",
+    "read_only=true",
+    "all mutation and action flags=false",
+    "UI does not authoritatively calculate or write ledger/PnL/position"
+  ],
+  "fail_closed_rules": [
+    "missing provider -> PROVIDER_PENDING",
+    "stale source -> STALE_DATA",
+    "duplicate trade id -> DUPLICATE_LEDGER_ID",
+    "missing trade id -> MISSING_LEDGER_ID",
+    "orphan fill -> ORPHAN_FILL",
+    "orphan position -> ORPHAN_POSITION",
+    "position ledger mismatch -> POSITION_LEDGER_MISMATCH",
+    "PnL ledger mismatch -> PNL_LEDGER_MISMATCH",
+    "UNKNOWN/BLOCKED -> CONSISTENCY_NOT_PROVEN"
+  ],
+  "allowed_next_actions": [
+    "DISPLAY_ONLY_REVIEW",
+    "WAIT_FOR_RUNTIME_PROVIDER",
+    "DESIGN_READ_ONLY_SCHEMA",
+    "IMPLEMENT_READ_ONLY_SCHEMA",
+    "REPAIR_REQUIRED"
+  ],
+  "paper_ledger_write_status": "NOT_ALLOWED_YET",
+  "live_ledger_write_status": "BLOCKED",
+  "real_order_capability": "NONE",
+  "execution_network_status": "NONE",
+  "overall_decision": "CONTRACT_READY_IMPLEMENTATION_PENDING",
+  "next_subphase": "FAZ-25C_READ_ONLY_LEDGER_PNL_POSITION_SCHEMA_IMPLEMENTATION",
+  "security": {
+    "LIVE_TRADING": false,
+    "live_order_sending_allowed": false,
+    "paper": "OFF",
+    "live": "OFF_LOCKED",
+    "real_order_endpoint": "NONE",
+    "execution_or_network_called": false
+  }
+}

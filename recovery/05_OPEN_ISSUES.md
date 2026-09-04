@@ -137,6 +137,31 @@ KONU-50: LOCKED. Faz-21 → Faz-47 planı kayıtlıdır ve kullanıcı onayıyla
 - Tests: PASS.
 - Next subphase: FAZ-22D UI FUNCTIONAL SIMULATION WITHOUT PAPER START.
 - Note: This is not paper start, server start, live enable, or real order capability.
+## FAZ-25B LEDGER PNL POSITION CONSISTENCY CONTRACT DESIGN COMPLETED - 2026-09-04
+
+- Faz-25B result: LEDGER_PNL_POSITION_CONSISTENCY_CONTRACT_DESIGN_READY.
+- Scope: analysis and contract design only.
+- Contract fields: 45.
+- Ledger runtime provider status: PENDING.
+- PnL runtime provider status: PENDING.
+- Position runtime provider status: PENDING.
+- UI display authority: READ_ONLY_DISPLAY_ONLY.
+- Paper ledger write status: NOT_ALLOWED_YET.
+- Live ledger write status: BLOCKED.
+- Real order capability: NONE.
+- Execution/network status: NONE.
+- Runtime start: NOT_TRIGGERED.
+- Paper start trigger: NOT_TRIGGERED.
+- Live start: NOT_TRIGGERED.
+- Server start: NOT_TRIGGERED.
+- Scheduler loop start: NOT_TRIGGERED.
+- Execution call: NONE.
+- Network/order endpoint: NONE.
+- LIVE_TRADING=false.
+- live_order_sending_allowed=false.
+- Real order endpoint: NONE.
+- Next subphase: FAZ-25C READ-ONLY LEDGER PNL POSITION SCHEMA IMPLEMENTATION.
+- Note: This is not paper start, server start, live enable, ledger runtime write, or real order capability.
 ## FAZ-25A UI LEDGER PNL POSITION CONSISTENCY OPEN GATE COMPLETED - 2026-09-04
 
 - Faz-25A result: UI_LEDGER_PNL_POSITION_CONSISTENCY_OPEN_GATE_COMPLETE.

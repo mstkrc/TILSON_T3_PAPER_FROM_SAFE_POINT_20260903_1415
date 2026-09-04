@@ -1,0 +1,20 @@
+FAZ-25B LEDGER PNL POSITION CONSISTENCY CONTRACT DESIGN COMPLETED - 2026-09-04
+
+Contract fields: 45
+Scope: analysis and contract design only
+Ledger runtime provider: PENDING
+PnL runtime provider: PENDING
+Position runtime provider: PENDING
+UI display authority: READ_ONLY_DISPLAY_ONLY
+Paper ledger write: NOT_ALLOWED_YET
+Live ledger write: BLOCKED
+Fallback: UNKNOWN/BLOCKED -> CONSISTENCY_NOT_PROVEN
+Action authority: all mutation, execution, paper, live, and send flags false
+Paper: OFF
+Live: OFF_LOCKED
+LIVE_TRADING=false
+live_order_sending_allowed=false
+Real order capability: NONE
+Execution/network status: NONE
+Next subphase: FAZ-25C READ-ONLY LEDGER PNL POSITION SCHEMA IMPLEMENTATION
+This is a design record only; no ledger write, paper, server, scheduler, live, or order start occurred.
