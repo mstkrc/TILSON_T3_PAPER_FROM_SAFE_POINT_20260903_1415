@@ -1,0 +1,22 @@
+{
+  "record_type": "FAZ29_ACTIVE_STRATEGY_MODE_ENTRY_GATE_RECONCILIATION",
+  "date": "2026-09-05",
+  "result": "FAZ29_ACTIVE_STRATEGY_MODE_ENTRY_GATE_RECONCILIATION_PASS_NO_ORDER_NO_PAPER_NO_LIVE_NO_RUNTIME",
+  "canonical_head_before": "c360c15e3c924a910f6336d23f879a765d9ac553",
+  "strategy_mode": "CROSS_ONLY",
+  "config_t3_entry_mode": "T3_COLOR_CHANGE_ONLY",
+  "continuation_mode_enabled": false,
+  "ui_options_visible": ["DEGISIM", "DEVAM"],
+  "ui_controls_operational": false,
+  "ui_strategy_mode_changeable": false,
+  "mode_reconciliation": "Config is authoritative; T3_COLOR_CHANGE_ONLY is the active final rule. UI presents both concepts but controls are display-only.",
+  "common_gates": {"listed_trading": true, "watch_strong": true, "t3_green": true, "plus_di_gt_minus_di": true, "adx_ge_30": true, "adx_slope_ok": true},
+  "symbols": [
+    {"symbol":"DASHUSDT","t3_value":58.0359192247,"t3_state":"GREEN","t3_context":"GREEN_TO_GREEN_CONTINUATION_NO_COLOR_CHANGE","plus_di":39.5724004276,"minus_di":10.2954392711,"adx":39.0528916556,"adx_slope":"RISING","cross_entry_allowed":true,"continuation_entry_allowed":false,"cross_entry_gate":false,"continuation_entry_gate":false,"final_dry_entry_context":false},
+    {"symbol":"MARSCOINUSDT","t3_value":0.19753067,"t3_state":"GREEN","t3_context":"GREEN_TO_GREEN_CONTINUATION_NO_COLOR_CHANGE","plus_di":30.6051928859,"minus_di":11.1064062069,"adx":43.1776334092,"adx_slope":"RISING","cross_entry_allowed":true,"continuation_entry_allowed":false,"cross_entry_gate":false,"continuation_entry_gate":false,"final_dry_entry_context":false}
+  ],
+  "paper_start_permission":"NOT_GRANTED_YET","paper_start_allowed":false,"paper_status":"OFF","live_lock_status":"OFF_LOCKED","LIVE_TRADING":false,"live_order_sending_allowed":false,"real_order_capability":"NONE","runtime_server_scheduler":"NOT_TRIGGERED","order_execution_private_endpoint":"NONE",
+  "real_signal_generated":false,"candidate_selected":false,"ranking_sizing_risk_order_pipeline_triggered":false,"trade_decision_generated":false,
+  "next_correct_action":"WAIT_FOR_NEW_CROSS_ENTRY_OR_USER_CHANGES_ACTIVE_ENTRY_MODE",
+  "overall_decision":"CROSS_ONLY_MODE_BLOCKS_GREEN_TO_GREEN_CONTINUATION_ENTRY_CONTEXT"
+}

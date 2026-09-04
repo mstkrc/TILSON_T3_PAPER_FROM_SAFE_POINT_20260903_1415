@@ -1750,6 +1750,7 @@ Control Center fiili seti 17 ekrandır: 01 = Genel Bakış; 02–17 = diğer Con
 ## FAZ-29 LONGXIA SYMBOL LISTING RECHECK RECORDED - 2026-09-05
 
 - Result: FAZ29_LONGXIA_SYMBOL_LISTING_RECHECK_NOT_LISTED_CONFIRMED_NO_START.
+- 2026-09-05: Recorded FAZ-29 active strategy mode and entry-gate reconciliation; CROSS_ONLY remains active, no start/order/runtime.
 - TradingView evidence: LONGXIAUSDT.P, Binance perpetual/swap crypto defi.
 - Public Binance exchangeInfo exact match: none; LONGXIA partial matches: none.
 - Public ticker probe: symbol not found; kline probe not used.

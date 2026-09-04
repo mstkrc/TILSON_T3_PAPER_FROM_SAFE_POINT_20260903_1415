@@ -1469,3 +1469,4 @@ Tarihsel düzeltme kaydı: Önceki Faz-21 OPEN GATE kabulü eksik/erken sayıld�
 - No indicator, signal, candidate, decision, order, paper/live start, runtime/server/scheduler, or private endpoint.
 - FAZ-29 is not operationally started; Paper OFF; Live OFF_LOCKED.
 - Next correct action: KEEP_LONGXIA_OUT_OF_BINANCE_USDT_M_OBSERVATION_UNIVERSE.
+- FAZ-29 active strategy reconciliation recorded: CROSS_ONLY; DASH/MARS GREEN_TO_GREEN does not satisfy active cross entry gate; no operational start.

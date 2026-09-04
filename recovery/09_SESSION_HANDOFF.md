@@ -1498,3 +1498,4 @@ LIVE_TRADING=false korunmuştur.
 - No indicator, signal, candidate, decision, order, paper/live start, runtime/server/scheduler, or private endpoint.
 - FAZ-29 is not operationally started; Paper OFF; Live OFF_LOCKED.
 - Next correct action: KEEP_LONGXIA_OUT_OF_BINANCE_USDT_M_OBSERVATION_UNIVERSE.
+- Next handoff: CROSS_ONLY active; wait for a new RED_TO_GREEN/ GREEN_TO_RED cross or an explicitly authorized config/UI change. Paper remains OFF and not permitted.

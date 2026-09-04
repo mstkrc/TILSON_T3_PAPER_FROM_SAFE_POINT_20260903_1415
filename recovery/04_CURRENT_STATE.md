@@ -1500,3 +1500,5 @@ Kaynak: `recovery/word/Tilson_T3_04_Current_State_ve_Phase_Tracker_Kilitli.docx`
 - Next correct action: KEEP_LONGXIA_OUT_OF_BINANCE_USDT_M_OBSERVATION_UNIVERSE.
 - Correct workspace: D:\\Masaustu\\TILSON_T3_GIT_SYNC_WORKSPACE_20260904.
 - Note: Listing recheck only; no indicator, signal, decision, start, order, or execution occurred.
+- FAZ-29 active strategy reconciliation: config T3_COLOR_CHANGE_ONLY is active CROSS_ONLY; UI DEGISIM/DEVAM controls are display-only.
+- DASHUSDT and MARSCOINUSDT are GREEN_TO_GREEN with DI/ADX context, but cross and continuation entry gates are both false; no decision/order/start/runtime occurred.
