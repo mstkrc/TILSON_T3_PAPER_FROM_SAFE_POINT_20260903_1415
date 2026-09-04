@@ -1,0 +1,18 @@
+FAZ-28B PAPER ONLY START CONTRACT DESIGN
+Date: 2026-09-04
+Result: PAPER_ONLY_START_CONTRACT_DESIGN_READY
+Scope: ANALYSIS_AND_CONTRACT_DESIGN_ONLY_NO_START
+Contract fields: 45
+Paper start permission: NOT_GRANTED_YET
+Paper start allowed: false
+Paper: OFF
+Live lock: OFF_LOCKED
+LIVE_TRADING=false
+live_order_sending_allowed=false
+Real order capability: NONE
+Execution/network status: NONE
+Closed candle rule: REQUIRED
+Forbidden actions: START_PAPER_NOW, START_LIVE, SEND_ORDER, ENABLE_LIVE, MODIFY_LIVE_LOCK, BYPASS_CLOSED_CANDLE, WRITE_LEDGER_RUNTIME, MUTATE_POSITION
+Next subphase: FAZ-28C PAPER ONLY START SCHEMA IMPLEMENTATION
+Note: This is not paper start, server start, live enable, or real order capability.
+
