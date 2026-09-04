@@ -1,0 +1,27 @@
+{
+  "phase": "FAZ-23E",
+  "result": "DECISION_EXPLANATION_RESULT_REVIEW_COMPLETE",
+  "scope": "RESULT_REVIEW_AND_EXIT_DECISION_ONLY",
+  "review_items": 20,
+  "schema_status": "PASS",
+  "builder_status": "PASS",
+  "tests_status": "PASS_39",
+  "read_only_guarantee_status": "PASS",
+  "missing_provider_behavior": "PENDING_PROVIDER",
+  "stale_data_behavior": "STALE_DATA",
+  "closed_candle_behavior": "CLOSED_CANDLE_REQUIRED",
+  "risk_block_behavior": "RISK_NOT_ALLOWED",
+  "paper_start_readiness": "NOT_ALLOWED_YET",
+  "live_lock_status": "OFF_LOCKED",
+  "security": {
+    "LIVE_TRADING": false,
+    "live_order_sending_allowed": false,
+    "paper": "OFF",
+    "live": "OFF_LOCKED",
+    "real_order_endpoint": "NONE",
+    "execution_or_network_called": false
+  },
+  "open_gaps_carried_forward": ["UI_RENDER_INTEGRATION_PENDING", "RUNTIME_PROVIDERS_PENDING"],
+  "overall_faz23_decision": "PASS_READ_ONLY_DECISION_EXPLANATION_LAYER",
+  "next_phase": "FAZ-24_UI_RISK_SAFETY_LIVE_LOCK_VALIDATION"
+}
