@@ -34,3 +34,25 @@ Day-end reference SHA-256: `A06D9AA89F47968B74A8A0043FB913179EAFAC47ADC4F31E15D2
 Control Center fiili seti 17 ekrandır: 01 = Genel Bakış; 02–17 = diğer Control Center ekranları. “Genel Bakış + 1–17” çalışma bütününü anlatır; ayrı 18. ekran yoktur.
 
 Live trading kapalıdır: `LIVE_TRADING=false`, `live_order_sending_allowed=false`. Gerçek Binance/order endpoint yoktur.
+
+
+## FAZ-21 / 01?17 USER VISUAL QA + TECHNICAL STATIC PASS ? 2026-09-04
+
+- Kullan?c? g?rsel QA: 01?17 USER_VISUAL_QA_APPROVED.
+- Teknik statik do?rulama: 17/17 PASS.
+- UTF-8: 17/17 PASS.
+- U+FFFD replacement character: 0.
+- Mojibake pattern: Yok.
+- 01 metadata: data-live-order-sending-allowed="false" eklendi.
+- 07 Strateji: kullan?c? iste?iyle d?rt yard?m ? ikonu kald?r?ld?.
+- Duplicate shell kontrol?: USER_VISUAL_QA_CONFIRMED / AUTOMATED_CHECK_INCONCLUSIVE / ACCEPTED_FOR_FAZ21_STATIC_UI_SCOPE.
+- 01?17: USER_VISUAL_QA_APPROVED / TECHNICAL_STATIC_PASS / RECORDED.
+- Faz-21: UI_SCREEN_SCOPE_17_17_PASS / WAITING_FAZ21_EXIT_GATE.
+- Data binding: NOT_DONE.
+- Paper: OFF.
+- Live: OFF / LOCKED.
+- LIVE_TRADING=false.
+- live_order_sending_allowed=false.
+- Ger?ek emir/Binance order endpoint: NONE.
+- Faz-22: NEXT_PENDING_USER_APPROVAL.
+- Not: Bu kay?t UI g?rsel/statik kapsam ge?i?idir; paper start de?ildir.

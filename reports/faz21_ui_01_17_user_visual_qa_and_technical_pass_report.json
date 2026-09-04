@@ -1,0 +1,17 @@
+{
+  "screen_count": 17,
+  "user_visual_qa": "APPROVED",
+  "technical_static_pass": true,
+  "utf8_pass": true,
+  "ufffd_count": 0,
+  "mojibake": false,
+  "duplicate_shell_check": "AUTOMATED_CHECK_INCONCLUSIVE_USER_VISUAL_QA_CONFIRMED",
+  "data_binding": "NOT_DONE",
+  "paper": "OFF",
+  "live": "OFF_LOCKED",
+  "live_trading": false,
+  "live_order_sending_allowed": false,
+  "real_order_endpoint": "NONE",
+  "phase21_status": "UI_SCREEN_SCOPE_17_17_PASS_WAITING_EXIT_GATE",
+  "phase22_status": "NEXT_PENDING_USER_APPROVAL"
+}
