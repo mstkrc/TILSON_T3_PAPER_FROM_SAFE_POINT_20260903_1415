@@ -260,6 +260,30 @@ Tarihsel düzeltme kaydı: Önceki Faz-21 OPEN GATE kabulü eksik/erken sayıld�
 - Tests: PASS.
 - Next subphase: FAZ-22D UI FUNCTIONAL SIMULATION WITHOUT PAPER START.
 - Note: This is not paper start, server start, live enable, or real order capability.
+## FAZ-25A UI LEDGER PNL POSITION CONSISTENCY OPEN GATE COMPLETED - 2026-09-04
+
+- Faz-25A result: UI_LEDGER_PNL_POSITION_CONSISTENCY_OPEN_GATE_COMPLETE.
+- Scope: analysis/report only.
+- Ledger consistency review: PARTIAL_PASS_DESIGN_REVIEW.
+- Ledger runtime provider status: PENDING.
+- PnL runtime provider status: PENDING.
+- Position runtime provider status: PENDING.
+- UI display authority: READ_ONLY_DISPLAY_ONLY.
+- Paper ledger write status: NOT_ALLOWED_YET.
+- Live ledger write status: BLOCKED.
+- Real order capability: NONE.
+- Runtime start: NOT_TRIGGERED.
+- Paper start trigger: NOT_TRIGGERED.
+- Live start: NOT_TRIGGERED.
+- Server start: NOT_TRIGGERED.
+- Scheduler loop start: NOT_TRIGGERED.
+- Execution call: NONE.
+- Network/order endpoint: NONE.
+- LIVE_TRADING=false.
+- live_order_sending_allowed=false.
+- Real order endpoint: NONE.
+- Next subphase: FAZ-25B LEDGER PNL POSITION CONSISTENCY CONTRACT DESIGN.
+- Note: This is not paper start, server start, live enable, ledger runtime write, or real order capability.
 ## FAZ-24E LIVE LOCK RESULT REVIEW AND EXIT DECISION COMPLETED - 2026-09-04
 
 - Faz-24E result: LIVE_LOCK_RESULT_REVIEW_AND_EXIT_DECISION_COMPLETE.

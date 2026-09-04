@@ -1,0 +1,20 @@
+FAZ-25A UI LEDGER PNL POSITION CONSISTENCY OPEN GATE COMPLETED - 2026-09-04
+
+Checks: 25
+Pass: 9
+Gaps: 16
+Ledger consistency review: PARTIAL_PASS_DESIGN_REVIEW
+Ledger runtime provider: PENDING
+PnL runtime provider: PENDING
+Position runtime provider: PENDING
+UI display authority: READ_ONLY_DISPLAY_ONLY
+Paper ledger write: NOT_ALLOWED_YET
+Live ledger write: BLOCKED
+Paper: OFF
+Live: OFF_LOCKED
+LIVE_TRADING=false
+live_order_sending_allowed=false
+Real order capability: NONE
+Execution/network status: NONE
+Next subphase: FAZ-25B LEDGER PNL POSITION CONSISTENCY CONTRACT DESIGN
+This is an analysis record only; no ledger runtime write, paper, server, scheduler, live, or order start occurred.
