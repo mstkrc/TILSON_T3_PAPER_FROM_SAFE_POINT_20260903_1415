@@ -1695,3 +1695,16 @@ Control Center fiili seti 17 ekrandır: 01 = Genel Bakış; 02–17 = diğer Con
 - No paper start, live start, runtime/server/scheduler, order, execution, or private endpoint.
 - FAZ-29 is not operationally started; Paper OFF; Live OFF_LOCKED.
 - Next correct action: USER_DECISION_FOR_NEXT_FAZ29_OBSERVATION_STEP.
+
+
+## FAZ-29 CLOSED CANDLE OBSERVATION CONTINUE RECORDED - 2026-09-05
+
+- Result: FAZ29_CLOSED_CANDLE_OBSERVATION_CONTINUE_PASS_NETWORK_READ_ONLY_NO_DECISION_NO_ORDER.
+- Only public Binance BTCUSDT 1h kline endpoint was used.
+- Closed candle progress: NEW_CLOSED_CANDLE_OBSERVED_NO_DECISION.
+- Last closed candle: 2026-09-04T22:00:00Z to 2026-09-04T22:59:59.999Z.
+- Open candle: OPEN_CANDLE_REJECTED_FOR_DECISION.
+- No indicator, signal, candidate/ranking/sizing/risk pipeline, or trade decision.
+- No paper/live start, runtime/server/scheduler, order, execution, or private endpoint.
+- FAZ-29 is not operationally started; Paper OFF; Live OFF_LOCKED.
+- Next correct action: USER_DECISION_FOR_NEXT_FAZ29_OBSERVATION_STEP.
