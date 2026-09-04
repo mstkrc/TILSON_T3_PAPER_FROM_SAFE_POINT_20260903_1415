@@ -305,3 +305,21 @@ Tarihsel düzeltme kaydı: Önceki Faz-21 OPEN GATE kabulü eksik/erken sayıld�
 - live_order_sending_allowed=false.
 - Real order/Binance order endpoint: NONE.
 - Note: This is analysis/record only. It is not implementation, paper start, server start, or live enable.
++## FAZ-22D NARROW UI SIMULATION TESTS IMPLEMENTED - 2026-09-04
+
+- Faz-22D result: NARROW_UI_SIMULATION_TESTS_IMPLEMENTED.
+- Scope: tests only with optional passive model helper.
+- UI/HTML/CSS change: NONE.
+- Output files change: NONE.
+- Paper start: NOT_TRIGGERED.
+- Live start: NOT_TRIGGERED.
+- Server start: NOT_TRIGGERED.
+- Scheduler loop start: NOT_TRIGGERED.
+- Execution call: NONE.
+- Network/order endpoint: NONE.
+- LIVE_TRADING=false.
+- live_order_sending_allowed=false.
+- Tested intents: refresh, route navigation, display-only buttons, disabled command buttons, live-lock controls, unknown snapshot, stale snapshot, blocked snapshot, no execution, no paper start.
+- Tests: PASS.
+- Next subphase: FAZ-22E UI FUNCTIONAL RESULT REVIEW.
+- Note: This is not paper start, server start, live enable, or real order capability.

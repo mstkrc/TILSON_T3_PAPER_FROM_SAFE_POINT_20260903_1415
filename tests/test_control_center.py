@@ -74,3 +74,55 @@ def test_live_lock_and_no_external_endpoints():
     assert not list((ROOT / "src/ui").glob("*telegram*"))
     assert not list((ROOT / "src/ui").glob("*excel*"))
     assert not list((ROOT / "src/ui").glob("*order*"))
+
+
+def test_narrow_ui_simulation_refresh_and_route_navigation_are_display_only():
+    model = build_control_center()
+    refreshed = model.display_refresh({"failure_state": "UNKNOWN"})
+
+    assert refreshed["decision_allowed"] is False
+    assert refreshed["execution_triggered"] is False
+    assert model.active_screen in model.screens
+    assert len(model.screens) >= 11
+
+
+def test_narrow_ui_simulation_buttons_do_not_execute():
+    model = build_control_center()
+
+    for action in model.control_buttons:
+        intent = model.intent(action)
+        assert intent.paper_only is True
+        assert intent.live_order_sent is False
+
+
+def test_narrow_ui_simulation_unknown_stale_and_blocked_snapshots_are_safe():
+    model = build_control_center()
+    snapshots = (
+        {"failure_state": "UNKNOWN"},
+        {"failure_state": "STALE", "stale_domains": ["health"]},
+        {"failure_state": "BLOCKED"},
+    )
+
+    for snapshot in snapshots:
+        bound = model.bind_snapshot(snapshot)
+        assert bound["snapshot"]["failure_state"] in {"UNKNOWN", "STALE", "BLOCKED"}
+        assert bound["decision_allowed"] is False
+
+
+def test_narrow_ui_simulation_never_starts_paper_or_live():
+    model = build_control_center()
+    bound = model.bind_snapshot({
+        "paper": "OFF",
+        "live": "OFF_LOCKED",
+        "LIVE_TRADING": False,
+        "live_order_sending_allowed": False,
+        "paper_start_triggered": False,
+        "live_order_sent": False,
+        "execution_triggered": False,
+    })
+
+    assert bound["snapshot"]["paper"] == "OFF"
+    assert bound["snapshot"]["live"] == "OFF_LOCKED"
+    assert bound["snapshot"]["paper_start_triggered"] is False
+    assert bound["snapshot"]["live_order_sent"] is False
+    assert bound["snapshot"]["execution_triggered"] is False

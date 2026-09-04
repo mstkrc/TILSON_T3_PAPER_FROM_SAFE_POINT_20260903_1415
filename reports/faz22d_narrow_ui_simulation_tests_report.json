@@ -1,0 +1,18 @@
+{
+  "phase": "FAZ-22D",
+  "result": "NARROW_UI_SIMULATION_TESTS_IMPLEMENTED",
+  "scope": "TESTS_ONLY_WITH_OPTIONAL_PASSIVE_MODEL_HELPER",
+  "ui_html_css_change": "NONE",
+  "output_files_change": "NONE",
+  "paper_start": "NOT_TRIGGERED",
+  "live_start": "NOT_TRIGGERED",
+  "server_start": "NOT_TRIGGERED",
+  "scheduler_loop_start": "NOT_TRIGGERED",
+  "execution_call": "NONE",
+  "network_order_endpoint": "NONE",
+  "live_trading": false,
+  "live_order_sending_allowed": false,
+  "tested_intents": ["refresh", "route_navigation", "display_only_buttons", "disabled_command_buttons", "live_lock_controls", "unknown_snapshot", "stale_snapshot", "blocked_snapshot", "no_execution", "no_paper_start"],
+  "tests": "PASS_16",
+  "next_subphase": "FAZ-22E_UI_FUNCTIONAL_RESULT_REVIEW"
+}
