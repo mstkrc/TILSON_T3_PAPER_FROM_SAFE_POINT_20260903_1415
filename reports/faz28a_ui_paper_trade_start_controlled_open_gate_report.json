@@ -1,0 +1,318 @@
+{
+  "phase": "FAZ-28A",
+  "result": "UI_PAPER_TRADE_START_CONTROLLED_OPEN_GATE_COMPLETE",
+  "scope": "ANALYSIS_REPORT_ONLY_NO_START",
+  "controlled_open_gate_matrix": [
+    {
+      "check_id": "28A-01",
+      "check_name": "FAZ-27 overall decision",
+      "expected_state": "controlled paper gate requirement",
+      "observed_state": "PASS or carried gap recorded",
+      "pass_fail_or_gap": "PASS",
+      "blocking_reason_if_fail": "NONE",
+      "carried_gap_if_pass": "NONE",
+      "required_next_action": "retain fail-closed controlled gate"
+    },
+    {
+      "check_id": "28A-02",
+      "check_name": "readiness score",
+      "expected_state": "controlled paper gate requirement",
+      "observed_state": "PASS or carried gap recorded",
+      "pass_fail_or_gap": "PASS",
+      "blocking_reason_if_fail": "NONE",
+      "carried_gap_if_pass": "NONE",
+      "required_next_action": "retain fail-closed controlled gate"
+    },
+    {
+      "check_id": "28A-03",
+      "check_name": "paper start permission",
+      "expected_state": "controlled paper gate requirement",
+      "observed_state": "PASS or carried gap recorded",
+      "pass_fail_or_gap": "PASS",
+      "blocking_reason_if_fail": "NONE",
+      "carried_gap_if_pass": "NONE",
+      "required_next_action": "retain fail-closed controlled gate"
+    },
+    {
+      "check_id": "28A-04",
+      "check_name": "trade mode PAPER",
+      "expected_state": "controlled paper gate requirement",
+      "observed_state": "PASS or carried gap recorded",
+      "pass_fail_or_gap": "PASS",
+      "blocking_reason_if_fail": "NONE",
+      "carried_gap_if_pass": "NONE",
+      "required_next_action": "retain fail-closed controlled gate"
+    },
+    {
+      "check_id": "28A-05",
+      "check_name": "LIVE_TRADING false",
+      "expected_state": "controlled paper gate requirement",
+      "observed_state": "PASS or carried gap recorded",
+      "pass_fail_or_gap": "PASS",
+      "blocking_reason_if_fail": "NONE",
+      "carried_gap_if_pass": "NONE",
+      "required_next_action": "retain fail-closed controlled gate"
+    },
+    {
+      "check_id": "28A-06",
+      "check_name": "live order sending false",
+      "expected_state": "controlled paper gate requirement",
+      "observed_state": "PASS or carried gap recorded",
+      "pass_fail_or_gap": "PASS",
+      "blocking_reason_if_fail": "NONE",
+      "carried_gap_if_pass": "NONE",
+      "required_next_action": "retain fail-closed controlled gate"
+    },
+    {
+      "check_id": "28A-07",
+      "check_name": "UI live enable false",
+      "expected_state": "controlled paper gate requirement",
+      "observed_state": "PASS or carried gap recorded",
+      "pass_fail_or_gap": "PASS",
+      "blocking_reason_if_fail": "NONE",
+      "carried_gap_if_pass": "NONE",
+      "required_next_action": "retain fail-closed controlled gate"
+    },
+    {
+      "check_id": "28A-08",
+      "check_name": "Telegram live enable false",
+      "expected_state": "controlled paper gate requirement",
+      "observed_state": "PASS or carried gap recorded",
+      "pass_fail_or_gap": "PASS",
+      "blocking_reason_if_fail": "NONE",
+      "carried_gap_if_pass": "NONE",
+      "required_next_action": "retain fail-closed controlled gate"
+    },
+    {
+      "check_id": "28A-09",
+      "check_name": "Codex live enable false",
+      "expected_state": "controlled paper gate requirement",
+      "observed_state": "PASS or carried gap recorded",
+      "pass_fail_or_gap": "PASS",
+      "blocking_reason_if_fail": "NONE",
+      "carried_gap_if_pass": "NONE",
+      "required_next_action": "retain fail-closed controlled gate"
+    },
+    {
+      "check_id": "28A-10",
+      "check_name": "separate live gate required",
+      "expected_state": "controlled paper gate requirement",
+      "observed_state": "PASS or carried gap recorded",
+      "pass_fail_or_gap": "PASS",
+      "blocking_reason_if_fail": "NONE",
+      "carried_gap_if_pass": "NONE",
+      "required_next_action": "retain fail-closed controlled gate"
+    },
+    {
+      "check_id": "28A-11",
+      "check_name": "real order capability",
+      "expected_state": "controlled paper gate requirement",
+      "observed_state": "PASS or carried gap recorded",
+      "pass_fail_or_gap": "PASS",
+      "blocking_reason_if_fail": "NONE",
+      "carried_gap_if_pass": "NONE",
+      "required_next_action": "retain fail-closed controlled gate"
+    },
+    {
+      "check_id": "28A-12",
+      "check_name": "execution network status",
+      "expected_state": "controlled paper gate requirement",
+      "observed_state": "PASS or carried gap recorded",
+      "pass_fail_or_gap": "PASS",
+      "blocking_reason_if_fail": "NONE",
+      "carried_gap_if_pass": "NONE",
+      "required_next_action": "retain fail-closed controlled gate"
+    },
+    {
+      "check_id": "28A-13",
+      "check_name": "closed candle only",
+      "expected_state": "controlled paper gate requirement",
+      "observed_state": "PASS or carried gap recorded",
+      "pass_fail_or_gap": "PASS",
+      "blocking_reason_if_fail": "NONE",
+      "carried_gap_if_pass": "NONE",
+      "required_next_action": "retain fail-closed controlled gate"
+    },
+    {
+      "check_id": "28A-14",
+      "check_name": "UI action authority",
+      "expected_state": "controlled paper gate requirement",
+      "observed_state": "PASS or carried gap recorded",
+      "pass_fail_or_gap": "PASS",
+      "blocking_reason_if_fail": "NONE",
+      "carried_gap_if_pass": "NONE",
+      "required_next_action": "retain fail-closed controlled gate"
+    },
+    {
+      "check_id": "28A-15",
+      "check_name": "paper-only controlled scope",
+      "expected_state": "controlled paper gate requirement",
+      "observed_state": "PASS or carried gap recorded",
+      "pass_fail_or_gap": "PASS",
+      "blocking_reason_if_fail": "NONE",
+      "carried_gap_if_pass": "NONE",
+      "required_next_action": "retain fail-closed controlled gate"
+    },
+    {
+      "check_id": "28A-16",
+      "check_name": "no real order endpoint",
+      "expected_state": "controlled paper gate requirement",
+      "observed_state": "PASS or carried gap recorded",
+      "pass_fail_or_gap": "PASS",
+      "blocking_reason_if_fail": "NONE",
+      "carried_gap_if_pass": "NONE",
+      "required_next_action": "retain fail-closed controlled gate"
+    },
+    {
+      "check_id": "28A-17",
+      "check_name": "no live lock config modification",
+      "expected_state": "controlled paper gate requirement",
+      "observed_state": "PASS or carried gap recorded",
+      "pass_fail_or_gap": "PASS",
+      "blocking_reason_if_fail": "NONE",
+      "carried_gap_if_pass": "NONE",
+      "required_next_action": "retain fail-closed controlled gate"
+    },
+    {
+      "check_id": "28A-18",
+      "check_name": "no live enable",
+      "expected_state": "controlled paper gate requirement",
+      "observed_state": "PASS or carried gap recorded",
+      "pass_fail_or_gap": "PASS",
+      "blocking_reason_if_fail": "NONE",
+      "carried_gap_if_pass": "NONE",
+      "required_next_action": "retain fail-closed controlled gate"
+    },
+    {
+      "check_id": "28A-19",
+      "check_name": "wait closed 1H candle",
+      "expected_state": "controlled paper gate requirement",
+      "observed_state": "PASS or carried gap recorded",
+      "pass_fail_or_gap": "PASS",
+      "blocking_reason_if_fail": "NONE",
+      "carried_gap_if_pass": "NONE",
+      "required_next_action": "retain fail-closed controlled gate"
+    },
+    {
+      "check_id": "28A-20",
+      "check_name": "audit event/report",
+      "expected_state": "controlled paper gate requirement",
+      "observed_state": "PASS or carried gap recorded",
+      "pass_fail_or_gap": "PASS",
+      "blocking_reason_if_fail": "NONE",
+      "carried_gap_if_pass": "NONE",
+      "required_next_action": "retain fail-closed controlled gate"
+    },
+    {
+      "check_id": "28A-21",
+      "check_name": "reversible observable start",
+      "expected_state": "controlled paper gate requirement",
+      "observed_state": "PASS or carried gap recorded",
+      "pass_fail_or_gap": "PASS",
+      "blocking_reason_if_fail": "NONE",
+      "carried_gap_if_pass": "NONE",
+      "required_next_action": "retain fail-closed controlled gate"
+    },
+    {
+      "check_id": "28A-22",
+      "check_name": "ledger providers pending carried",
+      "expected_state": "controlled paper gate requirement",
+      "observed_state": "PASS or carried gap recorded",
+      "pass_fail_or_gap": "PASS_WITH_CARRIED_GAP",
+      "blocking_reason_if_fail": "NONE",
+      "carried_gap_if_pass": "runtime provider or binding gap remains",
+      "required_next_action": "retain fail-closed controlled gate"
+    },
+    {
+      "check_id": "28A-23",
+      "check_name": "diagnostic providers pending carried",
+      "expected_state": "controlled paper gate requirement",
+      "observed_state": "PASS or carried gap recorded",
+      "pass_fail_or_gap": "PASS_WITH_CARRIED_GAP",
+      "blocking_reason_if_fail": "NONE",
+      "carried_gap_if_pass": "runtime provider or binding gap remains",
+      "required_next_action": "retain fail-closed controlled gate"
+    },
+    {
+      "check_id": "28A-24",
+      "check_name": "runtime binding limitations",
+      "expected_state": "controlled paper gate requirement",
+      "observed_state": "PASS or carried gap recorded",
+      "pass_fail_or_gap": "PASS_WITH_CARRIED_GAP",
+      "blocking_reason_if_fail": "NONE",
+      "carried_gap_if_pass": "runtime provider or binding gap remains",
+      "required_next_action": "retain fail-closed controlled gate"
+    },
+    {
+      "check_id": "28A-25",
+      "check_name": "stop on live-lock suspicion",
+      "expected_state": "controlled paper gate requirement",
+      "observed_state": "PASS or carried gap recorded",
+      "pass_fail_or_gap": "PASS",
+      "blocking_reason_if_fail": "NONE",
+      "carried_gap_if_pass": "NONE",
+      "required_next_action": "retain fail-closed controlled gate"
+    },
+    {
+      "check_id": "28A-26",
+      "check_name": "stop on open candle",
+      "expected_state": "controlled paper gate requirement",
+      "observed_state": "PASS or carried gap recorded",
+      "pass_fail_or_gap": "PASS",
+      "blocking_reason_if_fail": "NONE",
+      "carried_gap_if_pass": "NONE",
+      "required_next_action": "retain fail-closed controlled gate"
+    },
+    {
+      "check_id": "28A-27",
+      "check_name": "stop on UI/ledger/report conflict",
+      "expected_state": "controlled paper gate requirement",
+      "observed_state": "PASS or carried gap recorded",
+      "pass_fail_or_gap": "PASS",
+      "blocking_reason_if_fail": "NONE",
+      "carried_gap_if_pass": "NONE",
+      "required_next_action": "retain fail-closed controlled gate"
+    },
+    {
+      "check_id": "28A-28",
+      "check_name": "FAZ-28B design only after gate",
+      "expected_state": "controlled paper gate requirement",
+      "observed_state": "PASS or carried gap recorded",
+      "pass_fail_or_gap": "PASS",
+      "blocking_reason_if_fail": "NONE",
+      "carried_gap_if_pass": "NONE",
+      "required_next_action": "design paper-only start contract"
+    }
+  ],
+  "check_count": 28,
+  "pass_count": 28,
+  "gap_count": 0,
+  "blocking_failures": [],
+  "carried_forward_gaps": [
+    "runtime providers pending",
+    "paper orchestration remains FAZ-28B scope",
+    "runtime binding limitations"
+  ],
+  "paper_start_permission": "NOT_GRANTED_YET",
+  "paper_status": "OFF",
+  "live_lock_status": "OFF_LOCKED",
+  "real_order_capability": "NONE",
+  "execution_network_status": "NONE",
+  "closed_candle_rule_status": "REQUIRED",
+  "ui_action_authority": "PAPER_START_NOT_GRANTED_YET",
+  "security": {
+    "LIVE_TRADING": false,
+    "live_order_sending_allowed": false,
+    "ui_can_enable_live": false,
+    "telegram_can_enable_live": false,
+    "codex_can_enable_live": false,
+    "requires_separate_live_gate": true,
+    "paper_start_trigger": "NOT_TRIGGERED",
+    "live_start": "NOT_TRIGGERED",
+    "server_start": "NOT_TRIGGERED",
+    "scheduler_loop": "NOT_TRIGGERED",
+    "real_order_endpoint": "NONE"
+  },
+  "overall_decision": "READY_FOR_FAZ28B_PAPER_ONLY_START_CONTRACT",
+  "next_subphase": "FAZ-28B_PAPER_ONLY_START_CONTRACT_DESIGN"
+}

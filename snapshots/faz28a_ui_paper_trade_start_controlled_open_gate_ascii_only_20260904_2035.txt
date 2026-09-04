@@ -1,0 +1,26 @@
+FAZ-28A UI PAPER TRADE START CONTROLLED OPEN GATE
+Date: 2026-09-04
+Result: UI_PAPER_TRADE_START_CONTROLLED_OPEN_GATE_COMPLETE
+Scope: ANALYSIS_REPORT_ONLY_NO_START
+Checks: 28
+Pass: 28
+Gaps: 0
+Paper start permission: NOT_GRANTED_YET
+Paper: OFF
+Live lock: OFF_LOCKED
+LIVE_TRADING=false
+live_order_sending_allowed=false
+Real order capability: NONE
+Execution/network status: NONE
+Closed candle rule: REQUIRED
+UI action authority: PAPER_START_NOT_GRANTED_YET
+Runtime start: NOT_TRIGGERED
+Paper start trigger: NOT_TRIGGERED
+Live start: NOT_TRIGGERED
+Server start: NOT_TRIGGERED
+Scheduler loop: NOT_TRIGGERED
+Carried gaps: runtime providers pending; paper orchestration remains FAZ-28B scope
+Overall decision: READY_FOR_FAZ28B_PAPER_ONLY_START_CONTRACT
+Next subphase: FAZ-28B PAPER ONLY START CONTRACT DESIGN
+Note: This is not paper start, server start, live enable, or real order capability.
+
