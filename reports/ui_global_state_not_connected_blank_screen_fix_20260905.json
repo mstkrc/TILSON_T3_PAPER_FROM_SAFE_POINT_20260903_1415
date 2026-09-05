@@ -1,0 +1,10 @@
+{
+  "result":"UI_GLOBAL_STATE_NOT_CONNECTED_BLANK_SCREEN_FIX_COMMIT_PUSH_PASS",
+  "root_cause":"global bridge disconnect branch replaced bound values with STATE NOT CONNECTED",
+  "fix":"non-destructive connection banner; page shell and fallback content preserved",
+  "affected_pages":17,
+  "destructive_dom_patterns_removed":true,
+  "tests":"215 passed",
+  "safety":{"LIVE_TRADING":false,"live_order_sending_allowed":false,"real_order_allowed":false,"runtime_started":false,"paper_started":false,"live_started":false,"real_order_endpoint":false},
+  "remaining_gaps":[]
+}

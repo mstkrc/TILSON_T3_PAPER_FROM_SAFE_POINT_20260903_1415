@@ -1504,3 +1504,4 @@ Kaynak: `recovery/word/Tilson_T3_04_Current_State_ve_Phase_Tracker_Kilitli.docx`
 - DASHUSDT and MARSCOINUSDT are GREEN_TO_GREEN with DI/ADX context, but cross and continuation entry gates are both false; no decision/order/start/runtime occurred.
 - UI paper operation center repair: local paper state files, localhost view-model adapter, and fail-closed UI bridge implemented. Start remains blocked without explicit permission; stop is paper-only safe. Live remains locked and real orders remain blocked.
 - Clean point: CONTROL_CENTER_UI_BINDING_AND_AUDIT_CLEAN_POINT_PASS at HEAD 0c90858388adda12db7ebae55211707e827610c7; UI 17/17 registry/binding PASS; 01 alias is outputs/faz21_control_center.html; 02-17 are under outputs/control_center; no runtime/paper/live/order start.
+- Global disconnect fix: STATE NOT CONNECTED now uses a non-destructive banner; all 17 page shells remain visible and safety remains fail-closed. Tests: 215 passed.

@@ -1472,3 +1472,4 @@ Tarihsel düzeltme kaydı: Önceki Faz-21 OPEN GATE kabulü eksik/erken sayıld�
 - FAZ-29 active strategy reconciliation recorded: CROSS_ONLY; DASH/MARS GREEN_TO_GREEN does not satisfy active cross entry gate; no operational start.
 - UI paper operation center functional repair recorded: local state/view-model binding and fail-closed lifecycle adapter implemented; browser/server QA and explicit paper authorization remain pending; no paper/live/order start.
 - Clean point: Control Center UI binding and audit PASS at 0c90858388adda12db7ebae55211707e827610c7; 17/17 registry/binding PASS, tests 212 passed, safety PASS. Next: PAPER START PERMISSION GATE / USER DECISION REQUIRED.
+- Global STATE NOT CONNECTED blank-screen fix complete: non-destructive banner and 17-page shell preservation verified; 215 tests passed.
