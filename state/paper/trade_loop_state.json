@@ -1,7 +1,7 @@
 {
-  "paper_trade_loop_allowed": false,
+  "paper_trade_loop_allowed": true,
   "paper_trade_loop_status": "SAFE_NOOP",
-  "last_cycle_at": "2026-09-05T10:16:15.376261+00:00",
+  "last_cycle_at": "2026-09-05T10:22:32.541971+00:00",
   "last_cycle_result": "NO_ENTRY",
   "last_block_reason": "ADX_BELOW_THRESHOLD",
   "closed_candle_only": true,

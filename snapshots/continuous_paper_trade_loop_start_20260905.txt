@@ -1,0 +1,11 @@
+CONTINUOUS PAPER TRADE LOOP START
+=================================
+result: CONTINUOUS_PAPER_TRADE_LOOP_RUNNING_NO_SIGNAL_PASS
+runner PID: 7288; interval: 30 seconds; PAPER only.
+UI server: PID 7432; http://127.0.0.1:8765; loop status/view-model PASS.
+cycles observed: 2; both public data PASS, closed candle PASS, indicators PASS.
+signal: NO_SIGNAL; reason ADX_BELOW_THRESHOLD; risk not entered; paper order NONE.
+wallet: 1000 USD; positions 0; orders 0; ledger empty.
+safety: LIVE_TRADING=false; live_order_sending_allowed=false; real_order_allowed=false; live OFF_LOCKED.
+tests: pytest 228 passed; compileall PASS; git diff --check PASS.
+remaining: report export provider NOT_IMPLEMENTED.

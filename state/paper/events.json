@@ -127,6 +127,64 @@
       "closed_candle": "PASS",
       "market_data": "PASS",
       "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_TRADE_LOOP_START_REQUESTED"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
     }
   ],
   "source": "PAPER_LOCAL_EVENT_LOG"

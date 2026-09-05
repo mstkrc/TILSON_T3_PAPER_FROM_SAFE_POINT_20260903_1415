@@ -17,7 +17,7 @@ def event(kind, **extra):
 def body(handler):
     size = int(handler.headers.get("Content-Length", "0")); return json.loads(handler.rfile.read(size) or b"{}")
 def vm():
-    names = ("runtime","wallet","positions","open-orders","ledger","events","health","notifications","strategy","risk","scanner","reports","ui-selection")
+    names = ("runtime","wallet","positions","open-orders","ledger","events","health","notifications","strategy","risk","scanner","reports","ui-selection","trade-loop")
     data = {n.replace("-", "_"): read(n) for n in names}; ledger = data["ledger"]
     data["ledger"]["summary"] = {"fill_count": len(ledger.get("fills", [])), "closed_trade_count": len(ledger.get("closed_trades", []))}
     data["safety"] = {"paper_start_allowed": data["runtime"].get("paper_start_allowed", False), "live_locked": True, "LIVE_TRADING": False, "live_order_sending_allowed": False, "real_order_allowed": False}
@@ -31,6 +31,7 @@ class Handler(BaseHTTPRequestHandler):
     def do_OPTIONS(self): self.send_json({}, 204)
     def do_GET(self):
         path = urlparse(self.path).path
+        if path == "/api/paper/trade-loop/status": return self.send_json(read("trade-loop"))
         if path in ("/api/ui/view-model", "/api/paper/view-model"): return self.send_json(vm())
         if path == "/api/ui/screens": return self.send_json({"screens": [f"{i:02d}" for i in range(1, 18)]})
         if path == "/api/ui/detail": return self.send_json({"selected": read("ui-selection")})

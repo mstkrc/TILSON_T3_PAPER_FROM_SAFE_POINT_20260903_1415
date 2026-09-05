@@ -1247,3 +1247,4 @@ KONU-50: LOCKED. Faz-21 → Faz-47 planı kayıtlıdır ve kullanıcı onayıyla
 - Decision binding is implemented, but this run had no public market-data response (`URLError`); indicator/signal/risk path was not entered and paper execution remains unbound for safety.
 - Environment blocks public Binance Futures klines (connection refused). Check Windows firewall/proxy/DNS/TLS; do not substitute fixture data in paper runtime.
 - Public access now works through a host-scoped direct opener; remaining expected state is NO_ENTRY when ADX is below the configured threshold. No paper execution was authorized by the cycle.
+- Continuous loop is running paper-only with two safe no-entry cycles observed. Report export remains NOT_IMPLEMENTED; no paper order was created.

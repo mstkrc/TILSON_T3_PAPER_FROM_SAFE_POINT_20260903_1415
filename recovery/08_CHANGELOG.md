@@ -1772,3 +1772,4 @@ Control Center fiili seti 17 ekrandır: 01 = Genel Bakış; 02–17 = diğer Con
 - 2026-09-05: Bound paper loop to existing public 1H closed-candle, T3/DMI/ADX and signal modules. Network-unavailable cycle returned explicit SAFE_NOOP; no signal or paper order.
 - 2026-09-05: Added structured public market-data failure diagnostics (URL, symbol, timeframe, timeout, retry, error and next-action hint). Smoke result: environment connection refused; fail-closed.
 - 2026-09-05: Diagnosed dead proxy `127.0.0.1:9`; public Binance opener now bypasses proxy only for public klines. Paper loop once reached closed candle/indicators and safely produced NO_ENTRY (`ADX_BELOW_THRESHOLD`).
+- 2026-09-05: Started continuous PAPER-only runner (PID 7288, 30s); observed two closed-candle cycles with public data PASS and NO_ENTRY/ADX_BELOW_THRESHOLD. UI loop status binding verified.
