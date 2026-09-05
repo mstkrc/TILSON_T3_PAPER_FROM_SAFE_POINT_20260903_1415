@@ -1,0 +1,8 @@
+CONNECTED_UI_REAL_STATE_RENDER_PASS
+Browser: http://127.0.0.1:8765/faz21_control_center.html (HTTP 200)
+Connected UI hides static/demo layer and renders authoritative /api/paper/view-model state.
+Paper ON / PAPER; wallet 1000; positions 0; open orders 0; ledger empty.
+Market data PASS; closed candle PASS; last signal NO_SIGNAL; reason ADX_BELOW_THRESHOLD.
+pytest 232 passed; compileall PASS; git diff --check PASS.
+Safety: LIVE_TRADING=false; live_order_sending_allowed=false; real_order_allowed=false; live_runtime=OFF_LOCKED; no private/order endpoint.
+Chart renderer and report export remain explicit non-implemented gaps.

@@ -1774,3 +1774,4 @@ Control Center fiili seti 17 ekrandır: 01 = Genel Bakış; 02–17 = diğer Con
 - 2026-09-05: Diagnosed dead proxy `127.0.0.1:9`; public Binance opener now bypasses proxy only for public klines. Paper loop once reached closed candle/indicators and safely produced NO_ENTRY (`ADX_BELOW_THRESHOLD`).
 - 2026-09-05: Started continuous PAPER-only runner (PID 7288, 30s); observed two closed-candle cycles with public data PASS and NO_ENTRY/ADX_BELOW_THRESHOLD. UI loop status binding verified.
 - 2026-09-05: Fixed file:// static-demo leakage by fail-closed disconnected UI masking and added safe outputs static aliases to local server. HTML/asset routes verified 200; tests 230 passed.
+- 2026-09-05: Fixed connected UI demo-data leakage: authoritative paper view-model now overrides the static layer; added regression coverage. pytest 232 passed; live/order safety unchanged.

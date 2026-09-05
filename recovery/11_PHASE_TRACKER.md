@@ -1486,3 +1486,4 @@ Tarihsel düzeltme kaydı: Önceki Faz-21 OPEN GATE kabulü eksik/erken sayıld�
 - Public market-data smoke now PASS via host-scoped direct public opener; closed-candle indicators PASS and signal is safely blocked by ADX threshold. No live/order.
 - Continuous paper loop running safely: two observed cycles, public data/closed candle/indicators PASS, NO_ENTRY due ADX threshold; no paper order, live/order locked.
 - UI static/demo safety fix complete: disconnected mode masks static values and instructs server URL; outputs alias routes verified. No live/order change.
+- Connected-state authority fix complete: static demo layer hidden after view-model success; real local PAPER state rendered. Browser route HTTP 200; pytest 232 passed; no live/order change.

@@ -1,0 +1,16 @@
+{
+  "result": "CONNECTED_UI_REAL_STATE_RENDER_PASS",
+  "workspace": "D:\\Masaustu\\TILSON_T3_GIT_SYNC_WORKSPACE_20260904",
+  "head_before_record": "a1777997208bbce85c0075dcc60edd8b744bb7dc",
+  "fix": "Connected bridge hides static demo layer and renders authoritative /api/paper/view-model state.",
+  "browser_url": "http://127.0.0.1:8765/faz21_control_center.html",
+  "http_status": 200,
+  "paper_state": {"mode": "PAPER", "runtime": "ON", "wallet": 1000, "positions": 0, "open_orders": 0, "ledger": "empty", "signal": "NO_SIGNAL", "reason": "ADX_BELOW_THRESHOLD"},
+  "market_data": "PASS",
+  "closed_candle": "PASS",
+  "static_demo_hidden_when_connected": true,
+  "tests": "232 passed",
+  "compileall": "PASS",
+  "diff_check": "PASS",
+  "safety": {"LIVE_TRADING": false, "live_order_sending_allowed": false, "real_order_allowed": false, "live_runtime": "OFF_LOCKED", "private_order_endpoint_called": false}
+}
