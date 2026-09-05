@@ -1761,3 +1761,4 @@ Control Center fiili seti 17 ekrandır: 01 = Genel Bakış; 02–17 = diğer Con
 - Next correct action: KEEP_LONGXIA_OUT_OF_BINANCE_USDT_M_OBSERVATION_UNIVERSE.
 - 2026-09-05: Control Center UI binding clean point recorded at 0c90858388adda12db7ebae55211707e827610c7. Safety remains LIVE_TRADING=false, live_order_sending_allowed=false, real_order_allowed=false; no runtime/paper/live/order start.
 - 2026-09-05: Fixed global STATE NOT CONNECTED blank-screen behavior with a non-destructive bridge banner; 215 tests passed.
+- 2026-09-05: Scrubbed visible report-center DOM mojibake in screens 10-16 and preserved the shared seven-tab report bar; no live/order/runtime start.

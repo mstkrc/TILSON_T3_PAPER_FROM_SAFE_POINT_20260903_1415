@@ -1,0 +1,13 @@
+{
+  "result":"UI_REPORT_CENTER_VISIBLE_DOM_MOJIBAKE_SCRUB_COMMIT_PUSH_PASS",
+  "files_changed":["10_rapor_merkezi.html","11_portfoy_analiz_raporu.html","12_performans_analizi.html","13_islem_analizi.html","14_risk_merkezi.html","15_strateji_raporlari.html","16_ozel_raporlar.html"],
+  "before_visible_counts":{"10":62,"11":1,"12":3,"13":3,"14":0,"15":0,"16":1},
+  "after_visible_counts":{"10":0,"11":0,"12":0,"13":0,"14":0,"15":0,"16":0},
+  "report_subtabs_status":"7 tabs in each 10-16 screen",
+  "raw_bottom_links_status":"PASS",
+  "binding_preserved":true,
+  "blank_screen_fix_preserved":true,
+  "tests":"215 passed",
+  "safety":{"LIVE_TRADING":false,"live_order_sending_allowed":false,"real_order_allowed":false,"runtime_started":false,"paper_started":false,"live_started":false,"real_order_endpoint":false},
+  "remaining_gaps":[]
+}
