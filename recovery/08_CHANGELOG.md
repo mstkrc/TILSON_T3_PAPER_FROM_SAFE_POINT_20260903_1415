@@ -1759,3 +1759,4 @@ Control Center fiili seti 17 ekrandır: 01 = Genel Bakış; 02–17 = diğer Con
 - No indicator, signal, candidate, decision, order, paper/live start, runtime/server/scheduler, or private endpoint.
 - FAZ-29 is not operationally started; Paper OFF; Live OFF_LOCKED.
 - Next correct action: KEEP_LONGXIA_OUT_OF_BINANCE_USDT_M_OBSERVATION_UNIVERSE.
+- 2026-09-05: Control Center UI binding clean point recorded at 0c90858388adda12db7ebae55211707e827610c7. Safety remains LIVE_TRADING=false, live_order_sending_allowed=false, real_order_allowed=false; no runtime/paper/live/order start.
