@@ -1,1 +1,4 @@
-{"open_orders": [], "source": "PAPER_LOCAL_STATE"}
+{
+  "open_orders": [],
+  "source": "PAPER_LOCAL_STATE_RESET"
+}

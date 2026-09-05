@@ -1,0 +1,9 @@
+RESULT=FULL_PAPER_MODE_STARTED_AFTER_APPROVED_SIZING_REPAIR_PASS
+SIZING_SOURCE=src/paper/sizing.py:calculate_sizing
+INVALID_ARCHIVE=reports/invalid_paper_sizing_artifacts_20260905.json
+FULL_ROUND=COMPLETED universe=526 processed=526 data_pass=526 data_fail=0 signals=4 risk_allow=4 paper_orders=4
+ACTIVE_POSITIONS=BANANAUSDT,BROCCOLIF3BUSDT,AINUSDT,TRUTHUSDT
+UI=http://127.0.0.1:8765/faz21_control_center.html
+SAFETY=mode:PAPER paper_runtime:ON live_runtime:OFF_LOCKED LIVE_TRADING:false live_order_sending_allowed:false real_order_allowed:false
+TESTS=235 passed; compileall PASS; diff-check PASS
+NEXT=PAPER OBSERVATION / UI MONITORING; LIVE DISABLED

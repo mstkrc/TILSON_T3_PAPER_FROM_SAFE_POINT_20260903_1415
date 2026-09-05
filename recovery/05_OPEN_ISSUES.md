@@ -1250,3 +1250,4 @@ KONU-50: LOCKED. Faz-21 → Faz-47 planı kayıtlıdır ve kullanıcı onayıyla
 - Continuous loop is running paper-only with two safe no-entry cycles observed. Report export remains NOT_IMPLEMENTED; no paper order was created.
 - File-open static demo is now fail-closed; use `http://127.0.0.1:8765/faz21_control_center.html`. Export provider remains NOT_IMPLEMENTED.
 - Connected UI now fail-closes static/demo values after view-model success. Remaining gaps: chart renderer and report export are explicitly not implemented.
+- Approved sizing is now bound to full-round runtime; continuous full-round paper observation is active. No live/private/order path is enabled.

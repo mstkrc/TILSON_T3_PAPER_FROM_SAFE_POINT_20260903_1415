@@ -1487,3 +1487,4 @@ Tarihsel düzeltme kaydı: Önceki Faz-21 OPEN GATE kabulü eksik/erken sayıld�
 - Continuous paper loop running safely: two observed cycles, public data/closed candle/indicators PASS, NO_ENTRY due ADX threshold; no paper order, live/order locked.
 - UI static/demo safety fix complete: disconnected mode masks static values and instructs server URL; outputs alias routes verified. No live/order change.
 - Connected-state authority fix complete: static demo layer hidden after view-model success; real local PAPER state rendered. Browser route HTTP 200; pytest 232 passed; no live/order change.
+- Full paper sizing phase complete: approved sizing bound, invalid artifacts archived/reset, 526-symbol full round verified, continuous paper runner active; no live or real order.

@@ -1517,3 +1517,4 @@ LIVE_TRADING=false korunmuştur.
 - UI handoff: open `http://127.0.0.1:8765/faz21_control_center.html`; file:// mode is fail-closed and hides static demo content. Local route and bridge asset return 200.
 - Paper persistence handoff: risk-allowed paper execution persists canonical positions/ledger/events atomically; isolated LONG/SHORT proof passes. Current real batch has no signal and no order.
 - Connected UI handoff: server URL renders only authoritative `/api/paper/view-model` state; wallet 1000, zero positions/orders, empty ledger and NO_SIGNAL are shown without demo rows. Chart/export remain explicit gaps.
+- Current handoff: approved sizing full-paper round completed; active paper positions are BANANAUSDT, BROCCOLIF3BUSDT, AINUSDT and TRUTHUSDT. UI: http://127.0.0.1:8765/faz21_control_center.html. Live remains locked.

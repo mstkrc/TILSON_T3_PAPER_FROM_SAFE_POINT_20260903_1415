@@ -1776,3 +1776,4 @@ Control Center fiili seti 17 ekrandır: 01 = Genel Bakış; 02–17 = diğer Con
 - 2026-09-05: Fixed file:// static-demo leakage by fail-closed disconnected UI masking and added safe outputs static aliases to local server. HTML/asset routes verified 200; tests 230 passed.
 - 2026-09-05: Added isolated LONG/SHORT paper execution persistence proof and view-model scan summary fields; no live or real order path.
 - 2026-09-05: Fixed connected UI demo-data leakage: authoritative paper view-model now overrides the static layer; added regression coverage. pytest 232 passed; live/order safety unchanged.
+- 2026-09-05: Bound full-round paper entries to approved wallet/max-coin/exchange-metadata sizing; archived and reset invalid 0.001 artifacts; verified 526/526 round and continuous paper mode.

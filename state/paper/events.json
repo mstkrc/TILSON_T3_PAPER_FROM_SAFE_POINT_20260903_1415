@@ -185,6 +185,4660 @@
       "closed_candle": "PASS",
       "market_data": "PASS",
       "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOCAL_RUNTIME_STARTED"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOCAL_RUNTIME_STARTED"
+    },
+    {
+      "type": "PAPER_LOCAL_RUNTIME_STARTED"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_ORDER_CREATED",
+      "execution_id": "7a42bac1-8c2e-47bb-a2c3-55799483c207",
+      "symbol": "BANANAUSDT",
+      "direction": "LONG",
+      "paper_only": true,
+      "live_order_sent": false
+    },
+    {
+      "type": "PAPER_ORDER_CREATED",
+      "execution_id": "b533c966-4fbd-4ff4-a320-4ca7752bb2bd",
+      "symbol": "BROCCOLIF3BUSDT",
+      "direction": "LONG",
+      "paper_only": true,
+      "live_order_sent": false
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_ORDER_CREATED",
+      "execution_id": "cf30a56e-0087-4e84-b574-3d703811591d",
+      "symbol": "AINUSDT",
+      "direction": "LONG",
+      "paper_only": true,
+      "live_order_sent": false
+    },
+    {
+      "type": "PAPER_ORDER_CREATED",
+      "execution_id": "0c4bf1b0-8539-4f92-80ba-44ee98c89989",
+      "symbol": "TRUTHUSDT",
+      "direction": "SHORT",
+      "paper_only": true,
+      "live_order_sent": false
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_STATE_RESET_AFTER_INVALID_SIZING_ARTIFACT",
+      "timestamp": "2026-09-05T13:48:33.011997+00:00",
+      "archive": "reports\\invalid_paper_sizing_artifacts_20260905.json"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_ORDER_CREATED",
+      "execution_id": "e73c9d76-242d-4bac-9c1b-87b7efe0a35b",
+      "symbol": "BANANAUSDT",
+      "direction": "LONG",
+      "paper_only": true,
+      "live_order_sent": false
+    },
+    {
+      "type": "PAPER_ORDER_CREATED",
+      "execution_id": "ff0bab3d-8862-4ecd-809b-e21d7e0aa9fd",
+      "symbol": "BROCCOLIF3BUSDT",
+      "direction": "LONG",
+      "paper_only": true,
+      "live_order_sent": false
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_ORDER_CREATED",
+      "execution_id": "76580788-bcb4-4cfc-9c9b-45fc4a2cb102",
+      "symbol": "AINUSDT",
+      "direction": "LONG",
+      "paper_only": true,
+      "live_order_sent": false
+    },
+    {
+      "type": "PAPER_ORDER_CREATED",
+      "execution_id": "3fc059dc-f8cf-4087-a384-054d6976dec1",
+      "symbol": "TRUTHUSDT",
+      "direction": "SHORT",
+      "paper_only": true,
+      "live_order_sent": false
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
     }
   ],
   "source": "PAPER_LOCAL_EVENT_LOG"

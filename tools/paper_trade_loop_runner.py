@@ -6,6 +6,8 @@ an explicit decision engine is wired in.  A cycle is therefore a safe no-op.
 from __future__ import annotations
 
 import argparse
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from decimal import Decimal
 import json
 import sys
 import time
@@ -35,15 +37,29 @@ def event(kind: str, **extra: object) -> None:
     path.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
 
 
-def public_closed_candles(symbol: str = "BTCUSDT", limit: int = 200) -> list[dict]:
+def public_closed_candles(symbol: str = "BTCUSDT", limit: int = 200, timeout: float = 8) -> list[dict]:
     query = urlencode({"symbol": symbol, "interval": "1h", "limit": limit})
     url = "https://fapi.binance.com/fapi/v1/klines?" + query
     opener = build_opener(ProxyHandler({}))
-    with opener.open(Request(url, headers={"User-Agent": "TILSON-T3-paper-public-data/1.0"}), timeout=8) as response:
+    with opener.open(Request(url, headers={"User-Agent": "TILSON-T3-paper-public-data/1.0"}), timeout=timeout) as response:
         rows = json.loads(response.read().decode("utf-8"))
     now_ms = int(datetime.now(timezone.utc).timestamp() * 1000)
     return [{"open": float(row[1]), "high": float(row[2]), "low": float(row[3]), "close": float(row[4]), "close_time_ms": int(row[6])}
             for row in rows if int(row[6]) <= now_ms]
+
+
+def public_exchange_metadata(timeout: float = 10) -> dict[str, dict]:
+    url = "https://fapi.binance.com/fapi/v1/exchangeInfo"
+    opener = build_opener(ProxyHandler({}))
+    with opener.open(Request(url, headers={"User-Agent": "TILSON-T3-paper-public-data/1.0"}), timeout=timeout) as response:
+        payload = json.loads(response.read().decode("utf-8"))
+    output = {}
+    for raw in payload.get("symbols", []):
+        filters = {item.get("filterType"): item for item in raw.get("filters", [])}
+        lot = filters.get("LOT_SIZE", {})
+        notional = filters.get("MIN_NOTIONAL", filters.get("NOTIONAL", {}))
+        output[raw.get("symbol", "")] = {"step_size": Decimal(lot.get("stepSize", "0")), "min_qty": Decimal(lot.get("minQty", "0")), "min_notional": Decimal(notional.get("notional", notional.get("minNotional", "0")))}
+    return output
 
 
 def decision_snapshot(candles: list[dict], config: dict):
@@ -60,7 +76,7 @@ def decision_snapshot(candles: list[dict], config: dict):
         return IndicatorOutput(t3[i], colors[i], plus[i], minus[i], adx[i], slopes[i], datetime.fromtimestamp(candles[i]["close_time_ms"] / 1000, timezone.utc))
     previous, current = output(-2), output(-1)
     signal = evaluate_direction(previous, current, candle_is_closed=True, adx_threshold=config["adx_threshold"], continuation_enabled=config["continuation_mode_enabled"])
-    return current, signal
+    return previous, current, signal
 
 
 def cycle() -> str:
@@ -90,7 +106,7 @@ def cycle() -> str:
     if len(candles) < max(config["dmi_di_length"] + config["adx_smoothing"], config["t3_period"] * 2) + config["adx_slope_n"]:
         state.update({"paper_trade_loop_status": "SAFE_NOOP", "last_cycle_at": now, "last_cycle_result": "SAFE_NOOP", "last_block_reason": "INSUFFICIENT_CLOSED_CANDLES"})
         write_loop(state); event("PAPER_LOOP_SAFE_NOOP", reason="INSUFFICIENT_CLOSED_CANDLES", market_data="PASS", paper_order="NONE"); return "SAFE_NOOP"
-    current, signal = decision_snapshot(candles, config)
+    _, current, signal = decision_snapshot(candles, config)
     state.update({"market_data_status": "PASS", "last_market_data_error": None, "closed_candle_status": "PASS", "indicator_status": "PASS", "signal_status": signal.signal_type.value, "risk_status": "NOT_ENTERED"})
     if signal.signal_type.value == "NO_SIGNAL":
         state.update({"paper_trade_loop_status": "SAFE_NOOP", "last_cycle_at": now, "last_cycle_result": "NO_ENTRY", "last_block_reason": signal.blocked_reason})
@@ -99,57 +115,91 @@ def cycle() -> str:
     write_loop(state); event("PAPER_LOOP_NO_ENTRY", reason="PAPER_EXECUTION_GATE_NOT_BOUND", signal=signal.signal_type.value, paper_order="NONE"); return "NO_ENTRY"
 
 
-def scan_universe_once(max_symbols: int | None = None, sleep_ms: int = 100, batch_once: bool = False, batch_size: int = 25) -> str:
+def _fetch_symbol(symbol: str, request_timeout: float, retry: int) -> tuple[str, list[dict] | None, dict | None]:
+    last = None
+    for attempt in range(max(0, retry) + 1):
+        try:
+            return symbol, public_closed_candles(symbol, timeout=request_timeout), None
+        except Exception as exc:
+            last = exc
+    text_error = str(getattr(last, "reason", last))
+    reason = "KLINE_TIMEOUT" if isinstance(last, TimeoutError) or "timed out" in text_error.lower() else "KLINE_HTTP_ERROR"
+    return symbol, None, {"error_type": type(last).__name__, "symbol": symbol, "timeframe": "1h", "timeout_seconds": request_timeout, "public_only": True, "retry_count": retry, "last_error": text_error, "next_action_hint": "CHECK_PUBLIC_BINANCE_CONNECTIVITY; DO_NOT_USE_PRIVATE_ENDPOINT", "reason": reason}
+
+
+def scan_universe_once(max_symbols: int | None = None, sleep_ms: int = 100, batch_once: bool = False, batch_size: int = 25, request_timeout: float = 8, retry: int = 0, concurrency: int = 1, full_round: bool = False) -> str:
     from src.market.symbol_universe import load_usdt_m_futures_universe
     config = json.loads((ROOT / "config" / "trade_config.json").read_text(encoding="utf-8"))
     universe = load_usdt_m_futures_universe()
+    metadata = public_exchange_metadata(request_timeout)
     cursor_path = STATE / "universe_scan_cursor.json"
     cursor = json.loads(cursor_path.read_text(encoding="utf-8")) if cursor_path.exists() else {"next_index":0,"completed_rounds":0,"status":"IDLE"}
     size = max_symbols or (batch_size if batch_once else len(universe["tradable_symbols"]))
-    start = int(cursor.get("next_index", 0)); symbols = universe["tradable_symbols"][start:start+size]
+    start = 0 if full_round else int(cursor.get("next_index", 0)); symbols = universe["tradable_symbols"][start:start+size]
+    if full_round: symbols = universe["tradable_symbols"][:]
+    concurrency = min(20, max(1, int(concurrency)))
     (STATE / "symbol_universe.json").write_text(json.dumps(universe, indent=2) + "\n", encoding="utf-8")
     results=[]; counts={"data_pass":0,"data_fail":0,"indicator_pass":0,"no_signal":0,"long_signal":0,"short_signal":0}
-    for symbol in symbols:
+    fetched = {}
+    fetch_errors = {}
+    with ThreadPoolExecutor(max_workers=concurrency, thread_name_prefix="paper-kline") as pool:
+        futures = {pool.submit(_fetch_symbol, symbol, request_timeout, retry): symbol for symbol in symbols}
+        for future in as_completed(futures):
+            symbol, candles, error = future.result()
+            if candles is None: fetch_errors[symbol] = error or {"reason": "KLINE_HTTP_ERROR"}
+            else: fetched[symbol] = candles
+    for index, symbol in enumerate(symbols, 1):
         item={"symbol":symbol,"data_status":"FAIL","closed_candle_status":"FAIL","indicator_status":"FAIL","signal_status":"NO_SIGNAL","direction":"NONE","reason":"MARKET_DATA_UNAVAILABLE","risk_status":"NOT_ENTERED","risk_reason":None,"paper_order_status":"NONE","paper_order_id":None}
         try:
-            candles=public_closed_candles(symbol)
+            if symbol in fetch_errors: raise RuntimeError(fetch_errors[symbol].get("reason", "KLINE_HTTP_ERROR"))
+            candles = fetched[symbol]
             if len(candles) < max(config["dmi_di_length"]+config["adx_smoothing"], config["t3_period"]*2)+config["adx_slope_n"]: raise ValueError("INSUFFICIENT_CLOSED_CANDLES")
-            _, signal=decision_snapshot(candles, config); item.update({"data_status":"PASS","closed_candle_status":"PASS","indicator_status":"PASS","signal_status":signal.signal_type.value,"direction":signal.signal_type.value,"reason":signal.blocked_reason}); counts["data_pass"]+=1; counts["indicator_pass"]+=1
+            previous, current, signal=decision_snapshot(candles, config); gap=config["adx_threshold"]-current.adx; spread=current.plus_di-current.minus_di; near="LONG_NEAR" if spread>0 and current.t3_color in ("GREEN","UP") else "SHORT_NEAR" if spread<0 and current.t3_color in ("RED","DOWN") else "NEUTRAL"; score=max(0.0,100.0-abs(gap)*2.0)+min(20.0,abs(spread)); item.update({"data_status":"PASS","closed_candle_status":"PASS","indicator_status":"PASS","signal_status":signal.signal_type.value,"direction":signal.signal_type.value,"reason":signal.blocked_reason,"indicator_snapshot":{"symbol":symbol,"timeframe":"1h","closed_candle_time":current.candle_close_time_utc.isoformat(),"close_price":candles[-1]["close"],"t3_value":current.t3_value,"t3_previous_value":previous.t3_value,"t3_state":current.t3_color,"t3_color":current.t3_color,"t3_slope":"RISING" if current.t3_value>previous.t3_value else "FALLING" if current.t3_value<previous.t3_value else "FLAT","plus_di":current.plus_di,"minus_di":current.minus_di,"di_spread":spread,"dominant_di":"PLUS" if spread>0 else "MINUS" if spread<0 else "NEUTRAL","adx":current.adx,"adx_threshold":config["adx_threshold"],"adx_gap_to_threshold":gap,"adx_slope_value":None,"adx_slope_state":current.adx_slope_state,"entry_mode":config["t3_entry_mode"],"continuation_mode_enabled":config["continuation_mode_enabled"]},"signal_proximity":{"near_direction":near,"long_score":score if near=="LONG_NEAR" else 0,"short_score":score if near=="SHORT_NEAR" else 0,"nearest_score":score,"missing_requirements":[],"blocking_reason":signal.blocked_reason}}); counts["data_pass"]+=1; counts["indicator_pass"]+=1
             if signal.signal_type.value=="NO_SIGNAL": counts["no_signal"]+=1; item.update({"risk_status":"NOT_ENTERED","paper_order_status":"NONE"})
-            elif signal.signal_type.value in ("LONG","SHORT"):
+            elif signal.signal_type.value in ("LONG_CANDIDATE","SHORT_CANDIDATE"):
                 from src.paper.position import PositionDirection, PositionState
                 from src.risk.permission import evaluate_permission
-                direction=PositionDirection(signal.signal_type.value)
-                wallet=read("wallet_state.json"); pos_data=read("positions_state.json")
+                direction=PositionDirection("LONG" if signal.signal_type.value=="LONG_CANDIDATE" else "SHORT")
+                wallet=read("wallet_state.json"); pos_data=read("positions.json")
                 positions=[]
                 for raw in pos_data.get("positions",[]):
                     positions.append(PositionState(raw["symbol"], PositionDirection(raw["direction"]), float(raw["quantity"]), float(raw["entry_price"]), "runtime", True, 2.0, True))
-                permission=evaluate_permission(symbol=symbol,direction=direction,candidate_status="VALID",sizing_status="VALID",open_positions=positions,max_coin_count=int(config["max_coin_count"]),free_balance_usd=float(wallet.get("available_usd",wallet.get("cash_usd",0))),required_margin_usd=0.0,lock_available=True,stop_loss_enabled=True,stop_loss_percent=2.0,config_snapshot_id="trade_config")
+                equity=Decimal(str(wallet.get("equity_usd", wallet.get("available_usd", wallet.get("cash_usd", 0)))))
+                meta=metadata.get(symbol)
+                if not meta or meta["step_size"] <= 0 or meta["min_notional"] <= 0:
+                    item.update({"risk_status":"BLOCKED","risk_reason":"SIZING_METADATA_MISSING","paper_order_status":"NONE"}); results.append(item); continue
+                sizing=__import__("src.paper.sizing", fromlist=["calculate_sizing"]).calculate_sizing(symbol=symbol,current_equity=equity,max_coin_count=int(config["max_coin_count"]),leverage=int(config.get("default_leverage",1)),entry_price=Decimal(str(candles[-1]["close"])),step_size=meta["step_size"],min_notional=meta["min_notional"])
+                if sizing.sizing_status != "VALID" or sizing.normalized_quantity < meta["min_qty"]:
+                    item.update({"risk_status":"BLOCKED","risk_reason":"INVALID_SIZING","paper_order_status":"NONE"}); counts["risk_block_count"]=counts.get("risk_block_count",0)+1; continue
+                permission=evaluate_permission(symbol=symbol,direction=direction,candidate_status="VALID",sizing_status="VALID",open_positions=positions,max_coin_count=int(config["max_coin_count"]),free_balance_usd=float(wallet.get("available_usd",wallet.get("cash_usd",0))),required_margin_usd=float(sizing.used_margin_usd),lock_available=True,stop_loss_enabled=True,stop_loss_percent=2.0,config_snapshot_id="trade_config")
                 item.update({"risk_status":"ALLOW" if permission.permission_status=="ALLOW" else "BLOCKED","risk_reason":permission.blocked_reason or None,"paper_order_status":"NONE"})
                 if permission.permission_status=="ALLOW":
                     counts["risk_allow_count"]=counts.get("risk_allow_count",0)+1
-                    item.update(execute_allowed_paper_entry({"symbol":symbol,"direction":signal.signal_type.value}, permission, config, candles[-1]["close"]))
+                    item.update(execute_allowed_paper_entry({"symbol":symbol,"direction":direction.value}, permission, config, candles[-1]["close"], sizing))
                 else: counts["risk_block_count"]=counts.get("risk_block_count",0)+1
-                counts["long_signal"] += signal.signal_type.value=="LONG"; counts["short_signal"] += signal.signal_type.value=="SHORT"
-        except Exception as exc: item["reason"]=type(exc).__name__
+                counts["long_signal"] += signal.signal_type.value=="LONG_CANDIDATE"; counts["short_signal"] += signal.signal_type.value=="SHORT_CANDIDATE"
+        except Exception as exc:
+            error = fetch_errors.get(symbol, {})
+            item.update({"data_status":"DATA_FAIL","closed_candle_status":"NOT_ENTERED","indicator_status":"NOT_ENTERED","signal_status":"DATA_FAIL","direction":"NONE","reason":error.get("reason", "INSUFFICIENT_CLOSED_CANDLES" if "INSUFFICIENT" in str(exc) else "KLINE_HTTP_ERROR"),"error":error or {"error_type": type(exc).__name__, "last_error": str(exc)},"risk_status":"NOT_ENTERED","paper_order_status":"NONE"})
+        if item["data_status"] == "DATA_FAIL": counts["data_fail"] += 1
         results.append(item)
         if sleep_ms: time.sleep(sleep_ms/1000)
-    scan={"cycle_id":datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ"),"started_at":None,"finished_at":datetime.now(timezone.utc).isoformat(),"universe_source":universe["source"],"total_symbols":len(universe["tradable_symbols"]),"scanned_symbols":len(results),**counts,"candidate_count":0,"risk_allow_count":0,"risk_block_count":0,"paper_order_count":0,"symbols":results}
+    scan={"cycle_id":datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ"),"started_at":None,"finished_at":datetime.now(timezone.utc).isoformat(),"universe_source":universe["source"],"total_symbols":len(universe["tradable_symbols"]),"scanned_symbols":len(results),"full_round":{"status":"COMPLETED" if full_round and len(results)==len(universe["tradable_symbols"]) else "BATCH_COMPLETED","universe_size":len(universe["tradable_symbols"]),"processed_symbols":len(results),"data_pass":counts["data_pass"],"data_fail":counts["data_fail"],"signals":counts["long_signal"]+counts["short_signal"],"no_signal":counts["no_signal"],"risk_allow_count":counts.get("risk_allow_count",0),"risk_block_count":counts.get("risk_block_count",0),"paper_order_count":counts.get("paper_order_count",0),"concurrency_used":concurrency,"request_timeout_seconds":request_timeout,"retry_count":retry,"completion_policy":"one symbol record per universe symbol; DATA_FAIL is terminal per symbol","started_at":None,"finished_at":datetime.now(timezone.utc).isoformat()},**counts,"candidate_count":counts["long_signal"]+counts["short_signal"],"risk_allow_count":counts.get("risk_allow_count",0),"risk_block_count":counts.get("risk_block_count",0),"paper_order_count":counts.get("paper_order_count",0),"symbols":results}
     (STATE / "scan_results.json").write_text(json.dumps(scan, indent=2) + "\n", encoding="utf-8")
     nxt = start + len(symbols); complete = nxt >= len(universe["tradable_symbols"])
     cursor.update({"universe_size":len(universe["tradable_symbols"]),"batch_size":size,"next_index":0 if complete else nxt,"completed_rounds":int(cursor.get("completed_rounds",0))+(1 if complete else 0),"current_round_id":scan["cycle_id"],"last_batch_finished_at":scan["finished_at"],"symbols_scanned_this_round":len(symbols),"total_data_pass_this_round":counts["data_pass"],"total_data_fail_this_round":counts["data_fail"],"total_no_signal_this_round":counts["no_signal"],"total_long_signal_this_round":counts["long_signal"],"total_short_signal_this_round":counts["short_signal"],"total_candidates_this_round":0,"total_risk_allow_this_round":0,"total_risk_block_this_round":0,"total_paper_orders_this_round":0,"status":"ROUND_COMPLETE" if complete else "IDLE"})
     cursor_path.write_text(json.dumps(cursor, indent=2) + "\n", encoding="utf-8")
+    if full_round and len(results)==len(universe["tradable_symbols"]):
+        return "STRATEGY_FULL_ROUND_SCAN_COMPLETED_WITH_DATA_FAILS_PASS" if counts["data_fail"] else "STRATEGY_FULL_ROUND_SCAN_NO_SIGNAL_PASS" if counts["long_signal"]+counts["short_signal"]==0 else "STRATEGY_FULL_ROUND_SCAN_COMPLETED_PASS"
     return "FULL_UNIVERSE_PAPER_SCAN_NO_SIGNAL_PASS" if counts["long_signal"]+counts["short_signal"]==0 else "FULL_UNIVERSE_SCAN_SUPPORT_LIMITED_PASS"
 
-def execute_allowed_paper_entry(candidate: dict, permission, config: dict, price: float) -> dict:
+def execute_allowed_paper_entry(candidate: dict, permission, config: dict, price: float, sizing) -> dict:
     """Execute only an already risk-allowed candidate through the paper adapter."""
     runtime = read("runtime_state.json")
     if runtime.get("mode") != "PAPER" or runtime.get("paper_runtime") != "ON" or runtime.get("live_runtime") != "OFF_LOCKED" or runtime.get("live_trading") or runtime.get("live_order_sending_allowed") or runtime.get("real_order_allowed") or permission.permission_status != "ALLOW":
         return {"paper_order_status":"BLOCKED","paper_order_reason":"PAPER_SAFETY_GATE"}
     from types import SimpleNamespace
-    from decimal import Decimal
     from src.paper.execution import PaperExecutionInput, simulate_entry
-    sizing=SimpleNamespace(normalized_quantity=Decimal("0.001"))
     now=datetime.now(timezone.utc)
     result=simulate_entry(PaperExecutionInput(candidate["symbol"],candidate["direction"],"ALLOW",sizing,Decimal(str(price)),Decimal(str(price)),now,now,int(config.get("default_leverage",1)),config.get("margin_mode","ISOLATED"),config),lock_available=True)
     if result.execution_status == "FILLED":
@@ -165,12 +215,21 @@ def main() -> int:
     parser.add_argument("--interval-seconds", type=float, default=30)
     parser.add_argument("--scan-universe", action="store_true")
     parser.add_argument("--batch-once", action="store_true")
+    parser.add_argument("--full-round-once", action="store_true")
+    parser.add_argument("--full-round-run", action="store_true")
     parser.add_argument("--max-symbols", type=int)
-    parser.add_argument("--batch-size", type=int, default=10)
+    parser.add_argument("--batch-size", type=int, default=50)
     parser.add_argument("--sleep-ms", type=int, default=100)
+    parser.add_argument("--request-timeout-seconds", type=float, default=5)
+    parser.add_argument("--retry", type=int, default=1)
+    parser.add_argument("--concurrency", type=int, default=10)
     args = parser.parse_args()
+    if args.scan_universe and args.full_round_run:
+        while True:
+            print(scan_universe_once(args.max_symbols, args.sleep_ms, False, args.batch_size, args.request_timeout_seconds, args.retry, args.concurrency, True), flush=True)
+            time.sleep(args.interval_seconds)
     if args.scan_universe:
-        print(scan_universe_once(args.max_symbols, args.sleep_ms, args.batch_once, args.batch_size))
+        print(scan_universe_once(args.max_symbols, args.sleep_ms, args.batch_once and not args.full_round_once, args.batch_size, args.request_timeout_seconds, args.retry, args.concurrency, args.full_round_once))
         return 0
     if args.run:
         while True:

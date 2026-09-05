@@ -14,11 +14,12 @@ def test_default_state_is_safe_and_config_bound():
     assert runtime["live_trading"] is False
     assert wallet["initial_wallet_usd"] == config["initial_wallet_usd"] == 1000
 
-def test_view_model_is_empty_local_paper_state():
+def test_view_model_reads_canonical_local_paper_state():
     vm = view_model()
-    assert vm["positions"]["positions"] == []
+    assert all(p["paper_only"] is True for p in vm["positions"]["positions"])
     assert vm["open_orders"]["open_orders"] == []
-    assert vm["ledger"]["summary"] == {"fill_count": 0, "closed_trade_count": 0}
+    assert vm["ledger"]["summary"]["fill_count"] == len(vm["positions"]["positions"])
+    assert vm["ledger"]["summary"]["closed_trade_count"] == 0
     assert vm["safety_flags"]["real_order_allowed"] is False
 
 def test_start_policy_is_fail_closed_without_permission():

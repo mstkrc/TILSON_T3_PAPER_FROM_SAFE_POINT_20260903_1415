@@ -1,1 +1,49 @@
-{"positions": [], "source": "PAPER_LOCAL_STATE"}
+{
+  "positions": [
+    {
+      "symbol": "BANANAUSDT",
+      "direction": "LONG",
+      "entry_price": "4.076",
+      "quantity": "24.5",
+      "notional_usd": "99.8620",
+      "paper_execution_id": "e73c9d76-242d-4bac-9c1b-87b7efe0a35b",
+      "source": "FULL_UNIVERSE_SCAN",
+      "paper_only": true,
+      "is_open": true
+    },
+    {
+      "symbol": "BROCCOLIF3BUSDT",
+      "direction": "LONG",
+      "entry_price": "0.007622",
+      "quantity": "13119",
+      "notional_usd": "99.993018",
+      "paper_execution_id": "ff0bab3d-8862-4ecd-809b-e21d7e0aa9fd",
+      "source": "FULL_UNIVERSE_SCAN",
+      "paper_only": true,
+      "is_open": true
+    },
+    {
+      "symbol": "AINUSDT",
+      "direction": "LONG",
+      "entry_price": "0.07279",
+      "quantity": "1373",
+      "notional_usd": "99.94067",
+      "paper_execution_id": "76580788-bcb4-4cfc-9c9b-45fc4a2cb102",
+      "source": "FULL_UNIVERSE_SCAN",
+      "paper_only": true,
+      "is_open": true
+    },
+    {
+      "symbol": "TRUTHUSDT",
+      "direction": "SHORT",
+      "entry_price": "0.012389",
+      "quantity": "8071",
+      "notional_usd": "99.991619",
+      "paper_execution_id": "3fc059dc-f8cf-4087-a384-054d6976dec1",
+      "source": "FULL_UNIVERSE_SCAN",
+      "paper_only": true,
+      "is_open": true
+    }
+  ],
+  "source": "PAPER_LOCAL_STATE_RESET"
+}

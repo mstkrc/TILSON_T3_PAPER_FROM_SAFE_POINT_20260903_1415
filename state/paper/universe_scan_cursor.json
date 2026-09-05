@@ -1,0 +1,19 @@
+{
+  "next_index": 0,
+  "completed_rounds": 4,
+  "status": "ROUND_COMPLETE",
+  "universe_size": 526,
+  "batch_size": 526,
+  "current_round_id": "20260905T135310Z",
+  "last_batch_finished_at": "2026-09-05T13:53:10.755216+00:00",
+  "symbols_scanned_this_round": 526,
+  "total_data_pass_this_round": 526,
+  "total_data_fail_this_round": 0,
+  "total_no_signal_this_round": 522,
+  "total_long_signal_this_round": 3,
+  "total_short_signal_this_round": 1,
+  "total_candidates_this_round": 0,
+  "total_risk_allow_this_round": 0,
+  "total_risk_block_this_round": 0,
+  "total_paper_orders_this_round": 0
+}

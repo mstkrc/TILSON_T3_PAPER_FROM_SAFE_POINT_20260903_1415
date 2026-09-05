@@ -1520,3 +1520,4 @@ Kaynak: `recovery/word/Tilson_T3_04_Current_State_ve_Phase_Tracker_Kilitli.docx`
 - UI static demo fix: disconnected bridge hides static page content and shows server URL guidance; local server maps `/faz21_control_center.html` and outputs assets safely. HTML/asset routes verified 200.
 - Paper execution persistence proof added: safe simulate_entry results can atomically persist canonical positions, ledger fills and PAPER_ORDER_CREATED events; isolated LONG/SHORT fixtures pass. Current market remains NO_SIGNAL with no paper order.
 - Connected UI demo-data leakage fixed: successful view-model load now hides static/demo content and renders authoritative local PAPER state; empty positions/orders/ledger remain empty. Browser route HTTP 200; pytest 232 passed.
+- Approved sizing repair: invalid hardcoded 0.001 artifacts archived and paper state reset; full round completed 526/526 with 4 approved-sized paper fills. Live remains OFF_LOCKED.
