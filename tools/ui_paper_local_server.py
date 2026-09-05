@@ -1,6 +1,5 @@
-"""Local-only, fail-closed paper state adapter. No market or order network calls."""
+"""Local-only paper UI API; no market/private API or real order capability."""
 from __future__ import annotations
-
 import json
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
@@ -8,41 +7,78 @@ from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 STATE = ROOT / "state" / "paper"
-FILES = {"runtime": "runtime_state.json", "wallet": "wallet_state.json", "positions": "positions.json", "open-orders": "open_orders.json", "ledger": "ledger.json", "events": "events.json", "health": "health.json"}
+FILES = {"runtime":"runtime_state.json","wallet":"wallet_state.json","positions":"positions.json","open-orders":"open_orders.json","ledger":"ledger.json","events":"events.json","health":"health.json","notifications":"notifications.json","strategy":"strategy.json","risk":"risk.json","scanner":"scanner.json","reports":"reports.json","ui-selection":"ui_selection.json","pending-change-requests":"pending_change_requests.json","pending-panic-confirmations":"pending_panic_confirmations.json"}
 
-def read_state(name: str):
-    return json.loads((STATE / FILES[name]).read_text(encoding="utf-8"))
-
-def view_model():
-    runtime, wallet, positions, orders, ledger, events, health = (read_state(k) for k in ("runtime", "wallet", "positions", "open-orders", "ledger", "events", "health"))
-    return {"runtime": runtime, "wallet": wallet, "positions": positions, "open_orders": orders, "ledger": {"fills": ledger.get("fills", []), "closed_trades": ledger.get("closed_trades", []), "summary": {"fill_count": len(ledger.get("fills", [])), "closed_trade_count": len(ledger.get("closed_trades", []))}}, "events": events, "health": health, "safety_flags": {"paper_start_allowed": False, "live_locked": True, "real_order_allowed": False}, "ui_status": {"connected": True, "source": "PAPER_LOCAL_STATE"}}
-
-def write_events(event_type: str):
-    path = STATE / "events.json"
-    data = json.loads(path.read_text(encoding="utf-8"))
-    data.setdefault("events", []).append({"type": event_type, "status": "RECORDED"})
-    path.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
+def read(name): return json.loads((STATE / FILES[name]).read_text(encoding="utf-8"))
+def write(name, value): (STATE / FILES[name]).write_text(json.dumps(value, indent=2) + "\n", encoding="utf-8")
+read_state = read
+def event(kind, **extra):
+    data = read("events"); data.setdefault("events", []).append({"type": kind, **extra}); write("events", data)
+def body(handler):
+    size = int(handler.headers.get("Content-Length", "0")); return json.loads(handler.rfile.read(size) or b"{}")
+def vm():
+    names = ("runtime","wallet","positions","open-orders","ledger","events","health","notifications","strategy","risk","scanner","reports","ui-selection")
+    data = {n.replace("-", "_"): read(n) for n in names}; ledger = data["ledger"]
+    data["ledger"]["summary"] = {"fill_count": len(ledger.get("fills", [])), "closed_trade_count": len(ledger.get("closed_trades", []))}
+    data["safety"] = {"paper_start_allowed": False, "live_locked": True, "LIVE_TRADING": False, "live_order_sending_allowed": False, "real_order_allowed": False}
+    data["safety_flags"] = {"real_order_allowed": False, "live_trading": False, "live_order_sending_allowed": False}
+    data["ui_status"] = {"connected": True, "source": "PAPER_LOCAL_STATE", "trade_decision_generated": False}; return data
+view_model = vm
 
 class Handler(BaseHTTPRequestHandler):
-    def _send(self, payload, status=200):
-        raw = json.dumps(payload).encode("utf-8")
-        self.send_response(status); self.send_header("Content-Type", "application/json"); self.send_header("Content-Length", str(len(raw))); self.send_header("Access-Control-Allow-Origin", "*"); self.end_headers(); self.wfile.write(raw)
-    def do_OPTIONS(self): self._send({}, 204)
+    def send_json(self, value, status=200):
+        raw = json.dumps(value).encode(); self.send_response(status); self.send_header("Content-Type", "application/json"); self.send_header("Content-Length", str(len(raw))); self.send_header("Access-Control-Allow-Origin", "*"); self.end_headers(); self.wfile.write(raw)
+    def do_OPTIONS(self): self.send_json({}, 204)
     def do_GET(self):
-        route = urlparse(self.path).path
-        if route == "/api/paper/view-model": return self._send(view_model())
-        prefix = "/api/paper/"
-        if route.startswith(prefix) and route[len(prefix):] in FILES: return self._send(read_state(route[len(prefix):]))
-        self._send({"error": "NOT_FOUND"}, 404)
+        path = urlparse(self.path).path
+        if path in ("/api/ui/view-model", "/api/paper/view-model"): return self.send_json(vm())
+        if path == "/api/ui/screens": return self.send_json({"screens": [f"{i:02d}" for i in range(1, 18)]})
+        if path == "/api/ui/detail": return self.send_json({"selected": read("ui-selection")})
+        prefix = "/api/paper/"; key = path[len(prefix):] if path.startswith(prefix) else ""
+        if key in FILES: return self.send_json(read(key))
+        self.send_json({"error":"NOT_FOUND"}, 404)
     def do_POST(self):
-        route = urlparse(self.path).path
-        if route == "/api/paper/start":
-            write_events("START_REQUEST_BLOCKED")
-            return self._send({"result": "START_BLOCKED_PERMISSION_REQUIRED", "paper_start_allowed": False}, 403)
-        if route == "/api/paper/stop":
-            runtime_path = STATE / "runtime_state.json"; runtime = json.loads(runtime_path.read_text(encoding="utf-8")); runtime["paper_runtime"] = "OFF"; runtime["last_action"] = "PAPER_STOP_REQUEST_RECORDED"; runtime_path.write_text(json.dumps(runtime, indent=2) + "\n", encoding="utf-8"); write_events("PAPER_STOP_REQUEST_RECORDED"); return self._send({"result": "PAPER_STOP_REQUEST_RECORDED", "paper_runtime": "OFF"})
-        self._send({"error": "NOT_FOUND"}, 404)
-    def log_message(self, *_): pass
+        path = urlparse(self.path).path; payload = body(self)
+        if path == "/api/paper/start": event("START_REQUEST_BLOCKED", reason="USER_PAPER_PERMISSION_REQUIRED"); return self.send_json({"result":"START_BLOCKED_PERMISSION_REQUIRED","paper_start_allowed":False}, 403)
+        if path == "/api/paper/stop":
+            r = read("runtime"); r.update({"paper_runtime":"OFF","last_action":"PAPER_STOP_REQUEST_RECORDED"}); write("runtime", r); event("PAPER_STOP_REQUEST_RECORDED"); return self.send_json({"result":"PAPER_STOP_REQUEST_RECORDED","paper_runtime":"OFF"})
+        if path == "/api/paper/manual-close": return self.close_position(payload)
+        if path == "/api/paper/cancel-order": return self.cancel_order(payload)
+        if path == "/api/paper/panic-request":
+            p=read("pending-panic-confirmations"); p["requests"].append({"id":"PANIC_PENDING","status":"AWAITING_CONFIRMATION"}); write("pending-panic-confirmations",p); event("PANIC_REQUEST_RECORDED"); return self.send_json({"result":"PANIC_CONFIRMATION_REQUIRED"})
+        if path == "/api/paper/panic-confirm": return self.panic_confirm()
+        if path == "/api/ui/action": return self.ui_action(payload)
+        if path == "/api/ui/refresh": event("UI_REFRESH_REQUESTED"); return self.send_json(vm())
+        if path == "/api/strategy/config-change-request": return self.config_request(payload)
+        if path == "/api/notification/mark-read": event("NOTIFICATION_MARK_READ_REQUESTED", notification_id=payload.get("notification_id")); return self.send_json({"result":"NOTIFICATION_MARK_READ_RECORDED"})
+        self.send_json({"error":"NOT_FOUND"}, 404)
+    def config_request(self, payload):
+        p=read("pending-change-requests"); p["requests"].append({"action":"strategy_config_change_request","payload":payload,"requires_user_confirmation":True}); write("pending-change-requests",p); event("STRATEGY_CONFIG_CHANGE_REQUESTED"); return self.send_json({"result":"CONFIG_CHANGE_PENDING_USER_CONFIRMATION"})
+    def close_position(self, payload):
+        positions=read("positions").get("positions",[]); found=next((p for p in positions if p.get("id")==payload.get("position_id") or p.get("symbol")==payload.get("symbol")),None)
+        if not found: event("MANUAL_CLOSE_BLOCKED", reason="POSITION_NOT_OPEN"); return self.send_json({"result":"MANUAL_CLOSE_BLOCKED_POSITION_NOT_OPEN"},409)
+        event("MANUAL_CLOSE_REQUEST_RECORDED", position_id=payload.get("position_id")); return self.send_json({"result":"MANUAL_CLOSE_RECORDED_NO_EXECUTION"})
+    def cancel_order(self, payload):
+        orders=read("open-orders").get("open_orders",[]); order=next((o for o in orders if o.get("id")==payload.get("order_id")),None)
+        if not order: event("CANCEL_ORDER_BLOCKED", reason="ORDER_NOT_FOUND"); return self.send_json({"result":"CANCEL_BLOCKED_ORDER_NOT_FOUND"},409)
+        if str(order.get("status","")).upper() == "FILLED": event("CANCEL_ORDER_BLOCKED", reason="ORDER_FILLED"); return self.send_json({"result":"CANCEL_BLOCKED_ORDER_FILLED"},409)
+        order["status"]="CANCELED"; write("open-orders",{"open_orders":orders}); event("CANCEL_ORDER_RECORDED", order_id=order.get("id")); return self.send_json({"result":"CANCEL_RECORDED"})
+    def panic_confirm(self):
+        positions=read("positions").get("positions",[]); open_positions=[p for p in positions if p.get("is_open",True)]
+        if not open_positions: event("PANIC_CONFIRMED_NO_OPEN_POSITIONS"); return self.send_json({"result":"PANIC_CONFIRMED_NO_OPEN_POSITIONS"})
+        for p in open_positions: p["is_open"]=False
+        write("positions",{"positions":positions}); event("PANIC_CLOSE_RECORDED", count=len(open_positions)); return self.send_json({"result":"PANIC_CLOSE_RECORDED_NO_EXECUTION","count":len(open_positions)})
+    def ui_action(self, payload):
+        action=payload.get("action")
+        if action in {"open_detail","select_row","select_chart_symbol"}:
+            s=read("ui-selection"); s.update({k:payload.get(k,s.get(k)) for k in ("screen_id","entity_type","entity_id","symbol")}); write("ui-selection",s); event("UI_SELECTION_UPDATED",action=action); return self.send_json({"result":"UI_SELECTION_UPDATED","selection":s})
+        if action == "request_edit": return self.config_request(payload)
+        if action in {"refresh_view_model","refresh"}: return self.send_json(vm())
+        if action in {"open_report","export_report"}: event("REPORT_ACTION_RECORDED",action=action,report_id=payload.get("report_id")); return self.send_json({"result":"REPORT_ACTION_RECORDED"})
+        if action in {"manual_close","manual_close_position"}: return self.close_position(payload)
+        if action == "cancel_order": return self.cancel_order(payload)
+        if action == "mark_notification_read": event("NOTIFICATION_MARK_READ_REQUESTED",notification_id=payload.get("notification_id")); return self.send_json({"result":"NOTIFICATION_MARK_READ_RECORDED"})
+        return self.send_json({"result":"UI_ACTION_REJECTED_UNKNOWN_CONTRACT_ACTION"},400)
+    def log_message(self,*args): pass
 
-if __name__ == "__main__":
-    HTTPServer(("127.0.0.1", 8765), Handler).serve_forever()
+if __name__ == "__main__": HTTPServer(("127.0.0.1",8765),Handler).serve_forever()

@@ -1,0 +1,18 @@
+{
+  "result": "UI_COMPLETE_ALL_CONTROL_CENTER_SCREEN_BINDINGS_COMMIT_PUSH_PASS",
+  "workspace": "D:/Masaustu/TILSON_T3_GIT_SYNC_WORKSPACE_20260904",
+  "fixed_screens": ["02", "03", "04", "05", "06", "07", "09", "10"],
+  "unchanged_screens": ["08", "11", "12", "13", "14", "15", "16", "17"],
+  "screen_registry_17": "PASS",
+  "bridge_status_17": "PASS",
+  "data_screen_status_17": "PASS",
+  "data_bind_status_17": "PASS",
+  "data_action_status_17": "PASS",
+  "08_14_separation": "PASS",
+  "10_report_tabs": "PASS",
+  "11_16_report_subtabs": "PASS",
+  "17_notifications_main": "PASS",
+  "tests": {"pytest": "212 passed", "compileall": "PASS", "diff_check": "PASS"},
+  "safety": {"LIVE_TRADING": false, "live_order_sending_allowed": false, "real_order_allowed": false, "runtime_started": false, "paper_started": false, "live_started": false, "real_order_endpoint": false},
+  "remaining_gaps": []
+}
