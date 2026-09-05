@@ -1,9 +1,9 @@
 {
   "paper_trade_loop_allowed": false,
   "paper_trade_loop_status": "SAFE_NOOP",
-  "last_cycle_at": "2026-09-05T10:01:56.618513+00:00",
+  "last_cycle_at": "2026-09-05T10:06:49.251207+00:00",
   "last_cycle_result": "SAFE_NOOP",
-  "last_block_reason": "PAPER_LOOP_NO_DECISION_ENGINE_AVAILABLE",
+  "last_block_reason": "MARKET_DATA_UNAVAILABLE",
   "closed_candle_only": true,
   "public_market_data_only": true,
   "live_runtime": "OFF_LOCKED",

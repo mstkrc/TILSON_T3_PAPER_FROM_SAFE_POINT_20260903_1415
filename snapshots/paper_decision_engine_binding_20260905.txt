@@ -1,0 +1,11 @@
+PAPER DECISION ENGINE BINDING
+=============================
+result: PAPER_DECISION_ENGINE_BOUND_NO_ENTRY_SAFE_PASS
+binding: public 1H klines -> closed-candle filter -> existing T3/DMI/ADX -> existing signal evaluator.
+mode: PAPER; closed_candle_only=true; continuation_mode_enabled=false.
+run_once: SAFE_NOOP; MARKET_DATA_UNAVAILABLE (URLError).
+signal/risk/order: not entered / none / none.
+wallet: 1000 USD; positions 0; orders 0; ledger empty.
+safety: LIVE_TRADING=false; live_order_sending_allowed=false; real_order_allowed=false; live OFF_LOCKED.
+tests: pytest 228 passed; compileall PASS; git diff --check PASS.
+remaining: public data availability and full approved sizing/risk persistence before paper execution.

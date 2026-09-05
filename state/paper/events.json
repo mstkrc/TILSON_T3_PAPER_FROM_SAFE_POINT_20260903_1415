@@ -66,6 +66,14 @@
       "reason": "PAPER_LOOP_NO_DECISION_ENGINE_AVAILABLE",
       "market_data": "NOT_STARTED",
       "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_MARKET_DATA_UNAVAILABLE",
+      "reason": "URLError"
     }
   ],
   "source": "PAPER_LOCAL_EVENT_LOG"

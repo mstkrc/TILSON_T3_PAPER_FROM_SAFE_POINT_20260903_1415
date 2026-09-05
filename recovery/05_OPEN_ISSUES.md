@@ -1244,3 +1244,4 @@ KONU-50: LOCKED. Faz-21 → Faz-47 planı kayıtlıdır ve kullanıcı onayıyla
 - Connected PAPER ON blank-screen regression resolved with a non-destructive shell binding guard; no live/order/trade loop was started.
 - Full UI center retest after server reload passed endpoint routing. Remaining non-critical gap: report export provider is not implemented and returns explicit EXPORT_NOT_IMPLEMENTED.
 - Paper loop runner is fail-closed SAFE_NOOP until a decision engine is explicitly wired; no continuous loop was started.
+- Decision binding is implemented, but this run had no public market-data response (`URLError`); indicator/signal/risk path was not entered and paper execution remains unbound for safety.

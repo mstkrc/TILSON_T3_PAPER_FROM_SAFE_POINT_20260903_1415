@@ -9,7 +9,7 @@ def test_runner_is_paper_only_and_fail_closed():
     text = (ROOT / "tools/paper_trade_loop_runner.py").read_text(encoding="utf-8")
     assert "MODE_NOT_PAPER" in text
     assert "LIVE_OR_ORDER_RISK" in text
-    assert "PAPER_LOOP_NO_DECISION_ENGINE_AVAILABLE" in text
+    assert "MARKET_DATA_UNAVAILABLE" in text
     assert "private" not in text.lower()
     assert "real_order_allowed" in text
 
