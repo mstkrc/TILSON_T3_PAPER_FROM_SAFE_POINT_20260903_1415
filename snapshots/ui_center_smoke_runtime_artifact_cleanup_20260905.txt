@@ -1,0 +1,10 @@
+UI CENTER SMOKE RUNTIME ARTIFACT CLEANUP
+=======================================
+HEAD: 506575712092ac342a9ed53213927684f3690389
+Prior result: UI_CENTER_PARTIAL_CAPACITY_PASS_EXPORT_NOT_IMPLEMENTED_EXPLICIT
+Dirty files: events.json, pending_change_requests.json, pending_panic_confirmations.json, ui_selection.json
+Classification: smoke-test artifacts only; no live/order/private/trade-loop event.
+Cleanup: archive persistent events; clear pending smoke requests; reset transient UI selection.
+Safety: PAPER ON; LIVE OFF_LOCKED; LIVE_TRADING=false; real_order_allowed=false.
+Accounting: wallet 1000 USD; positions 0; orders 0; ledger empty.
+Export gap: EXPORT_NOT_IMPLEMENTED remains explicit.

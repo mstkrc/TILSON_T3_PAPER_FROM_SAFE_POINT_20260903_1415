@@ -10,6 +10,52 @@
     },
     {
       "type": "PAPER_LOCAL_RUNTIME_STARTED"
+    },
+    {
+      "type": "UI_REFRESH_REQUESTED"
+    },
+    {
+      "type": "PANIC_REQUEST_RECORDED"
+    },
+    {
+      "type": "PANIC_CONFIRMED_NO_OPEN_POSITIONS"
+    },
+    {
+      "type": "STRATEGY_CONFIG_CHANGE_REQUESTED"
+    },
+    {
+      "type": "MANUAL_CLOSE_BLOCKED",
+      "reason": "POSITION_NOT_OPEN"
+    },
+    {
+      "type": "CANCEL_ORDER_BLOCKED",
+      "reason": "ORDER_NOT_FOUND"
+    },
+    {
+      "type": "NOTIFICATION_MARK_READ_REQUESTED",
+      "notification_id": "smoke"
+    },
+    {
+      "type": "UI_SELECTION_UPDATED",
+      "action": "select_row"
+    },
+    {
+      "type": "UI_SELECTION_UPDATED",
+      "action": "open_detail"
+    },
+    {
+      "type": "STRATEGY_CONFIG_CHANGE_REQUESTED"
+    },
+    {
+      "type": "UI_SELECTION_UPDATED",
+      "action": "select_row"
+    },
+    {
+      "type": "UI_SELECTION_UPDATED",
+      "action": "open_detail"
+    },
+    {
+      "type": "STRATEGY_CONFIG_CHANGE_REQUESTED"
     }
   ],
   "source": "PAPER_LOCAL_EVENT_LOG"
