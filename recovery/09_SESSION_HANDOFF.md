@@ -1505,3 +1505,4 @@ LIVE_TRADING=false korunmuştur.
 - Report Center handoff: screens 10-16 have zero visible DOM mojibake and shared report subtabs; 08 Risk/14 Risk Reports separation preserved.
 - Visual QA handoff: 10-16 each show one horizontal seven-link report tab bar; duplicate/large tab cards removed; no runtime/paper/live/order start.
 - Browser reopen handoff: 10/11/13/16 failures corrected; one small horizontal report bar remains per 10-16; strict visual tests pass.
+- Safe point handoff: HEAD 04f279fa3e186367d909f2027604a45988ff9369; Report Center visual fix and 01-17 binding remain PASS. Next: PAPER START PERMISSION GATE / USER DECISION REQUIRED.

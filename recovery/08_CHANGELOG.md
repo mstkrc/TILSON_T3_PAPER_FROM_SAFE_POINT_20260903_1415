@@ -1764,3 +1764,4 @@ Control Center fiili seti 17 ekrandır: 01 = Genel Bakış; 02–17 = diğer Con
 - 2026-09-05: Scrubbed visible report-center DOM mojibake in screens 10-16 and preserved the shared seven-tab report bar; no live/order/runtime start.
 - 2026-09-05: Fixed browser-visible report-center tab layout and removed duplicate tab bars; 218 tests passed.
 - 2026-09-05: Resolved reopened browser QA issues in report center 10-16; removed legacy tab cards and cleaned visible planning/action text; 219 tests passed.
+- 2026-09-05: Recorded Report Center visual fix safe point at 04f279fa3e186367d909f2027604a45988ff9369; one horizontal 7-link subtab bar per 10-16.

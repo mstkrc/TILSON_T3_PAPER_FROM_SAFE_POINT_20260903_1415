@@ -1,0 +1,19 @@
+REPORT CENTER VISUAL FIX SAFE POINT
+HEAD: 04f279fa3e186367d909f2027604a45988ff9369
+GIT STATUS: CLEAN BEFORE THIS RECOVERY UPDATE
+RESULT: UI_REPORT_CENTER_BROWSER_VISUAL_REOPEN_FIX_COMMIT_PUSH_PASS
+10-16: one small horizontal report-subtabs bar, 7 links, 1 active tab each
+10: visible mojibake/action/planning text fixed; duplicate bottom tab removed
+11/13: large vertical tab cards removed
+16: duplicate internal tab strip removed
+08 Risk main preserved; 14 Risk Reports remains Report Center subtab
+01-17 UI binding: PASS
+BLANK SCREEN BRIDGE: PRESERVED
+PYTEST: 219 passed
+COMPILEALL: PASS
+GIT DIFF CHECK: PASS
+LIVE_TRADING=false
+live_order_sending_allowed=false
+real_order_allowed=false
+RUNTIME/PAPER/LIVE/ORDER: NOT STARTED
+NEXT: PAPER START PERMISSION GATE / USER DECISION REQUIRED
