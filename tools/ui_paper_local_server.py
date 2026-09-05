@@ -1,9 +1,11 @@
 """Local-only paper UI API; no market/private API or real order capability."""
 from __future__ import annotations
 import json
+import mimetypes
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
 from urllib.parse import urlparse
+from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[1]
 STATE = ROOT / "state" / "paper"
@@ -35,6 +37,12 @@ class Handler(BaseHTTPRequestHandler):
         if path in ("/api/ui/view-model", "/api/paper/view-model"): return self.send_json(vm())
         if path == "/api/ui/screens": return self.send_json({"screens": [f"{i:02d}" for i in range(1, 18)]})
         if path == "/api/ui/detail": return self.send_json({"selected": read("ui-selection")})
+        relative = unquote(path.lstrip("/")) or "faz21_control_center.html"
+        candidate = (ROOT / relative).resolve()
+        if not candidate.is_file():
+            candidate = (ROOT / "outputs" / relative).resolve()
+        if candidate.is_file() and ROOT in candidate.parents and candidate.suffix.lower() in {".html", ".js", ".css", ".svg", ".json"}:
+            raw = candidate.read_bytes(); self.send_response(200); self.send_header("Content-Type", mimetypes.guess_type(str(candidate))[0] or "application/octet-stream"); self.send_header("Content-Length", str(len(raw))); self.end_headers(); self.wfile.write(raw); return
         prefix = "/api/paper/"; key = path[len(prefix):] if path.startswith(prefix) else ""
         if key in FILES: return self.send_json(read(key))
         self.send_json({"error":"NOT_FOUND"}, 404)

@@ -1514,3 +1514,4 @@ LIVE_TRADING=false korunmuştur.
 - Market-data handoff: public Futures klines connection returned WinError 10061 (connection refused); structured diagnostic is in `trade_loop_state.json` and events. Next: resolve environment network access, then rerun once.
 - Market-data handoff updated: dead localhost proxy bypassed for public Binance klines only. Latest once cycle: data/closed candle/indicators PASS, signal NO_SIGNAL, ADX_BELOW_THRESHOLD, no order.
 - Continuous loop handoff: PID 7288, 30s interval, paper-only; two cycles observed, both NO_ENTRY/ADX_BELOW_THRESHOLD. UI server PID 7432 at 127.0.0.1:8765 exposes loop status and view-model trade_loop data.
+- UI handoff: open `http://127.0.0.1:8765/faz21_control_center.html`; file:// mode is fail-closed and hides static demo content. Local route and bridge asset return 200.

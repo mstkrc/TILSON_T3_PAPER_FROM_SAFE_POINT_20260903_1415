@@ -1485,3 +1485,4 @@ Tarihsel düzeltme kaydı: Önceki Faz-21 OPEN GATE kabulü eksik/erken sayıld�
 - Public market-data smoke remains environment-blocked (WinError 10061); fail-closed runner records diagnostic and produces no paper order.
 - Public market-data smoke now PASS via host-scoped direct public opener; closed-candle indicators PASS and signal is safely blocked by ADX threshold. No live/order.
 - Continuous paper loop running safely: two observed cycles, public data/closed candle/indicators PASS, NO_ENTRY due ADX threshold; no paper order, live/order locked.
+- UI static/demo safety fix complete: disconnected mode masks static values and instructs server URL; outputs alias routes verified. No live/order change.

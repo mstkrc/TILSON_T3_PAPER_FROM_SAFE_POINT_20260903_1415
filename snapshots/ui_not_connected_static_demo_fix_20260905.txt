@@ -1,0 +1,11 @@
+UI NOT CONNECTED STATIC DEMO FIX
+================================
+result: UI_NOT_CONNECTED_STATIC_DEMO_SCREEN_FIXED_PASS
+server URL: http://127.0.0.1:8765/faz21_control_center.html
+routes: HTML 200; bridge asset 200; view-model PASS; runtime PAPER ON.
+file mode: disconnected banner instructs server URL; static demo content hidden; dynamic values are NOT CONNECTED/—.
+pages: 17/17 shell contract PASS.
+paper: wallet 1000 USD; positions 0; orders 0; ledger empty.
+safety: LIVE_TRADING=false; live_order_sending_allowed=false; real_order_allowed=false; live OFF_LOCKED.
+continuous runner: PID 7288; paper/public-only; no real order.
+tests: pytest 230 passed; compileall PASS; git diff --check PASS.
