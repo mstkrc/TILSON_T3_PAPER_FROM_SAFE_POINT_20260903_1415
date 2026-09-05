@@ -1,0 +1,16 @@
+{
+  "result": "STOP_AND_REPORT_REMAINING_UI_SCREEN_BINDINGS",
+  "workspace": "D:/Masaustu/TILSON_T3_GIT_SYNC_WORKSPACE_20260904",
+  "base_head": "76092baae1cf4c33eddc70784d879eb384ae9cba",
+  "scope": "local-only paper UI action contract; no live or real order capability",
+  "contract": {
+    "implemented": ["paper_start", "paper_stop", "manual_close_position", "cancel_order", "panic_request", "panic_confirm", "request_edit", "open_detail", "select_row", "select_chart_symbol", "open_report", "export_report", "refresh_view_model", "mark_notification_read"],
+    "start_policy": "blocked unless explicit paper permission is granted",
+    "config_policy": "change requests are recorded pending confirmation; config is not mutated",
+    "network_policy": "127.0.0.1 local state only; no market/private/order endpoint"
+  },
+  "screens": {"total_html": 17, "bridge_bound": 10, "remaining_unbound": ["11_portfoy_analiz_raporu.html", "12_performans_analizi.html", "13_islem_analizi.html", "14_risk_merkezi.html", "15_strateji_raporlari.html", "16_ozel_raporlar.html", "17_bildirimler.html"]},
+  "verification": {"python_compile": "PASS", "git_diff_check": "PASS", "live_trading": false, "real_order_allowed": false, "runtime_started": false},
+  "next_action": "Bind the remaining seven compact HTML screens to the same bridge, then run the full test suite and commit/push only after all 17 screens pass.",
+  "stop_reason": "Full functional implementation cannot honestly be declared while seven screens do not load the action bridge."
+}
