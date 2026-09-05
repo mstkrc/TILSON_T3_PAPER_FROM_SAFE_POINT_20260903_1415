@@ -1504,3 +1504,4 @@ LIVE_TRADING=false korunmuştur.
 - Global bridge disconnect fix recorded: UI shell preserved on state-server failure; banner only, fail-closed actions. No runtime/paper/live/order start.
 - Report Center handoff: screens 10-16 have zero visible DOM mojibake and shared report subtabs; 08 Risk/14 Risk Reports separation preserved.
 - Visual QA handoff: 10-16 each show one horizontal seven-link report tab bar; duplicate/large tab cards removed; no runtime/paper/live/order start.
+- Browser reopen handoff: 10/11/13/16 failures corrected; one small horizontal report bar remains per 10-16; strict visual tests pass.

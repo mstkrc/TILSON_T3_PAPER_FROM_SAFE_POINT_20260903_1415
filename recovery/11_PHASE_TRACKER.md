@@ -1475,3 +1475,4 @@ Tarihsel düzeltme kaydı: Önceki Faz-21 OPEN GATE kabulü eksik/erken sayıld�
 - Global STATE NOT CONNECTED blank-screen fix complete: non-destructive banner and 17-page shell preservation verified; 215 tests passed.
 - Report Center visible DOM scrub complete for 10-16; visible mojibake 0, tabs PASS, safety unchanged.
 - Report Center browser visual QA complete: one horizontal small tab bar per screen, no duplicate raw tabs, 218 tests passed.
+- Reopened browser visual QA complete: action/planning mojibake and duplicate/large tab strips removed; 219 tests passed, safety unchanged.

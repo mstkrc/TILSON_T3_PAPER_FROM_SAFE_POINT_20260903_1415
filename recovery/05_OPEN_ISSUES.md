@@ -1238,3 +1238,4 @@ KONU-50: LOCKED. Faz-21 → Faz-47 planı kayıtlıdır ve kullanıcı onayıyla
 - Global blank-screen issue resolved in bridge: disconnect preserves page content and shows only a connection banner; no live/order/runtime start.
 - Report Center 10-16 visible text scrub completed with zero visible mojibake and seven report subtabs per screen.
 - Report Center visual QA issues resolved: no duplicate tab bar or large vertical tab cards remain; safety unchanged.
+- User browser visual reopen findings resolved; strict browser-failure tests pass.

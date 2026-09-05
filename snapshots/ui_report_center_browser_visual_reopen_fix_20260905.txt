@@ -1,0 +1,12 @@
+REPORT CENTER BROWSER VISUAL REOPEN FIX
+RESULT: UI_REPORT_CENTER_BROWSER_VISUAL_REOPEN_FIX_COMMIT_PUSH_PASS
+10: mojibake/action/planning cleanup and duplicate tabs removed
+11/13: large vertical tab cards removed
+16: internal duplicate tab strip removed
+10-16: exactly one small horizontal report-subtabs, seven links, one active tab
+TESTS: 219 passed
+08/14 separation: preserved
+LIVE_TRADING=false
+live_order_sending_allowed=false
+real_order_allowed=false
+RUNTIME/PAPER/LIVE/ORDER: NOT STARTED

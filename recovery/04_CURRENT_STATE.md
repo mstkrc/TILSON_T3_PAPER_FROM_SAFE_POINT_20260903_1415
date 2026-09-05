@@ -1507,3 +1507,4 @@ Kaynak: `recovery/word/Tilson_T3_04_Current_State_ve_Phase_Tracker_Kilitli.docx`
 - Global disconnect fix: STATE NOT CONNECTED now uses a non-destructive banner; all 17 page shells remain visible and safety remains fail-closed. Tests: 215 passed.
 - Report Center visible DOM scrub complete: 10-16 visible mojibake count 0; seven-tab report subtab bars preserved; no runtime/paper/live/order start.
 - Browser visual QA fix complete: 10-16 have one horizontal small report-subtabs bar, duplicate bottom tabs removed, visible mojibake 0; 218 tests passed.
+- Browser visual reopen fix complete: 10 action/planning mojibake and duplicate tabs removed; 11/13 large tab cards and 16 internal duplicate strip removed; 219 tests passed.
