@@ -1243,3 +1243,4 @@ KONU-50: LOCKED. Faz-21 → Faz-47 planı kayıtlıdır ve kullanıcı onayıyla
 - Paper permission is now GRANTED_BY_USER for local paper only. No trade/run-loop authorization; live and real order remain blocked.
 - Connected PAPER ON blank-screen regression resolved with a non-destructive shell binding guard; no live/order/trade loop was started.
 - Full UI center retest after server reload passed endpoint routing. Remaining non-critical gap: report export provider is not implemented and returns explicit EXPORT_NOT_IMPLEMENTED.
+- Paper loop runner is fail-closed SAFE_NOOP until a decision engine is explicitly wired; no continuous loop was started.

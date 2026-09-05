@@ -7,7 +7,7 @@ from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 STATE = ROOT / "state" / "paper"
-FILES = {"runtime":"runtime_state.json","wallet":"wallet_state.json","positions":"positions.json","open-orders":"open_orders.json","ledger":"ledger.json","events":"events.json","health":"health.json","notifications":"notifications.json","strategy":"strategy.json","risk":"risk.json","scanner":"scanner.json","reports":"reports.json","ui-selection":"ui_selection.json","pending-change-requests":"pending_change_requests.json","pending-panic-confirmations":"pending_panic_confirmations.json"}
+FILES = {"runtime":"runtime_state.json","wallet":"wallet_state.json","positions":"positions.json","open-orders":"open_orders.json","ledger":"ledger.json","events":"events.json","health":"health.json","notifications":"notifications.json","strategy":"strategy.json","risk":"risk.json","scanner":"scanner.json","reports":"reports.json","ui-selection":"ui_selection.json","pending-change-requests":"pending_change_requests.json","pending-panic-confirmations":"pending_panic_confirmations.json","trade-loop":"trade_loop_state.json"}
 
 def read(name): return json.loads((STATE / FILES[name]).read_text(encoding="utf-8"))
 def write(name, value): (STATE / FILES[name]).write_text(json.dumps(value, indent=2) + "\n", encoding="utf-8")
@@ -39,6 +39,14 @@ class Handler(BaseHTTPRequestHandler):
         self.send_json({"error":"NOT_FOUND"}, 404)
     def do_POST(self):
         path = urlparse(self.path).path; payload = body(self)
+        if path == "/api/paper/trade-loop/status": return self.send_json(read("trade-loop"))
+        if path == "/api/paper/trade-loop/run-once":
+            from paper_trade_loop_runner import cycle
+            return self.send_json({"ok": True, "result": cycle()})
+        if path == "/api/paper/trade-loop/start":
+            s=read("trade-loop"); s["paper_trade_loop_allowed"]=True; s["paper_trade_loop_status"]="START_REQUESTED"; write("trade-loop",s); event("PAPER_TRADE_LOOP_START_REQUESTED"); return self.send_json({"ok": True, "result":"PAPER_TRADE_LOOP_BACKGROUND_RUNNER_NOT_IMPLEMENTED","run_once":"/api/paper/trade-loop/run-once"})
+        if path == "/api/paper/trade-loop/stop":
+            s=read("trade-loop"); s["paper_trade_loop_allowed"]=False; s["paper_trade_loop_status"]="OFF"; write("trade-loop",s); event("PAPER_TRADE_LOOP_STOPPED"); return self.send_json({"ok": True, "result":"PAPER_TRADE_LOOP_STOPPED"})
         if path == "/api/paper/start":
             r=read("runtime")
             if not r.get("paper_start_allowed",False): event("START_REQUEST_BLOCKED", reason="USER_PAPER_PERMISSION_REQUIRED"); return self.send_json({"result":"START_BLOCKED_PERMISSION_REQUIRED","paper_start_allowed":False}, 403)

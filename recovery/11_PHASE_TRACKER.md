@@ -1480,3 +1480,4 @@ Tarihsel düzeltme kaydı: Önceki Faz-21 OPEN GATE kabulü eksik/erken sayıld�
 - Paper gate passed after explicit user permission: local paper runtime ON, no trade/order opened, scheduler and market data not started, live locked.
 - UI robustness fix recorded: shared bridge shell guard prevents connected-state ON/OFF blank screen; pytest 222 passed. This is not a strategy or trading start.
 - Full UI center operation retest after local server reload: paper state/view-model PASS, safe action routes PASS, export explicit NOT_IMPLEMENTED, live/order safety PASS.
+- Paper-only loop runner implemented; one closed-candle cycle is fail-closed SAFE_NOOP with explicit missing decision engine reason. No live/order/trade loop.

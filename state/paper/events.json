@@ -56,6 +56,16 @@
     },
     {
       "type": "STRATEGY_CONFIG_CHANGE_REQUESTED"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_SAFE_NOOP",
+      "reason": "PAPER_LOOP_NO_DECISION_ENGINE_AVAILABLE",
+      "market_data": "NOT_STARTED",
+      "paper_order": "NONE"
     }
   ],
   "source": "PAPER_LOCAL_EVENT_LOG"

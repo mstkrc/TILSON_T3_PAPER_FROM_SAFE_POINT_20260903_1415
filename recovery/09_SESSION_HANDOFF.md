@@ -1509,3 +1509,4 @@ LIVE_TRADING=false korunmuştur.
 - Paper handoff: user explicitly granted paper-only start; localhost UI server is running and paper runtime ON. Do not start strategy/run loop or trading without separate authorization; live remains locked.
 - UI bridge handoff: connected PAPER ON no longer replaces the document shell with a scalar value; shell containers are metadata-only and leaf/value targets remain bindable. Next: commit/push fix, then browser visual verification.
 - Server handoff: local UI server reloaded at PID 3668 on 127.0.0.1:8765; endpoint chain is live for paper-local state. Export remains explicit NOT_IMPLEMENTED; do not start trade loop.
+- Paper loop handoff: `tools/paper_trade_loop_runner.py --once` is implemented and ran SAFE_NOOP; no market-data/trade loop or paper order was started. Continuous `--run` remains a separate explicit operator action.
