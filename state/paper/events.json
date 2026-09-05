@@ -90,6 +90,43 @@
       "retry_count": 0,
       "last_error": "[WinError 10061] Hedef makine etkin olarak reddetti\u011finden ba\u011flant\u0131 kurulamad\u0131",
       "next_action_hint": "CHECK_WINDOWS_TLS_PROXY_DNS_OR_FIREWALL; DO_NOT_USE_PRIVATE_ENDPOINT"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_NO_ENTRY",
+      "reason": "ADX_BELOW_THRESHOLD",
+      "closed_candle": "PASS",
+      "market_data": "PASS",
+      "paper_order": "NONE"
     }
   ],
   "source": "PAPER_LOCAL_EVENT_LOG"

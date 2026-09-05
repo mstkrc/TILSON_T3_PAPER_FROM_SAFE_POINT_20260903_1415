@@ -1,23 +1,17 @@
 {
   "paper_trade_loop_allowed": false,
   "paper_trade_loop_status": "SAFE_NOOP",
-  "last_cycle_at": "2026-09-05T10:11:14.790535+00:00",
-  "last_cycle_result": "SAFE_NOOP",
-  "last_block_reason": "MARKET_DATA_UNAVAILABLE",
+  "last_cycle_at": "2026-09-05T10:16:15.376261+00:00",
+  "last_cycle_result": "NO_ENTRY",
+  "last_block_reason": "ADX_BELOW_THRESHOLD",
   "closed_candle_only": true,
   "public_market_data_only": true,
   "live_runtime": "OFF_LOCKED",
   "real_order_allowed": false,
-  "market_data_status": "MARKET_DATA_UNAVAILABLE",
-  "last_market_data_error": {
-    "error_type": "URLError",
-    "url": "https://fapi.binance.com/fapi/v1/klines",
-    "symbol": "BTCUSDT",
-    "timeframe": "1h",
-    "timeout_seconds": 8,
-    "public_only": true,
-    "retry_count": 0,
-    "last_error": "[WinError 10061] Hedef makine etkin olarak reddetti\u011finden ba\u011flant\u0131 kurulamad\u0131",
-    "next_action_hint": "CHECK_WINDOWS_TLS_PROXY_DNS_OR_FIREWALL; DO_NOT_USE_PRIVATE_ENDPOINT"
-  }
+  "market_data_status": "PASS",
+  "last_market_data_error": null,
+  "closed_candle_status": "PASS",
+  "indicator_status": "PASS",
+  "signal_status": "NO_SIGNAL",
+  "risk_status": "NOT_ENTERED"
 }

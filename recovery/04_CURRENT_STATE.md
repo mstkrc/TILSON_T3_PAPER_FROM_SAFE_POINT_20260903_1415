@@ -1515,3 +1515,4 @@ Kaynak: `recovery/word/Tilson_T3_04_Current_State_ve_Phase_Tracker_Kilitli.docx`
 - Paper-only fail-closed trade loop runner implemented. `--once` completed `SAFE_NOOP` with `PAPER_LOOP_NO_DECISION_ENGINE_AVAILABLE`; no market data, signal, decision, or paper order. Loop endpoints and state are available; continuous run requires explicit `--run`.
 - Existing T3/DMI/ADX/signal path is now bound to the paper runner with public 1H closed-candle provider. First bound cycle safely returned `MARKET_DATA_UNAVAILABLE`/`SAFE_NOOP`; no order. Tests: 228 passed.
 - Public market-data verification: `https://fapi.binance.com/fapi/v1/klines` was refused with `URLError`/WinError 10061. Runner records structured error and remains SAFE_NOOP; no signal, risk, or order.
+- Public market-data access fixed safely by bypassing dead `127.0.0.1:9` proxy for the public host only; paper `--once` now reaches closed candles, computes indicators, and returns NO_ENTRY due ADX below threshold.

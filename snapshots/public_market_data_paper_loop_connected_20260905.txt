@@ -1,0 +1,11 @@
+PUBLIC MARKET DATA PAPER LOOP CONNECTED
+======================================
+result: PUBLIC_MARKET_DATA_CONNECTED_PAPER_LOOP_ONCE_PASS
+diagnosis: HTTP/HTTPS/ALL proxy was dead localhost 127.0.0.1:9.
+fix: direct opener scoped to public Binance klines; SSL verification preserved.
+data: BTCUSDT 1h public klines PASS; closed candle PASS; indicators PASS.
+signal: NO_SIGNAL; reason ADX_BELOW_THRESHOLD; risk not entered; paper order NONE.
+state: PAPER ON; wallet 1000 USD; positions 0; orders 0; ledger empty.
+safety: LIVE_TRADING=false; live_order_sending_allowed=false; real_order_allowed=false; live OFF_LOCKED.
+tests: pytest 228 passed; compileall PASS; git diff --check PASS.
+continuous: not started.

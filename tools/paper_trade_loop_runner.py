@@ -7,13 +7,15 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 import time
 from datetime import datetime, timezone
 from urllib.parse import urlencode
-from urllib.request import urlopen
+from urllib.request import Request, build_opener, ProxyHandler
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
 STATE = ROOT / "state" / "paper"
 LOOP_STATE = STATE / "trade_loop_state.json"
 
@@ -35,7 +37,9 @@ def event(kind: str, **extra: object) -> None:
 
 def public_closed_candles(symbol: str = "BTCUSDT", limit: int = 200) -> list[dict]:
     query = urlencode({"symbol": symbol, "interval": "1h", "limit": limit})
-    with urlopen("https://fapi.binance.com/fapi/v1/klines?" + query, timeout=8) as response:
+    url = "https://fapi.binance.com/fapi/v1/klines?" + query
+    opener = build_opener(ProxyHandler({}))
+    with opener.open(Request(url, headers={"User-Agent": "TILSON-T3-paper-public-data/1.0"}), timeout=8) as response:
         rows = json.loads(response.read().decode("utf-8"))
     now_ms = int(datetime.now(timezone.utc).timestamp() * 1000)
     return [{"open": float(row[1]), "high": float(row[2]), "low": float(row[3]), "close": float(row[4]), "close_time_ms": int(row[6])}
@@ -87,6 +91,7 @@ def cycle() -> str:
         state.update({"paper_trade_loop_status": "SAFE_NOOP", "last_cycle_at": now, "last_cycle_result": "SAFE_NOOP", "last_block_reason": "INSUFFICIENT_CLOSED_CANDLES"})
         write_loop(state); event("PAPER_LOOP_SAFE_NOOP", reason="INSUFFICIENT_CLOSED_CANDLES", market_data="PASS", paper_order="NONE"); return "SAFE_NOOP"
     current, signal = decision_snapshot(candles, config)
+    state.update({"market_data_status": "PASS", "last_market_data_error": None, "closed_candle_status": "PASS", "indicator_status": "PASS", "signal_status": signal.signal_type.value, "risk_status": "NOT_ENTERED"})
     if signal.signal_type.value == "NO_SIGNAL":
         state.update({"paper_trade_loop_status": "SAFE_NOOP", "last_cycle_at": now, "last_cycle_result": "NO_ENTRY", "last_block_reason": signal.blocked_reason})
         write_loop(state); event("PAPER_LOOP_NO_ENTRY", reason=signal.blocked_reason, closed_candle="PASS", market_data="PASS", paper_order="NONE"); return "NO_ENTRY"

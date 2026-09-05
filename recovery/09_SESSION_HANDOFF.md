@@ -1512,3 +1512,4 @@ LIVE_TRADING=false korunmuştur.
 - Paper loop handoff: `tools/paper_trade_loop_runner.py --once` is implemented and ran SAFE_NOOP; no market-data/trade loop or paper order was started. Continuous `--run` remains a separate explicit operator action.
 - Decision-engine handoff: existing indicator/signal path is wired behind paper/live guards; current run received `URLError` from public klines and emitted `MARKET_DATA_UNAVAILABLE`. Do not treat this as a trade decision.
 - Market-data handoff: public Futures klines connection returned WinError 10061 (connection refused); structured diagnostic is in `trade_loop_state.json` and events. Next: resolve environment network access, then rerun once.
+- Market-data handoff updated: dead localhost proxy bypassed for public Binance klines only. Latest once cycle: data/closed candle/indicators PASS, signal NO_SIGNAL, ADX_BELOW_THRESHOLD, no order.
