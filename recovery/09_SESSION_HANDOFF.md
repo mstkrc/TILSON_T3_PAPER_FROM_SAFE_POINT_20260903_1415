@@ -1503,3 +1503,4 @@ LIVE_TRADING=false korunmuştur.
 - Clean point handoff: HEAD 0c90858388adda12db7ebae55211707e827610c7; UI binding/audit PASS, pytest 212 passed. Next: PAPER START PERMISSION GATE / USER DECISION REQUIRED; do not start runtime, paper, live, scheduler, or orders without explicit authorization.
 - Global bridge disconnect fix recorded: UI shell preserved on state-server failure; banner only, fail-closed actions. No runtime/paper/live/order start.
 - Report Center handoff: screens 10-16 have zero visible DOM mojibake and shared report subtabs; 08 Risk/14 Risk Reports separation preserved.
+- Visual QA handoff: 10-16 each show one horizontal seven-link report tab bar; duplicate/large tab cards removed; no runtime/paper/live/order start.

@@ -1,0 +1,12 @@
+REPORT CENTER VISUAL QA FIX
+RESULT: UI_REPORT_CENTER_VISUAL_QA_FIX_COMMIT_PUSH_PASS
+10-16 VISIBLE MOJIBAKE: 0
+REPORT SUBTABS: exactly one bar, seven links, one active tab per file
+TAB CSS: horizontal/small; no large card sizing
+DUPLICATE BOTTOM TABS: removed
+08/14 separation: preserved
+BLANK SCREEN FIX: preserved
+PYTEST: 218 passed
+LIVE_TRADING=false
+real_order_allowed=false
+RUNTIME/PAPER/LIVE/ORDER: NOT STARTED
