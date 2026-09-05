@@ -1765,3 +1765,5 @@ Control Center fiili seti 17 ekrandır: 01 = Genel Bakış; 02–17 = diğer Con
 - 2026-09-05: Fixed browser-visible report-center tab layout and removed duplicate tab bars; 218 tests passed.
 - 2026-09-05: Resolved reopened browser QA issues in report center 10-16; removed legacy tab cards and cleaned visible planning/action text; 219 tests passed.
 - 2026-09-05: Recorded Report Center visual fix safe point at 04f279fa3e186367d909f2027604a45988ff9369; one horizontal 7-link subtab bar per 10-16.
+- 2026-09-05: User-authorized local paper runtime started; wallet 1000 USD, positions/orders/ledger empty; live/order safety unchanged.
+- 2026-09-05: Fixed connected-state blank screen caused by scalar runtime bindings overwriting page shells; added shell-container skip and leaf/value target rules. Verified 17-page contract; pytest 222 passed, compileall PASS, diff-check PASS.

@@ -9,8 +9,8 @@ def test_default_state_is_safe_and_config_bound():
     config = json.loads((ROOT / "config/trade_config.json").read_text())
     runtime = read_state("runtime")
     wallet = read_state("wallet")
-    assert runtime["paper_runtime"] == "OFF"
-    assert runtime["paper_start_allowed"] is False
+    assert runtime["paper_runtime"] == "ON"
+    assert runtime["paper_start_allowed"] is True
     assert runtime["live_trading"] is False
     assert wallet["initial_wallet_usd"] == config["initial_wallet_usd"] == 1000
 
@@ -23,8 +23,8 @@ def test_view_model_is_empty_local_paper_state():
 
 def test_start_policy_is_fail_closed_without_permission():
     runtime = read_state("runtime")
-    assert runtime["paper_permission"] == "NOT_GRANTED_YET"
-    assert runtime["paper_start_allowed"] is False
+    assert runtime["paper_permission"] == "GRANTED_BY_USER"
+    assert runtime["paper_start_allowed"] is True
 
 def test_stop_policy_cannot_enable_orders_or_live():
     runtime = read_state("runtime")

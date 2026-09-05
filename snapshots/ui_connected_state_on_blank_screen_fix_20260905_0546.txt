@@ -1,0 +1,11 @@
+UI CONNECTED STATE ON BLANK SCREEN FIX
+======================================
+result: UI_CONNECTED_STATE_ON_BLANK_SCREEN_FIX_PASS_NO_LIVE_NO_ORDER
+bug: PAPER runtime ON reduced the page to scalar ON.
+root_cause: unconditional data-bind textContent writes reached body/shell containers.
+fix: shell containers are skipped; leaf/value targets remain bindable.
+pages: 01-17 bridge/data-screen/data-bind/data-action contract PASS.
+tests: pytest 222 passed; compileall PASS; git diff --check PASS.
+safety: LIVE_TRADING=false; live_order_sending_allowed=false; real_order_allowed=false.
+runtime: paper-only local state; scheduler and market-data loop NOT_STARTED; orders NONE.
+remaining_gap: browser visual verification.

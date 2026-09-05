@@ -20,7 +20,7 @@ def vm():
     names = ("runtime","wallet","positions","open-orders","ledger","events","health","notifications","strategy","risk","scanner","reports","ui-selection")
     data = {n.replace("-", "_"): read(n) for n in names}; ledger = data["ledger"]
     data["ledger"]["summary"] = {"fill_count": len(ledger.get("fills", [])), "closed_trade_count": len(ledger.get("closed_trades", []))}
-    data["safety"] = {"paper_start_allowed": False, "live_locked": True, "LIVE_TRADING": False, "live_order_sending_allowed": False, "real_order_allowed": False}
+    data["safety"] = {"paper_start_allowed": data["runtime"].get("paper_start_allowed", False), "live_locked": True, "LIVE_TRADING": False, "live_order_sending_allowed": False, "real_order_allowed": False}
     data["safety_flags"] = {"real_order_allowed": False, "live_trading": False, "live_order_sending_allowed": False}
     data["ui_status"] = {"connected": True, "source": "PAPER_LOCAL_STATE", "trade_decision_generated": False}; return data
 view_model = vm
@@ -39,7 +39,10 @@ class Handler(BaseHTTPRequestHandler):
         self.send_json({"error":"NOT_FOUND"}, 404)
     def do_POST(self):
         path = urlparse(self.path).path; payload = body(self)
-        if path == "/api/paper/start": event("START_REQUEST_BLOCKED", reason="USER_PAPER_PERMISSION_REQUIRED"); return self.send_json({"result":"START_BLOCKED_PERMISSION_REQUIRED","paper_start_allowed":False}, 403)
+        if path == "/api/paper/start":
+            r=read("runtime")
+            if not r.get("paper_start_allowed",False): event("START_REQUEST_BLOCKED", reason="USER_PAPER_PERMISSION_REQUIRED"); return self.send_json({"result":"START_BLOCKED_PERMISSION_REQUIRED","paper_start_allowed":False}, 403)
+            r.update({"paper_runtime":"ON","mode":"PAPER","live_runtime":"OFF_LOCKED","real_order_allowed":False,"live_order_sending_allowed":False,"last_action":"PAPER_LOCAL_RUNTIME_STARTED"}); write("runtime",r); event("PAPER_LOCAL_RUNTIME_STARTED"); return self.send_json({"result":"PAPER_LOCAL_RUNTIME_STARTED","paper_runtime":"ON","mode":"PAPER","live_runtime":"OFF_LOCKED"})
         if path == "/api/paper/stop":
             r = read("runtime"); r.update({"paper_runtime":"OFF","last_action":"PAPER_STOP_REQUEST_RECORDED"}); write("runtime", r); event("PAPER_STOP_REQUEST_RECORDED"); return self.send_json({"result":"PAPER_STOP_REQUEST_RECORDED","paper_runtime":"OFF"})
         if path == "/api/paper/manual-close": return self.close_position(payload)
@@ -50,6 +53,11 @@ class Handler(BaseHTTPRequestHandler):
         if path == "/api/ui/action": return self.ui_action(payload)
         if path == "/api/ui/refresh": event("UI_REFRESH_REQUESTED"); return self.send_json(vm())
         if path == "/api/strategy/config-change-request": return self.config_request(payload)
+        if path == "/api/reports/open": return self.report_action(payload, "open_report")
+        if path == "/api/reports/export": return self.send_json({"ok": False, "error": "EXPORT_NOT_IMPLEMENTED"}, 501)
+        if path == "/api/ui/selection": return self.ui_action({**payload, "action": "select_row"})
+        if path == "/api/ui/detail": return self.ui_action({**payload, "action": "open_detail"})
+        if path == "/api/ui/change-request": return self.config_request(payload)
         if path == "/api/notification/mark-read": event("NOTIFICATION_MARK_READ_REQUESTED", notification_id=payload.get("notification_id")); return self.send_json({"result":"NOTIFICATION_MARK_READ_RECORDED"})
         self.send_json({"error":"NOT_FOUND"}, 404)
     def config_request(self, payload):
@@ -79,6 +87,12 @@ class Handler(BaseHTTPRequestHandler):
         if action == "cancel_order": return self.cancel_order(payload)
         if action == "mark_notification_read": event("NOTIFICATION_MARK_READ_REQUESTED",notification_id=payload.get("notification_id")); return self.send_json({"result":"NOTIFICATION_MARK_READ_RECORDED"})
         return self.send_json({"result":"UI_ACTION_REJECTED_UNKNOWN_CONTRACT_ACTION"},400)
+    def report_action(self, payload, action):
+        report_id = payload.get("report_id")
+        if report_id and not (ROOT / "reports" / str(report_id)).exists():
+            return self.send_json({"ok": False, "error": "REPORT_NOT_FOUND"}, 404)
+        event("REPORT_ACTION_RECORDED", action=action, report_id=report_id)
+        return self.send_json({"ok": True, "result": "REPORT_ACTION_RECORDED", "report_id": report_id})
     def log_message(self,*args): pass
 
 if __name__ == "__main__": HTTPServer(("127.0.0.1",8765),Handler).serve_forever()

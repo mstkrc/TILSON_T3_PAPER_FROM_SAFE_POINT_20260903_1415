@@ -1240,3 +1240,5 @@ KONU-50: LOCKED. Faz-21 → Faz-47 planı kayıtlıdır ve kullanıcı onayıyla
 - Report Center visual QA issues resolved: no duplicate tab bar or large vertical tab cards remain; safety unchanged.
 - User browser visual reopen findings resolved; strict browser-failure tests pass.
 - Report Center visual safe point recorded at 04f279fa3e186367d909f2027604a45988ff9369; next step is PAPER START PERMISSION GATE / USER DECISION REQUIRED.
+- Paper permission is now GRANTED_BY_USER for local paper only. No trade/run-loop authorization; live and real order remain blocked.
+- Connected PAPER ON blank-screen regression resolved with a non-destructive shell binding guard; no live/order/trade loop was started.
