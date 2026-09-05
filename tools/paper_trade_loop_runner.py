@@ -99,13 +99,79 @@ def cycle() -> str:
     write_loop(state); event("PAPER_LOOP_NO_ENTRY", reason="PAPER_EXECUTION_GATE_NOT_BOUND", signal=signal.signal_type.value, paper_order="NONE"); return "NO_ENTRY"
 
 
+def scan_universe_once(max_symbols: int | None = None, sleep_ms: int = 100, batch_once: bool = False, batch_size: int = 25) -> str:
+    from src.market.symbol_universe import load_usdt_m_futures_universe
+    config = json.loads((ROOT / "config" / "trade_config.json").read_text(encoding="utf-8"))
+    universe = load_usdt_m_futures_universe()
+    cursor_path = STATE / "universe_scan_cursor.json"
+    cursor = json.loads(cursor_path.read_text(encoding="utf-8")) if cursor_path.exists() else {"next_index":0,"completed_rounds":0,"status":"IDLE"}
+    size = max_symbols or (batch_size if batch_once else len(universe["tradable_symbols"]))
+    start = int(cursor.get("next_index", 0)); symbols = universe["tradable_symbols"][start:start+size]
+    (STATE / "symbol_universe.json").write_text(json.dumps(universe, indent=2) + "\n", encoding="utf-8")
+    results=[]; counts={"data_pass":0,"data_fail":0,"indicator_pass":0,"no_signal":0,"long_signal":0,"short_signal":0}
+    for symbol in symbols:
+        item={"symbol":symbol,"data_status":"FAIL","closed_candle_status":"FAIL","indicator_status":"FAIL","signal_status":"NO_SIGNAL","direction":"NONE","reason":"MARKET_DATA_UNAVAILABLE","risk_status":"NOT_ENTERED","risk_reason":None,"paper_order_status":"NONE","paper_order_id":None}
+        try:
+            candles=public_closed_candles(symbol)
+            if len(candles) < max(config["dmi_di_length"]+config["adx_smoothing"], config["t3_period"]*2)+config["adx_slope_n"]: raise ValueError("INSUFFICIENT_CLOSED_CANDLES")
+            _, signal=decision_snapshot(candles, config); item.update({"data_status":"PASS","closed_candle_status":"PASS","indicator_status":"PASS","signal_status":signal.signal_type.value,"direction":signal.signal_type.value,"reason":signal.blocked_reason}); counts["data_pass"]+=1; counts["indicator_pass"]+=1
+            if signal.signal_type.value=="NO_SIGNAL": counts["no_signal"]+=1; item.update({"risk_status":"NOT_ENTERED","paper_order_status":"NONE"})
+            elif signal.signal_type.value in ("LONG","SHORT"):
+                from src.paper.position import PositionDirection, PositionState
+                from src.risk.permission import evaluate_permission
+                direction=PositionDirection(signal.signal_type.value)
+                wallet=read("wallet_state.json"); pos_data=read("positions_state.json")
+                positions=[]
+                for raw in pos_data.get("positions",[]):
+                    positions.append(PositionState(raw["symbol"], PositionDirection(raw["direction"]), float(raw["quantity"]), float(raw["entry_price"]), "runtime", True, 2.0, True))
+                permission=evaluate_permission(symbol=symbol,direction=direction,candidate_status="VALID",sizing_status="VALID",open_positions=positions,max_coin_count=int(config["max_coin_count"]),free_balance_usd=float(wallet.get("available_usd",wallet.get("cash_usd",0))),required_margin_usd=0.0,lock_available=True,stop_loss_enabled=True,stop_loss_percent=2.0,config_snapshot_id="trade_config")
+                item.update({"risk_status":"ALLOW" if permission.permission_status=="ALLOW" else "BLOCKED","risk_reason":permission.blocked_reason or None,"paper_order_status":"NONE"})
+                if permission.permission_status=="ALLOW":
+                    counts["risk_allow_count"]=counts.get("risk_allow_count",0)+1
+                    item.update(execute_allowed_paper_entry({"symbol":symbol,"direction":signal.signal_type.value}, permission, config, candles[-1]["close"]))
+                else: counts["risk_block_count"]=counts.get("risk_block_count",0)+1
+                counts["long_signal"] += signal.signal_type.value=="LONG"; counts["short_signal"] += signal.signal_type.value=="SHORT"
+        except Exception as exc: item["reason"]=type(exc).__name__
+        results.append(item)
+        if sleep_ms: time.sleep(sleep_ms/1000)
+    scan={"cycle_id":datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ"),"started_at":None,"finished_at":datetime.now(timezone.utc).isoformat(),"universe_source":universe["source"],"total_symbols":len(universe["tradable_symbols"]),"scanned_symbols":len(results),**counts,"candidate_count":0,"risk_allow_count":0,"risk_block_count":0,"paper_order_count":0,"symbols":results}
+    (STATE / "scan_results.json").write_text(json.dumps(scan, indent=2) + "\n", encoding="utf-8")
+    nxt = start + len(symbols); complete = nxt >= len(universe["tradable_symbols"])
+    cursor.update({"universe_size":len(universe["tradable_symbols"]),"batch_size":size,"next_index":0 if complete else nxt,"completed_rounds":int(cursor.get("completed_rounds",0))+(1 if complete else 0),"current_round_id":scan["cycle_id"],"last_batch_finished_at":scan["finished_at"],"symbols_scanned_this_round":len(symbols),"total_data_pass_this_round":counts["data_pass"],"total_data_fail_this_round":counts["data_fail"],"total_no_signal_this_round":counts["no_signal"],"total_long_signal_this_round":counts["long_signal"],"total_short_signal_this_round":counts["short_signal"],"total_candidates_this_round":0,"total_risk_allow_this_round":0,"total_risk_block_this_round":0,"total_paper_orders_this_round":0,"status":"ROUND_COMPLETE" if complete else "IDLE"})
+    cursor_path.write_text(json.dumps(cursor, indent=2) + "\n", encoding="utf-8")
+    return "FULL_UNIVERSE_PAPER_SCAN_NO_SIGNAL_PASS" if counts["long_signal"]+counts["short_signal"]==0 else "FULL_UNIVERSE_SCAN_SUPPORT_LIMITED_PASS"
+
+def execute_allowed_paper_entry(candidate: dict, permission, config: dict, price: float) -> dict:
+    """Execute only an already risk-allowed candidate through the paper adapter."""
+    runtime = read("runtime_state.json")
+    if runtime.get("mode") != "PAPER" or runtime.get("paper_runtime") != "ON" or runtime.get("live_runtime") != "OFF_LOCKED" or runtime.get("live_trading") or runtime.get("live_order_sending_allowed") or runtime.get("real_order_allowed") or permission.permission_status != "ALLOW":
+        return {"paper_order_status":"BLOCKED","paper_order_reason":"PAPER_SAFETY_GATE"}
+    from types import SimpleNamespace
+    from decimal import Decimal
+    from src.paper.execution import PaperExecutionInput, simulate_entry
+    sizing=SimpleNamespace(normalized_quantity=Decimal("0.001"))
+    now=datetime.now(timezone.utc)
+    result=simulate_entry(PaperExecutionInput(candidate["symbol"],candidate["direction"],"ALLOW",sizing,Decimal(str(price)),Decimal(str(price)),now,now,int(config.get("default_leverage",1)),config.get("margin_mode","ISOLATED"),config),lock_available=True)
+    if result.execution_status == "FILLED":
+        from src.paper.state_store import persist_entry
+        persist_entry(STATE, result)
+    return {"paper_order_status":"CREATED" if result.execution_status=="FILLED" else "BLOCKED","paper_order_id":result.execution_id,"paper_only":result.paper_only,"live_order_sent":result.live_order_sent,"paper_order_reason":result.blocked_reason}
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     group = parser.add_mutually_exclusive_group()
     group.add_argument("--once", action="store_true")
     group.add_argument("--run", action="store_true")
     parser.add_argument("--interval-seconds", type=float, default=30)
+    parser.add_argument("--scan-universe", action="store_true")
+    parser.add_argument("--batch-once", action="store_true")
+    parser.add_argument("--max-symbols", type=int)
+    parser.add_argument("--batch-size", type=int, default=10)
+    parser.add_argument("--sleep-ms", type=int, default=100)
     args = parser.parse_args()
+    if args.scan_universe:
+        print(scan_universe_once(args.max_symbols, args.sleep_ms, args.batch_once, args.batch_size))
+        return 0
     if args.run:
         while True:
             cycle(); time.sleep(args.interval_seconds)

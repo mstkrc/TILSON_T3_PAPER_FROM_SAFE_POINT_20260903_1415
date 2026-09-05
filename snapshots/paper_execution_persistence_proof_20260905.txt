@@ -1,0 +1,4 @@
+PAPER_EXECUTION_PERSISTENCE_FIXTURE_PROOF_PASS
+LONG/SHORT isolated fixtures persist paper position, ledger fill and PAPER_ORDER_CREATED event.
+Duplicate execution IDs are blocked. Current real batch: NO_SIGNAL; paper orders: 0.
+Safety: PAPER only, LIVE_TRADING=false, live_runtime=OFF_LOCKED, real_order_allowed=false.

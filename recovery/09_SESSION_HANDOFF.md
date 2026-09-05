@@ -1515,4 +1515,5 @@ LIVE_TRADING=false korunmuştur.
 - Market-data handoff updated: dead localhost proxy bypassed for public Binance klines only. Latest once cycle: data/closed candle/indicators PASS, signal NO_SIGNAL, ADX_BELOW_THRESHOLD, no order.
 - Continuous loop handoff: PID 7288, 30s interval, paper-only; two cycles observed, both NO_ENTRY/ADX_BELOW_THRESHOLD. UI server PID 7432 at 127.0.0.1:8765 exposes loop status and view-model trade_loop data.
 - UI handoff: open `http://127.0.0.1:8765/faz21_control_center.html`; file:// mode is fail-closed and hides static demo content. Local route and bridge asset return 200.
+- Paper persistence handoff: risk-allowed paper execution persists canonical positions/ledger/events atomically; isolated LONG/SHORT proof passes. Current real batch has no signal and no order.
 - Connected UI handoff: server URL renders only authoritative `/api/paper/view-model` state; wallet 1000, zero positions/orders, empty ledger and NO_SIGNAL are shown without demo rows. Chart/export remain explicit gaps.

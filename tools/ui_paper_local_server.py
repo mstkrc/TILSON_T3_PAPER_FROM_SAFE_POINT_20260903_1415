@@ -23,6 +23,9 @@ def vm():
     data = {n.replace("-", "_"): read(n) for n in names}; ledger = data["ledger"]
     data["ledger"]["summary"] = {"fill_count": len(ledger.get("fills", [])), "closed_trade_count": len(ledger.get("closed_trades", []))}
     data["safety"] = {"paper_start_allowed": data["runtime"].get("paper_start_allowed", False), "live_locked": True, "LIVE_TRADING": False, "live_order_sending_allowed": False, "real_order_allowed": False}
+    scan = json.loads((STATE / "scan_results.json").read_text(encoding="utf-8")) if (STATE / "scan_results.json").exists() else {}
+    cursor = json.loads((STATE / "universe_scan_cursor.json").read_text(encoding="utf-8")) if (STATE / "universe_scan_cursor.json").exists() else {}
+    data["scan_summary"] = {"universe_enabled": True, "universe_size": cursor.get("universe_size", scan.get("total_symbols", 0)), "batch_size": cursor.get("batch_size", 0), "next_index": cursor.get("next_index", 0), "symbols_scanned_this_round": cursor.get("symbols_scanned_this_round", scan.get("scanned_symbols", 0)), "data_pass": scan.get("data_pass", 0), "data_fail": scan.get("data_fail", 0), "no_signal": scan.get("no_signal", 0), "long_signal": scan.get("long_signal", 0), "short_signal": scan.get("short_signal", 0), "candidates": scan.get("candidate_count", 0), "risk_allow": scan.get("risk_allow_count", 0), "risk_block": scan.get("risk_block_count", 0), "paper_orders": scan.get("paper_order_count", 0), "status": cursor.get("status", "IDLE")}
     data["safety_flags"] = {"real_order_allowed": False, "live_trading": False, "live_order_sending_allowed": False}
     data["ui_status"] = {"connected": True, "source": "PAPER_LOCAL_STATE", "trade_decision_generated": False}; return data
 view_model = vm
