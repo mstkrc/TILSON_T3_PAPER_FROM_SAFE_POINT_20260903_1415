@@ -1479,3 +1479,4 @@ Tarihsel düzeltme kaydı: Önceki Faz-21 OPEN GATE kabulü eksik/erken sayıld�
 - Report Center visual fix safe point recorded at 04f279fa3e186367d909f2027604a45988ff9369; 10-16 one small horizontal bar, 7 links, 1 active tab.
 - Paper gate passed after explicit user permission: local paper runtime ON, no trade/order opened, scheduler and market data not started, live locked.
 - UI robustness fix recorded: shared bridge shell guard prevents connected-state ON/OFF blank screen; pytest 222 passed. This is not a strategy or trading start.
+- Full UI center operation retest after local server reload: paper state/view-model PASS, safe action routes PASS, export explicit NOT_IMPLEMENTED, live/order safety PASS.

@@ -1511,3 +1511,4 @@ Kaynak: `recovery/word/Tilson_T3_04_Current_State_ve_Phase_Tracker_Kilitli.docx`
 - Safe point: REPORT_CENTER_VISUAL_FIX at HEAD 04f279fa3e186367d909f2027604a45988ff9369. 10-16 visual QA PASS; 01-17 binding PASS; no runtime/paper/live/order start.
 - User explicitly granted PAPER-only start. Local UI server/runtime is ON; live remains OFF_LOCKED, real orders blocked, positions/orders/ledger empty, and no trade loop authorization was granted.
 - Connected PAPER ON blank-screen fix: shared bridge skips scalar bindings on html/body/main and shell containers; UI shell is preserved in connected and disconnected states. Tests: 222 passed; compileall and diff-check PASS.
+- Local UI server reloaded from current router code (PID 3668); previously failing routes now resolve. Full capacity retest: core paper actions PASS; export explicitly NOT_IMPLEMENTED; live/order safety unchanged.

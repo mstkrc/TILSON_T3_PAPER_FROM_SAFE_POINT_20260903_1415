@@ -1,0 +1,13 @@
+UI CENTER SERVER RELOAD FULL CAPACITY RETEST
+============================================
+result: UI_CENTER_PARTIAL_CAPACITY_PASS_EXPORT_NOT_IMPLEMENTED_EXPLICIT
+head: d031ca8bb7b4f8e65b1e5b40fa19746094642a05
+server: old PID 7504 -> new PID 3668, localhost 127.0.0.1:8765
+paper: ON / PAPER; wallet 1000 USD; positions 0; orders 0; ledger empty
+routes: runtime/view-model/health PASS; selection/detail/change-request PASS
+export: explicit EXPORT_NOT_IMPLEMENTED, no fake PASS
+actions: refresh, panic safe flow, strategy pending, no-position/no-order guards, notification PASS; unknown action FAIL as expected
+pages: 17/17 shells preserved; connected blank-screen guard PASS
+tests: pytest 225 passed; compileall PASS; git diff --check PASS
+safety: LIVE_TRADING=false; live_order_sending_allowed=false; real_order_allowed=false; trade/market-data loop NOT_STARTED
+remaining: report export provider; browser visual click-through is separate
