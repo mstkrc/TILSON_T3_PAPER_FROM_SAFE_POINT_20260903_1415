@@ -10,7 +10,9 @@ def test_runner_is_paper_only_and_fail_closed():
     assert "MODE_NOT_PAPER" in text
     assert "LIVE_OR_ORDER_RISK" in text
     assert "MARKET_DATA_UNAVAILABLE" in text
-    assert "private" not in text.lower()
+    assert "next_action_hint" in text
+    assert "fapi.binance.com/fapi/v1/klines" in text
+    assert "fapi.binance.com/fapi/v1/order" not in text
     assert "real_order_allowed" in text
 
 

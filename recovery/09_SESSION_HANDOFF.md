@@ -1511,3 +1511,4 @@ LIVE_TRADING=false korunmuştur.
 - Server handoff: local UI server reloaded at PID 3668 on 127.0.0.1:8765; endpoint chain is live for paper-local state. Export remains explicit NOT_IMPLEMENTED; do not start trade loop.
 - Paper loop handoff: `tools/paper_trade_loop_runner.py --once` is implemented and ran SAFE_NOOP; no market-data/trade loop or paper order was started. Continuous `--run` remains a separate explicit operator action.
 - Decision-engine handoff: existing indicator/signal path is wired behind paper/live guards; current run received `URLError` from public klines and emitted `MARKET_DATA_UNAVAILABLE`. Do not treat this as a trade decision.
+- Market-data handoff: public Futures klines connection returned WinError 10061 (connection refused); structured diagnostic is in `trade_loop_state.json` and events. Next: resolve environment network access, then rerun once.

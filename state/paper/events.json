@@ -74,6 +74,22 @@
     {
       "type": "PAPER_LOOP_MARKET_DATA_UNAVAILABLE",
       "reason": "URLError"
+    },
+    {
+      "type": "PAPER_LOOP_HEARTBEAT",
+      "loop": "CLOSED_CANDLE_TRADE_LOOP"
+    },
+    {
+      "type": "PAPER_LOOP_MARKET_DATA_UNAVAILABLE",
+      "error_type": "URLError",
+      "url": "https://fapi.binance.com/fapi/v1/klines",
+      "symbol": "BTCUSDT",
+      "timeframe": "1h",
+      "timeout_seconds": 8,
+      "public_only": true,
+      "retry_count": 0,
+      "last_error": "[WinError 10061] Hedef makine etkin olarak reddetti\u011finden ba\u011flant\u0131 kurulamad\u0131",
+      "next_action_hint": "CHECK_WINDOWS_TLS_PROXY_DNS_OR_FIREWALL; DO_NOT_USE_PRIVATE_ENDPOINT"
     }
   ],
   "source": "PAPER_LOCAL_EVENT_LOG"

@@ -1482,3 +1482,4 @@ Tarihsel düzeltme kaydı: Önceki Faz-21 OPEN GATE kabulü eksik/erken sayıld�
 - Full UI center operation retest after local server reload: paper state/view-model PASS, safe action routes PASS, export explicit NOT_IMPLEMENTED, live/order safety PASS.
 - Paper-only loop runner implemented; one closed-candle cycle is fail-closed SAFE_NOOP with explicit missing decision engine reason. No live/order/trade loop.
 - Paper decision binding implemented using existing T3/DMI/ADX/signal modules and public closed candles; first run safely no-op due unavailable data. No live/order.
+- Public market-data smoke remains environment-blocked (WinError 10061); fail-closed runner records diagnostic and produces no paper order.

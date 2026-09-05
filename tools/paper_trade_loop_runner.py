@@ -80,8 +80,9 @@ def cycle() -> str:
     try:
         candles = public_closed_candles()
     except Exception as exc:
-        state.update({"paper_trade_loop_status": "SAFE_NOOP", "last_cycle_at": now, "last_cycle_result": "SAFE_NOOP", "last_block_reason": "MARKET_DATA_UNAVAILABLE"})
-        write_loop(state); event("PAPER_LOOP_MARKET_DATA_UNAVAILABLE", reason=type(exc).__name__); return "SAFE_NOOP"
+        detail = {"error_type": type(exc).__name__, "url": "https://fapi.binance.com/fapi/v1/klines", "symbol": "BTCUSDT", "timeframe": "1h", "timeout_seconds": 8, "public_only": True, "retry_count": 0, "last_error": str(getattr(exc, "reason", exc)), "next_action_hint": "CHECK_WINDOWS_TLS_PROXY_DNS_OR_FIREWALL; DO_NOT_USE_PRIVATE_ENDPOINT"}
+        state.update({"paper_trade_loop_status": "SAFE_NOOP", "last_cycle_at": now, "last_cycle_result": "SAFE_NOOP", "last_block_reason": "MARKET_DATA_UNAVAILABLE", "market_data_status": "MARKET_DATA_UNAVAILABLE", "last_market_data_error": detail})
+        write_loop(state); event("PAPER_LOOP_MARKET_DATA_UNAVAILABLE", **detail); return "SAFE_NOOP"
     if len(candles) < max(config["dmi_di_length"] + config["adx_smoothing"], config["t3_period"] * 2) + config["adx_slope_n"]:
         state.update({"paper_trade_loop_status": "SAFE_NOOP", "last_cycle_at": now, "last_cycle_result": "SAFE_NOOP", "last_block_reason": "INSUFFICIENT_CLOSED_CANDLES"})
         write_loop(state); event("PAPER_LOOP_SAFE_NOOP", reason="INSUFFICIENT_CLOSED_CANDLES", market_data="PASS", paper_order="NONE"); return "SAFE_NOOP"

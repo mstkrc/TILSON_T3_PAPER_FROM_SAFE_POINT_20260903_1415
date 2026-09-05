@@ -1770,3 +1770,4 @@ Control Center fiili seti 17 ekrandır: 01 = Genel Bakış; 02–17 = diğer Con
 - 2026-09-05: Reloaded local UI server from current action-router code and retested full paper UI capacity. Prior 404 routes resolved; export returns explicit EXPORT_NOT_IMPLEMENTED; no live/order/trade loop.
 - 2026-09-05: Added fail-closed paper trade-loop runner and local status/start/stop/run-once endpoints. One cycle returned SAFE_NOOP because no decision engine is available; live/order safety unchanged.
 - 2026-09-05: Bound paper loop to existing public 1H closed-candle, T3/DMI/ADX and signal modules. Network-unavailable cycle returned explicit SAFE_NOOP; no signal or paper order.
+- 2026-09-05: Added structured public market-data failure diagnostics (URL, symbol, timeframe, timeout, retry, error and next-action hint). Smoke result: environment connection refused; fail-closed.

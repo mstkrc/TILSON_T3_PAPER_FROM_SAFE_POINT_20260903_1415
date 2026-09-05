@@ -1,0 +1,11 @@
+PUBLIC MARKET DATA PAPER LOOP VERIFY
+====================================
+result: PUBLIC_MARKET_DATA_UNAVAILABLE_ENVIRONMENT_BLOCKED
+endpoint: https://fapi.binance.com/fapi/v1/klines (public Futures klines only)
+symbol/timeframe: BTCUSDT / 1h; timeout 8s; retry 0
+error: URLError, WinError 10061 connection refused.
+paper loop: SAFE_NOOP; market data unavailable; closed-candle/indicator/signal/risk not reached.
+paper order: NONE; wallet 1000 USD; positions 0; orders 0; ledger empty.
+safety: PAPER ON; LIVE OFF_LOCKED; LIVE_TRADING=false; live_order_sending_allowed=false; real_order_allowed=false.
+tests: pytest 228 passed; compileall PASS; git diff --check PASS.
+next: check Windows firewall/proxy/DNS/TLS; never use private endpoint or fixture as paper data.
