@@ -1,1 +1,16 @@
-{"events": [{"type": "UI_PAPER_BINDING_INITIALIZED", "status": "RECORDED"}, {"type": "LIVE_LOCKED_REAL_ORDER_BLOCKED", "status": "ENFORCED"}], "source": "PAPER_LOCAL_EVENT_LOG"}
+{
+  "events": [
+    {
+      "type": "UI_PAPER_BINDING_INITIALIZED",
+      "status": "RECORDED"
+    },
+    {
+      "type": "LIVE_LOCKED_REAL_ORDER_BLOCKED",
+      "status": "ENFORCED"
+    },
+    {
+      "type": "PAPER_LOCAL_RUNTIME_STARTED"
+    }
+  ],
+  "source": "PAPER_LOCAL_EVENT_LOG"
+}

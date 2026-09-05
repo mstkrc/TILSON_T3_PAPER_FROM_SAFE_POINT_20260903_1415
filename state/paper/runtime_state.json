@@ -1,12 +1,15 @@
 {
   "mode": "PAPER",
-  "paper_permission": "NOT_GRANTED_YET",
-  "paper_runtime": "OFF",
-  "paper_start_allowed": false,
+  "paper_permission": "GRANTED_BY_USER",
+  "paper_runtime": "ON",
+  "paper_start_allowed": true,
+  "runtime_start_allowed": true,
+  "last_user_permission": "USER_EXPLICIT_PAPER_START_APPROVAL",
   "live_runtime": "OFF_LOCKED",
   "live_trading": false,
   "live_order_sending_allowed": false,
   "real_order_allowed": false,
-  "last_action": "INITIALIZED_UI_BINDING_REPAIR",
+  "last_action": "PAPER_LOCAL_RUNTIME_STARTED",
+  "permission_granted_at": "2026-09-05T00:00:00+03:00",
   "updated_at_utc": "2026-09-05T00:00:00Z"
 }
