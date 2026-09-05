@@ -1499,3 +1499,4 @@ LIVE_TRADING=false korunmuştur.
 - FAZ-29 is not operationally started; Paper OFF; Live OFF_LOCKED.
 - Next correct action: KEEP_LONGXIA_OUT_OF_BINANCE_USDT_M_OBSERVATION_UNIVERSE.
 - Next handoff: CROSS_ONLY active; wait for a new RED_TO_GREEN/ GREEN_TO_RED cross or an explicitly authorized config/UI change. Paper remains OFF and not permitted.
+- UI handoff: start `python tools/ui_paper_local_server.py` only after a separately authorized runtime step; open `outputs/faz21_control_center.html` through the local server, not as an authoritative standalone file. State is local empty PAPER sandbox; start endpoint remains permission-blocked.

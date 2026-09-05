@@ -5,6 +5,7 @@
 - Day-end snapshot: `snapshots/day_end_close_reverted_safe_point_10_17_pending_20260903_0432.txt` (SHA-256 `A06D9AA89F47968B74A8A0043FB913179EAFAC47ADC4F31E15D299A562A8BB77`).
 - 10–17 mevcut HTML çıktıları yalnız `UNACCEPTED_WORKING_ARTIFACTS` olarak tutulur; PASS, APPROVED, LOCKED veya BASELINE_PROTECTED değildir.
 - 10–17 için `NOT_ACCEPTED / REWORK_PENDING / USER_LATER_QA_REQUIRED` ve ileride kullanıcı browser/manual QA şartı geçerlidir.
+- UI paper binding repair recorded: local state/view-model binding is implemented, but paper runtime is intentionally OFF and start permission remains NOT_GRANTED_YET. Browser QA and explicit paper authorization remain required.
 - Safe point `REVERTED_TO_GROUP2_APPROVED_STATE` olarak korunur; 01–09 `DO_NOT_TOUCH` kapsamındadır.
 
 Control Center fiili seti 17 ekrandır: 01 = Genel Bakış; 02–17 = diğer Control Center ekranları. “Genel Bakış + 1–17” çalışma bütününü anlatır; ayrı 18. ekran yoktur.

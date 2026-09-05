@@ -1,0 +1,15 @@
+{
+  "initial_wallet_usd": 1000,
+  "cash_usd": 1000,
+  "equity_usd": 1000,
+  "used_margin_usd": 0,
+  "available_usd": 1000,
+  "realized_pnl_usd": 0,
+  "unrealized_pnl_usd": 0,
+  "total_pnl_usd": 0,
+  "pnl_percent": 0,
+  "max_coin_count": 10,
+  "default_leverage": 1,
+  "margin_mode": "ISOLATED",
+  "source": "PAPER_LOCAL_STATE"
+}
